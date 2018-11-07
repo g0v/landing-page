@@ -4,7 +4,7 @@
 git checkout master
 REV=`git describe --always`
 rm -rf _public
-git clone git@gthub.com:g0v/landing-page --depth 1 -b gh-pages _public
+git clone git@github.com:g0v/landing-page --depth 1 -b gh-pages _public
 cd _public
 git rm -rf *
 cp -R ../static/ ./
