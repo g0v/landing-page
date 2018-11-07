@@ -1,0 +1,51 @@
+mixin nbr(count)
+  - for (var i = 0; i < count; i++)
+    br
+mixin use-block(name,package)
+  - if(!package) package = "default"
+  script(src="/static/blocks/" + package + "/" + name + "/index.js")
+  link(rel="stylesheet",type="text/css",href="/static/blocks/" + package + "/" + name + "/index.css")
+mixin block(name,package,version,style)
+  div(class="block-item block-" + name, data-package=package, data-version=version,style=style): .inner
+    block
+mixin use-zh-font(name,selector)
+  script.
+    xfl.load("https://plotdb.github.io/xl-fontset/alpha/!{name}/", function(font) {
+      var selector = "!{selector}";
+      if(selector) {
+        var style = document.createElement("style");
+        style.innerText = "!{selector} { font-family: !{name}; }";
+        document.body.appendChild(style);
+      }
+      texts = Array.from(document.querySelectorAll(selector || 'body'))
+        .map(function(it) { return it.innerText; }).join('');
+      font.sync(texts);
+    })
+mixin use-font(name,selector)
+  script.
+    xfl.load("https://plotdb.github.io/xl-fontset/alpha/!{name}.ttf", function() {
+      var selector = "!{selector}";
+      if(selector) {
+        var style = document.createElement("style");
+        style.innerText = "!{selector} { font-family: !{name}; }";
+        document.body.appendChild(style);
+      }
+    })
+mixin lorem(len,offset)
+  - var start = Math.floor(Math.random() * 100);
+  - if(!offset) offset = 0;
+  - var offset = Math.floor(offset * Math.random() - offset * 0.5)
+  - var string = "Village did removed enjoyed explain nor ham saw calling talking. Securing as informed declared or margaret. Joy horrible moreover man feelings own shy. Request norland neither mistake for yet. Between the for morning assured country believe. On even feet time have an no at. Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem. Did shy say mention enabled through elderly improve. As at so believe account evening behaved hearted is. House is tiled we aware. It ye greatest removing concerns an overcame appetite. Manner result square father boy behind its his. Their above spoke match ye mr right oh as first. Be my depending to believing perfectly concealed household. Point could to built no hours smile sense. Raising say express had chiefly detract demands she. Quiet led own cause three him. Front no party young abode state up. Saved he do fruit woody of to. Met defective are allowance two perceived listening consulted contained. It chicken oh colonel pressed excited suppose to shortly. He improve started no we manners however effects. Prospect humoured mistress to by proposal marianne attended. Simplicity the far admiration preference everything. Up help home head spot an he room in. "
+  | #{string.substring(start, start + len + offset).trim()}
+
+mixin carousel(id)
+  .carousel.slide(data-ride="carousel",id=id)
+    .carousel-inner
+      block
+    a.carousel-control-prev(href="#" + id,role="button",data-slide="prev")
+      span.carousel-control-prev-icon(aria-hidden="true")
+      span.sr-only Previous
+    a.carousel-control-next(href="#" + id,role="button",data-slide="next")
+      span.carousel-control-next-icon(aria-hidden="true")
+      span.sr-only Next
+
