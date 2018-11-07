@@ -9,9 +9,9 @@ html(lang="en")
     include /library.pug
     // custom files
     link(rel="stylesheet",type="text/css",href="/css/index.css")
-    script(src="/assets/xfl/xfl.js")
-    script(src="/assets/stickyfill/2.1.0/stickyfill.min.js")
-    script(type="text/javascript",src="/js/index.js")
+    script(src=assets + "/xfl/xfl.js")
+    script(src=assets + "/stickyfill/2.1.0/stickyfill.min.js")
+    script(type="text/javascript",src="js/index.js")
   body
     #landing
       .dark-shape
@@ -19,9 +19,9 @@ html(lang="en")
         .btn.btn-light.ml-1.btn-sm EN
         .btn.btn-light.ml-1.btn-sm 中文
       .row.content
-        .thumb.col: img(src="/assets/img/g0v-hero.jpg")
+        .thumb.col: img(src="assets/img/g0v-hero.jpg")
         .desc.col
-          img.d-block.mr-auto.ml-auto(src="/assets/img/g0v-only.svg")
+          img.d-block.mr-auto.ml-auto(src="assets/img/g0v-only.svg")
           p 自台灣發起、去中心化的公民科技社群「零時政府」，以資訊透明、開放成果、開放協作為核心，透過群眾草根的力量來關心公共事務。
           hr
           .text-center
@@ -73,7 +73,7 @@ html(lang="en")
           mixin project(id,title)
             .row.mb-4.project
               .col-4
-                .thumb(style="background-image:url(/assets/img/projects/" + id + ".jpg)")
+                .thumb(style="background-image:url(assets/img/projects/" + id + ".jpg)")
               .col-8
                 h3= title
                 hr
@@ -126,7 +126,7 @@ html(lang="en")
     br
     #footer
       .dark-shape
-      img(src="/assets/img/g0v-banner-dark.svg")
+      img(src="assets/img/g0v-banner-dark.svg")
       hr
       div MIT License ( Code )
       div CC-BY 4.0 License ( Content )
