@@ -185,9 +185,11 @@ nav.navbar .collapse {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-#landing .desc img {
+#landing .desc img,
+#landing .desc canvas {
   margin: 100px auto 20px auto;
   width: 300px;
+  display: block;
 }
 @media (max-width: 1200px) {
   #landing .dark-shape {
