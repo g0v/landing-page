@@ -24,10 +24,14 @@ block body
     .sticky: .inner
       div 最新消息
       br
+      .text-danger.clickable(data-scrollto="#more") 了解更多
+      .text-danger.clickable(data-scrollto="#projects") 成果列表
+      .text-danger.clickable(data-scrollto="#participate") 如何參與
+      br
       a(href=root + "manifesto/") g0v 宣言
       a(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30",target="_blank") 小額捐款
       a(href="https://hack.g0v.tw/transaction/",target="_blank") 收支明細
-      +nbr(1)
+      br
       a(href=root + "novice/") 新手指南
       a(href=root + "faq/") 常見問題
       a(href=root + "coc/") 社群守則
@@ -35,7 +39,10 @@ block body
       div 更多資源..
     .inner   
       .para
-        h2.sticky 什麼是 g0v?
+        .text-center
+          h1.sticky 零時政府是什麼？
+          .text-muted what is g0v?
+        +nbr(2)
         p 將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也是代表數位原生世代從 0 與 1 世界的視野。
         h3 運作模式
         p g0v.tw 的推動結合線上與實體，以各種網路工具加上兩個月一次的黑客松(註)工作坊，參與者自主提出專案邀集不同專業者加入，透過 g0v.tw 的實體、線上平台媒合各方資源，協作出專案成果，不定期會舉辦小型黑客松工作坊。分散式的組織強調自主參與的能量，鼓勵大家找出問題、提出解決方案、參與討論分享資源，以實作代替按讚。

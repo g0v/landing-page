@@ -267,20 +267,23 @@ iframe.video {
 .main .sticky .inner a {
   display: block;
 }
-.foot {
+body > .foot {
   margin-top: 20px;
   padding: 30px;
   border-top: 4px solid #c42026;
-  background: #000;
+  background: linear-gradient(60deg, #000, #191a1b);
   color: #fff;
   position: relative;
   min-height: 220px;
   overflow: hidden;
 }
-.foot img {
+body > .foot img {
   width: 200px;
 }
-.foot .dark-shape {
+body > .foot a {
+  color: #eeeff0;
+}
+body > .foot .dark-shape {
   z-index: 0;
   position: absolute;
   width: 1000px;
@@ -297,7 +300,7 @@ iframe.video {
   right: -600px;
   background-size: cover;
 }
-.foot .dark-shape:after {
+body > .foot .dark-shape:after {
   content: " ";
   display: block;
   position: absolute;
