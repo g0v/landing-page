@@ -1,22 +1,26 @@
 //- module
 doctype html
+- var root = "/";
 include /vars.pug
+include /mixins.pug
+include /components/index.pug
+block vars
 html(lang="en")
   head(prefix="og: http://ogp.me/ns#")
     meta(charset="utf-8")
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    // libraries
     include /library.pug
-    // custom files
-    link(rel="stylesheet",type="text/css",href="/css/index.css")
-    link(href="https://fonts.googleapis.com/css?family=Varela+Round",rel="stylesheet")
-    script(src="/assets/xfl/xfl.js")
-    script(type="text/javascript",src="/js/index.js")
+    +css("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+    +css("https://fonts.googleapis.com/css?family=Roboto")
+    +css(root + "assets/ldui/ldui.min.css")
+    +css(root + "css/index.css")
+    block head
   body
-    include nav.pug
+    if ctrl.navtop.show
+      +navtop()
     block body
-    .footer: .inner
+    .foot: .inner
       .row
         .col-sm
           span 專案開發
@@ -32,4 +36,19 @@ html(lang="en")
           a(href="http://www.facebook.com/g0v.tw") #[i.fa.fa-facebook]
           a(href="https://twitter.com/search?q=%23g0v&src=hash") #[i.fa.fa-twitter]
           a(href="https://plus.google.com/102893633954450772289") #[i.fa.fa-google-plus]
+
+
+    //-#footer
+      .dark-shape
+      img(src="assets/img/g0v-banner-dark.svg")
+      hr
+      div MIT License ( Code )
+      div CC-BY 4.0 License ( Content )
+      div by g0v.tw contributors
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.26/bootstrap-native-v4.min.js")
+    +script(root + "assets/ldui/ldui.min.js")
+    +script(root + "assets/xfl/xfl.js")
+    +script(root + "js/index.js")
+    block script
 

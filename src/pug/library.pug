@@ -24,73 +24,10 @@ if use.og
 if fb
   meta(property="fb:app_id",content=fb.app_id)
   meta(property="fb:admins",content=fb.admins)
-
 if use.favicon
     link(rel="icon",type="image/x-icon",href="#{favicon}")
-
 if use.appleicon
   link(rel="apple-touch-icon",sizes="57x57",href="icon-57.png")
   link(rel="apple-touch-icon",sizes="72x72",href="icon-72.png")
   link(rel="apple-touch-icon",sizes="114x114",href="icon-114.png")
   link(rel="apple-touch-icon",sizes="144x144",href="icon-144.png")
-
-if use.cdn
-  //- from cdn
-  if lib.jquery
-    script(type="text/javascript",src="//codeorigin.jquery.com/jquery-1.10.2.min.js")
-  if lib.d3js
-    script(type="text/javascript",src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.4/d3.min.js")
-  if lib.angular
-    script(type="text/javascript",src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js")
-  if lib.bootstrap
-    link(rel="stylesheet",type="text/css",href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css")
-    script(type="text/javascript",src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js")
-    script(type="text/javascript",src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js")
-  if lib.semantic
-    link(rel="stylesheet",type="text/css",href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.9.3/css/semantic.min.css")
-    script(type="text/javascript",src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.9.3/javascript/semantic.min.js")
-  if lib.fontawesome
-    link(rel="stylesheet",href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css")
-  if lib.reactjs
-    script(type="text/javascript",src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js")
-    script(type="text/javascript",src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js")
-  if lib.revealjs
-    link(rel="stylesheet",type="text/css",href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/reveal.min.css")
-    link(rel="stylesheet",type="text/css",href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/theme/white.min.css")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/js/reveal.min.js")
-
-  if lib.ionrangeslider
-    link(rel="stylesheet",type="text/css",href="//cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.7/css/ion.rangeSlider.min.css")
-    link(rel="stylesheet",type="text/css",href="//cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.7/css/ion.rangeSlider.skinFlat.css")
-    script(src="//cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.7/js/ion.rangeSlider.min.js")
-else
-  //- from local
-  if lib.jquery
-    script(type="text/javascript",src= assets + "/jquery/1.10.2/jquery.min.js")
-  if lib.d3js
-    script(type="text/javascript",src= assets + "/d3js/3.5.4/d3.min.js")
-  if lib.angular
-    script(type="text/javascript",src= assets + "/angular/1.3.15/angular.min.js")
-  if lib.bootstrap
-    link(rel="stylesheet",type="text/css",href= assets + "/bootstrap/4.0.0/css/bootstrap.min.css")
-    script(type="text/javascript",src= assets + "/popper/1.12.3/popper.min.js")
-    script(type="text/javascript",src= assets + "/bootstrap/4.0.0/js/bootstrap.min.js")
-  if lib.semantic
-    link(rel="stylesheet",type="text/css",href= assets + "/semantic-ui/0.9.5/css/semantic.min.css")
-    script(type="text/javascript",src= assets + "/semantic-ui/0.9.5/js/semantic.min.js")
-  if lib.fontawesome
-    link(rel="stylesheet",type="text/css",href= assets + "/fontawesome/4.6.2/css/font-awesome.min.css")
-  if lib.reactjs
-    script(type="text/javascript",src= assets + "/reactjs/0.14.0/react.js")
-    script(type="text/javascript",src= assets + "/reactjs/0.14.0/react-dom.js")
-  if lib.revealjs
-    link(rel="stylesheet",type="text/css",href= assets + "/revealjs/3.3.0/css/reveal.css")
-    link(rel="stylesheet",type="text/css",href= assets + "/revealjs/3.3.0/css/theme/white.css")
-    script(src= assets + "/revealjs/3.3.0/js/reveal.js")
-  if lib.ionrangeslider
-    link(rel="stylesheet",type="text/css",href= assets + "/ion-rangeslider/2.1.7/css/ion.rangeSlider.css")
-    link(rel="stylesheet",type="text/css",href= assets + "/ion-rangeslider/2.1.7/css/ion.rangeSlider.skinFlat.css")
-    script(src= assets + "/ion-rangeslider/2.1.7/js/ion.rangeSlider.min.js")
-if lib.ldcolorpicker
-  link(rel="stylesheet",type="text/css",href= assets + "/ldcolorpicker/0.1.1/ldcp.css")
-  script(src= assets + "/ldcolorpicker/0.1.1/ldcp.min.js")

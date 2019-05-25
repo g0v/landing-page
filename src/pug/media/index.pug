@@ -1,12 +1,13 @@
 extends /base.pug
-include /mixins.pug
 block body
-  .block1024.content
-    +nbr(2)
-    :markdown-it
-      ### 媒體報導
-      Also see [international media coverage](http://g0v.tw/en-US/media.html).
+  .w-1024.m-auto
 
+    +nbr(3)
+    .text-center
+      h1.display-4.font-weight-bold 媒體報導
+      .text-muted Media Coverage
+    +nbr(3)
+    :markdown-it
       #### 2017 第四季
       * [從巴西到台灣，他們用開放資料監督政治人物如何花錢](https://theinitium.com/article/20171024-tech-open-data/) / 端傳媒 蔣珮伊 2017.10.24
       * [放上網免費參閱 留美台青年挖掘被遺落歷史](https://www.singtaousa.com/ny/436-%E7%B4%90%E7%B4%84/312506-%E6%94%BE%E4%B8%8A%E7%B6%B2%E5%85%8D%E8%B2%BB%E5%8F%83%E9%96%B1+%E7%95%99%E7%BE%8E%E5%8F%B0%E9%9D%92%E5%B9%B4%E6%8C%96%E6%8E%98%E8%A2%AB%E9%81%BA%E8%90%BD%E6%AD%B7%E5%8F%B2/) / 星島日報 2017.10.01
@@ -247,3 +248,4 @@ block body
       * [佛心求職程式 可揪血汗公司](http://www.appledaily.com.tw/appledaily/article/headline/20130414/34951484/) / 蘋果日報 2013.04.14
       * [「揭露22K」網 揪出血汗企業](http://www.appledaily.com.tw/appledaily/article/headline/20130129/34800790/) / 蘋果日報 2013.01.29
 
+  +nbr(3)

@@ -1,10 +1,8 @@
-g0v.tw
-============
+# g0v.tw
 
-https://g0v.hackmd.io/7LBPpu4FQAi7B3343Vb69Q
+Discuss here: https://g0v.hackmd.io/7LBPpu4FQAi7B3343Vb69Q
 
 
-LICENSE
-------------
+## LICENSE
 
 MIT License

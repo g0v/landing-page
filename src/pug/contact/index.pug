@@ -1,10 +1,12 @@
 extends /base.pug
-include /mixins.pug
 block body
   .block1024.content
-    +nbr(2)
-    h3 接觸 g0v 社群
-    hr
+    +nbr(3)
+    .text-center
+      h1.display-4.font-weight-bold 與社群聯繫
+      .text-muted Contact with g0v Community
+    +nbr(3)
+
     p 你可以在線上/線下接觸到 g0v 社群的討論與活動，包括：
     ul
       li #[a(href="https://www.facebook.com/groups/g0v.general/") 臉書 g0v 後勤中心]
