@@ -9,8 +9,18 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: c0nsolas, 'Varela Round', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  color: #222324;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: c0nsolas, Roboto, Helvetica, Arial, '粗黑體', sans-serif;
 }
 a {
   color: #d60000;
@@ -254,21 +264,26 @@ iframe.video {
   padding: 30px;
   border-left: 4px solid #c42026;
 }
-#footer {
-  font-size: 14px;
+.main .sticky .inner a {
+  display: block;
+}
+body > .foot {
   margin-top: 20px;
   padding: 30px;
   border-top: 4px solid #c42026;
-  background: #fff;
-  color: #000;
+  background: linear-gradient(60deg, #000, #191a1b);
+  color: #fff;
   position: relative;
   min-height: 220px;
   overflow: hidden;
 }
-#footer img {
+body > .foot img {
   width: 200px;
 }
-#footer .dark-shape {
+body > .foot a {
+  color: #eeeff0;
+}
+body > .foot .dark-shape {
   z-index: 0;
   position: absolute;
   width: 1000px;
@@ -285,7 +300,7 @@ iframe.video {
   right: -600px;
   background-size: cover;
 }
-#footer .dark-shape:after {
+body > .foot .dark-shape:after {
   content: " ";
   display: block;
   position: absolute;
