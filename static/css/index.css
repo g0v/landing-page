@@ -102,24 +102,6 @@ nav.navbar .collapse {
 #hero-text .inner h4 {
   margin: -30px 0 60px;
 }
-/*.footer
-  background: linear-gradient(45deg,#111,#222)
-  color: #fff
-  .inner
-    a
-      color: #fff
-    max-width: 1024px!important
-    margin: auto!important
-    padding: 40px 10px 80px
-    .col-sm b:first-child
-      font-weight: 900
-      font-size: 1.1em
-    i.fa
-      font-size: 1.2em
-      margin-right: 20px
-  img
-    margin-bottom: 20px
-*/
 .news .item .date {
   font-family: sans-serif;
   background: #999;
@@ -243,8 +225,8 @@ iframe.video {
 .para h2.sticky,
 .para h3.sticky {
   z-index: 2;
-  background: #fff;
-  padding: 10px 10px 10px 0;
+  background: rgba(255,255,255,0.8);
+  padding: 20px 10px 20px 0;
 }
 .main > .inner {
   max-width: 1024px;
