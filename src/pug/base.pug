@@ -1,9 +1,8 @@
 //- module
 doctype html
-- var root = "";
-- var ctrl = {};
+- var root = "/";
+- var ctrl = {navtop: {show: true}};
 - var use = {}
-- ctrl.navtop = {};
 include /../../static/assets/ldui/pug/ldui.pug
 block vars
 html(lang="en")
@@ -18,6 +17,8 @@ html(lang="en")
     +css(root + "css/index.css")
     block head
   body
+    if ctrl.navtop.show
+      include /modules/navtop.pug
     block body
     include /modules/foot.pug
     script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.26/bootstrap-native-v4.min.js")

@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: c0nsolas, Roboto, Helvetica, Arial, '王漢宗超明', sans-serif;
+  font-family: c0nsolas, '王漢宗超明', serif;
 }
 .typeset h1,
 .typeset h2,
@@ -31,7 +31,7 @@ h6 {
 .typeset h4,
 .typeset h5,
 .typeset h6 {
-  font-family: c0nsolas, Roboto, Helvetica, Arial, '王漢宗超明', sans-serif;
+  font-family: c0nsolas, '王漢宗超明', serif;
   font-weight: 400;
 }
 a {
@@ -221,12 +221,18 @@ iframe.video {
 .para h3 {
   margin-top: 48px;
 }
-.para h1.sticky,
-.para h2.sticky,
-.para h3.sticky {
+.para .sticky {
   z-index: 2;
   background: rgba(255,255,255,0.8);
-  padding: 20px 10px 20px 0;
+  padding: 10px 10px 10px 0;
+}
+.para .sticky h1,
+.para .sticky h2,
+.para .sticky h3,
+.para .sticky h4,
+.para .sticky h5,
+.para .sticky h6 {
+  margin-top: 0;
 }
 .main > .inner {
   max-width: 1024px;
@@ -251,11 +257,21 @@ iframe.video {
 .main .sticky .inner a {
   display: block;
 }
+.project .thumb {
+  height: 350px;
+  background: #eee;
+  background: #eee center center no-repeat;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  border: 1px solid #999;
+}
+.project h3 {
+  margin-top: 12px;
+}
 body > .foot {
-  margin-top: 20px;
+  margin-top: 100px;
   padding: 30px;
-  border-top: 4px solid #c42026;
-  background: linear-gradient(60deg, #000, #191a1b);
+  background: linear-gradient(60deg, #000, #490a0b);
   color: #fff;
   position: relative;
   min-height: 220px;
@@ -294,16 +310,9 @@ body > .foot .dark-shape:after {
   height: 100%;
   background: rgba(0,0,0,0.5);
 }
-.project .thumb {
-  width: 270px;
-  height: 350px;
-  background: #eee;
-  background: #eee center center no-repeat;
-  background-size: cover;
-  margin-left: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  border: 1px solid #999;
-}
-.project h3 {
-  margin-top: 12px;
+#navtop {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
 }

@@ -1,6 +1,18 @@
 //- module
-mixin navtop
-  nav.navbar.navbar-expand-lg.navbar-dark.bg-black.text-light
+//-
+  parameters: ctrl.navtop
+   - placeholder: add placeholder or not. ( if not, navbar will overlap with hero content )
+   - className: space seperated navbar className
+   - transition: comma joined, two space separated className for navbar in two state.
+   - transitionTarget: css selector of node that its visibility is used to control navbar state.
+- if(!ctrl.navtop) { ctrl.navtop = {placeholder: true, shown: true}; }
+- if(!ctrl.navtop.className) { ctrl.navtop.className = "navbar-light bg-light" };
+#nav-top
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-black.text-light(
+    class=ctrl.navtop.className,
+    data-transition=ctrl.navtop.transition,
+    data-transition-target=ctrl.navtop.transitionTarget)
+
     button.navbar-toggler(type="button",data-toggle="collapse",data-target="#navbar-list"): span.navbar-toggler-icon
     #navbar-list.collapse.navbar-collapse
       a.navbar-brand(href="/"): img(src="/assets/img/g0v-banner.svg",style="height:27px;margin-top:-8px")
@@ -34,4 +46,4 @@ mixin navtop
         a.nav-item.nav-link(href="#") #[i.fa.fa-google-plus]
         a.nav-item.nav-link(href="#") #[i.fa.fa-github]
 
-
+#nav-top-placeholder

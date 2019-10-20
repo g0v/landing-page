@@ -41,8 +41,9 @@ block body
     .inner.typeset.heading-contrast
 
       .para
-        h1.sticky 零時政府是什麼？
-        .text-muted what is g0v?
+        .sticky
+          .text-muted what is g0v?
+          h2 零時政府是什麼？
         +nbr(2)
         p 將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也是代表數位原生世代從 0 與 1 世界的視野。
         h3 運作模式
@@ -65,14 +66,16 @@ block body
       hr#projects
       br
       .para
-        h2.sticky 社群成果
+        .sticky
+          .text-muted Projects
+          h2 社群成果
         p 自 2012 年底開始，零時政府以 g0v 黑客松作為起點，已舉辦了 3 次國際年會、3 屆公民科技獎助金、30+ 場黑客松、 30+ 場受邀演講、 100+ 次媒體報導，2000+ 遍布三大洲的貢獻者，成果皆以開放授權模式釋出。
         br
         mixin project(id,title)
-          .row.mb-4.project
+          .row.mb-4.pb-4.project
             .col-4
               .thumb(style="background-image:url(assets/img/projects/" + id + ".jpg)")
-            .col-8
+            .col-8: .vertical-center: div
               h3= title
               hr
               block
@@ -97,7 +100,9 @@ block body
       hr#participate
       br
       .para
-        h2.sticky 如何參與？
+        .sticky
+          .text-muted Participate
+          h2 如何參與？
         p 了解 g0v 最快的方式就是實際來參與一次。無論線上或線下，你都可以找得到各種管道與社群參與者互動。
         h3 雙月黑客松與基礎松
         p 自 g0v 發起以來每兩個月舉辦一次的雙月黑客松 ( 大松 ) 已是 g0v 的常駐活動了，在這裡你可以找到形形色色的參與者，無論是老手、新手、各種不同領域的人，都在這個一整天的活動中熱烈地討論、實作、並在活動結束時將成果向大家發表。
@@ -118,7 +123,7 @@ block body
           a.btn.btn-outline-danger.text-danger.mr-2(href="https://grants.g0v.tw") 至公民科技獎助金提案
           a.btn.btn-outline-danger.text-danger(href="https://g0v.network") 在自己國家發起 g0v 活動
 
-  +nbr(3)
+  +nbr(5)
 
 block script
   +script(root + "assets/threejs/r98/three.min.js")
