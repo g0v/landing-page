@@ -1,0 +1,129 @@
+//- module
+
+mixin ldp(name, colors, actions, cls)
+  - if(!actions) actions = []
+  .ldp(class=(cls || ""))
+    .colors
+      .ctrl
+        each a in actions
+          div(data-action=a[0])= a[1]
+      each c in colors
+        .color(style=`background:${c}`)
+    if name
+      .name= name
+
+//- Palette Editor
+mixin ldPaletteEditor
+  .ldp
+    .name
+    .colors
+  .edit
+    .inner
+      .row
+        .col-sm-6
+          .ldColorPicker.no-border.no-palette
+        .col-sm-6
+          .row.mb-2
+            .col-sm-8
+              select.form-control.form-control-local-sm(value="rgb")
+                option(value="rgb") RGB
+                option(value="hsl") HSL
+                option(value="hcl") HCL
+            .col-sm-4.pl-0: input.form-control.form-control-local-sm.value(placeholder="Hex Value",data-tag="hex",style="margin:0")
+          - var configs = [["Red", "Green", "Blue", "rgb", "active"], ["Hue", "Saturation", "Luminance", "hsl",""], ["Hue", "Chroma", "Luminance", "hcl",""]];
+          each config in configs
+            .row.config(data-tag=config[3],class=config[4])
+              .col-sm-8
+                .label-group: span= config[0]
+                input.ldrs.ldrs-sm(
+                data-tag=config[3] + "-" + config[0][0].toLowerCase())
+                .label-group: span= config[1]
+                input.ldrs.ldrs-sm(
+                data-tag=config[3] + "-" + config[1][0].toLowerCase())
+                .label-group: span= config[2]
+                input.ldrs.ldrs-sm(
+                data-tag=config[3] + "-" + config[2][0].toLowerCase())
+              .col-sm-4
+                input.value.form-control.form-control-local-sm(
+                data-tag=config[3] + "-" + config[0][0].toLowerCase())
+                input.value.form-control.form-control-local-sm(
+                data-tag=config[3] + "-" + config[1][0].toLowerCase())
+                input.value.form-control.form-control-local-sm(
+                data-tag=config[3] + "-" + config[2][0].toLowerCase())
+
+//- Palette Picker Widget
+mixin ldPalettePicker
+  .ldpp(ldPalettePicker)
+    .navbar.text-center: .inner(data-tag="menu")
+      ul.nav.nav-pills.float-right
+        .nav-item: a.nav-link.active(data-panel="view") View
+        .nav-item: a.nav-link(data-panel="mypal") My Pals
+        .nav-item: a.nav-link(data-panel="edit") Edit
+      div.nav.nav-pills
+        .input-group
+          input.form-control(placeholder="Search...",data-tag="search")
+          .input-group-append.dropdown
+              .btn.btn-outline-dark.dropdown-toggle(data-toggle="dropdown") Filter
+              .dropdown-menu(data-tag="categories")
+                a.dropdown-item(href="#",data-cat="") All
+                .dropdown-divider
+                a.dropdown-item(href="#",data-cat="artwork") Artwork
+                a.dropdown-item(href="#",data-cat="brand") Brand
+                a.dropdown-item(href="#",data-cat="concept") Concept
+                .dropdown-divider
+                a.dropdown-item(href="#",data-cat="gradient") Gradient
+                a.dropdown-item(href="#",data-cat="qualitative") Qualitative
+                a.dropdown-item(href="#",data-cat="diverging") Diverging
+                a.dropdown-item(href="#",data-cat="colorbrew") Colorbrew
+    .panels
+      .panel.active.clusterize-scroll(data-panel="view",style="max-height:600px"): .inner.clusterize-content
+      .panel.clusterize-scroll(data-panel="mypal",style="max-height:600px")
+        .inner.clusterize-content
+        .btn.btn-primary.btn-block.ld-over-inverse.btn-load
+          | Load More
+          .ld.ldld.ldbtn.sm
+      .panel(data-panel="edit")
+        +ldPaletteEditor
+        .foot
+          hr
+          .float-right
+            .btn.btn-primary.mr-2(data-action="use") Use This Palette
+            .btn.btn-outline-secondary.ld-ext-right(data-action="save") Save as Asset #[.ld.ldld.ldbtn.sm]
+          .btn.btn-outline-secondary(data-action="undo") Undo #[i.i-undo]
+mixin ldCover
+  .ldcv: .base: .inner
+    block
+//- module
+- var anikit = {"groupName":["No Animation","Popular Animation","Repeat Animation","Transition"],"members":[["static"],["blink","bounce","bounce-in","bounce-out","breath","fade","flip-h","float-btt-in","slide-ltr","spin","tremble"],["beat","blink","blur","bounce","bounceAlt","breath","clock","coin-h","coin-v","cycle","cycle-alt","damage","dim","fade","flip","flip-h","flip-v","float","heartbeat","hit","jelly","jelly-alt","jingle","jump","measure","metronome","move-btt","move-fade-btt","move-fade-ltr","move-fade-rtl","move-fade-ttb","move-ltr","move-rtl","move-ttb","orbit","pulse","rubber-h","rubber-v","rush-btt","rush-ltr","rush-rtl","rush-ttb","shake-h","shake-v","shiver","skew","skew-alt","slide-btt","slide-ltr","slide-rtl","slide-ttb","smash","spin","spin-fast","squeeze","surprise","swim","swing","tick","tick-alt","tremble","vortex","vortex-alt","wander-h","wander-v","wrench"],["blur-in","blur-out","bounce-alt-in","bounce-alt-out","bounce-in","bounce-out","fade-in","fade-out","fall-btt-in","fall-ltr-in","fall-rtl-in","fall-ttb-in","flip-h-in","flip-h-out","flip-v-in","flip-v-out","float-btt-in","float-btt-out","float-ltr-in","float-ltr-out","float-rtl-in","float-rtl-out","float-ttb-in","float-ttb-out","grow-btt-in","grow-btt-out","grow-ltr-in","grow-ltr-out","grow-rtl-in","grow-rtl-out","grow-ttb-in","grow-ttb-out","jump-alt-in","jump-alt-out","jump-in","jump-out","power-off","power-on","rush-btt-in","rush-ltr-in","rush-rtl-in","rush-ttb-in","slide-btt-in","slide-btt-out","slide-ltr-in","slide-ltr-out","slide-rtl-in","slide-rtl-out","slide-ttb-in","slide-ttb-out","spring-btt-in","spring-ltr-in","spring-rtl-in","spring-ttb-in","throw-btt-in","throw-ltr-in","throw-rtl-in","throw-ttb-in","vortex-alt-in","vortex-alt-out","vortex-in","vortex-out","zoom-in","zoom-out"]],"group":{"static":["static"],"popular":["blink","bounce","bounce-in","bounce-out","breath","fade","flip-h","float-btt-in","slide-ltr","spin","tremble"],"repeat":["beat","blink","blur","bounce","bounceAlt","breath","clock","coin-h","coin-v","cycle","cycle-alt","damage","dim","fade","flip","flip-h","flip-v","float","heartbeat","hit","jelly","jelly-alt","jingle","jump","measure","metronome","move-btt","move-fade-btt","move-fade-ltr","move-fade-rtl","move-fade-ttb","move-ltr","move-rtl","move-ttb","orbit","pulse","rubber-h","rubber-v","rush-btt","rush-ltr","rush-rtl","rush-ttb","shake-h","shake-v","shiver","skew","skew-alt","slide-btt","slide-ltr","slide-rtl","slide-ttb","smash","spin","spin-fast","squeeze","surprise","swim","swing","tick","tick-alt","tremble","vortex","vortex-alt","wander-h","wander-v","wrench"],"transition":["blur-in","blur-out","bounce-alt-in","bounce-alt-out","bounce-in","bounce-out","fade-in","fade-out","fall-btt-in","fall-ltr-in","fall-rtl-in","fall-ttb-in","flip-h-in","flip-h-out","flip-v-in","flip-v-out","float-btt-in","float-btt-out","float-ltr-in","float-ltr-out","float-rtl-in","float-rtl-out","float-ttb-in","float-ttb-out","grow-btt-in","grow-btt-out","grow-ltr-in","grow-ltr-out","grow-rtl-in","grow-rtl-out","grow-ttb-in","grow-ttb-out","jump-alt-in","jump-alt-out","jump-in","jump-out","power-off","power-on","rush-btt-in","rush-ltr-in","rush-rtl-in","rush-ttb-in","slide-btt-in","slide-btt-out","slide-ltr-in","slide-ltr-out","slide-rtl-in","slide-rtl-out","slide-ttb-in","slide-ttb-out","spring-btt-in","spring-ltr-in","spring-rtl-in","spring-ttb-in","throw-btt-in","throw-ltr-in","throw-rtl-in","throw-ttb-in","vortex-alt-in","vortex-alt-out","vortex-in","vortex-out","zoom-in","zoom-out"]}};
+mixin ldap(clsname)
+  .ldcv.ldap(class=clsname): .base: .inner.has-tips.mx-auto: div
+    .head: input
+    block
+    .menu
+      each g,$index in anikit.groupName
+        .item-head #{g}
+        .item-group
+          each m in anikit.members[$index]
+            .item(data-value=m)
+              div #{m}
+              .ani(class=`ld ld-${m}`)
+
+mixin anikit-select-options
+  each n,i in anikit.groupName
+    optgroup(label=n)
+      each k in anikit.members[i]
+        option(value=k)= k
+
+- prefix = function(n) { return (!n?[]:(Array.isArray(n)?n:[n])).map(function(it){ return `${prefix.currentName}$${it}`; }).join(' ');}
+mixin scope(name)
+  - var prentName = prefix.currentName;
+  - prefix.currentName = name;
+  if attributes.class && /naked-scope/.exec(attributes.class)
+    block
+  else
+    div(ld-scope=name || '')&attributes(attributes)
+      block
+  - prefix.currentName = parentName;
+mixin lzimg(src)
+  img.ldlz(data-src=src,
+  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAQAICRAEAOw==")&attributes(attributes)
