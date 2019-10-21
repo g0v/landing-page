@@ -9,18 +9,30 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 19px;
   color: #222324;
 }
 html,
 body,
+.typeset {
+  font-family: c0nsolas, Roboto, Helvetica, Arial, '源石黑體-Light', sans-serif;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: c0nsolas, Roboto, Helvetica, Arial, '粗黑體', sans-serif;
+  font-family: c0nsolas, '王漢宗超明', serif;
+}
+.typeset h1,
+.typeset h2,
+.typeset h3,
+.typeset h4,
+.typeset h5,
+.typeset h6 {
+  font-family: c0nsolas, '王漢宗超明', serif;
+  font-weight: 400;
 }
 a {
   color: #d60000;
@@ -31,17 +43,6 @@ a {
 nav.navbar .collapse {
   max-width: 1200px;
   margin: auto;
-}
-.block1200,
-.block1024 {
-  width: 90%;
-  margin: auto;
-}
-.block1200 {
-  max-width: 1200px;
-}
-.block1024 {
-  max-width: 1024px;
 }
 .carousel > a {
   z-index: 2;
@@ -101,24 +102,6 @@ nav.navbar .collapse {
 #hero-text .inner h4 {
   margin: -30px 0 60px;
 }
-/*.footer
-  background: linear-gradient(45deg,#111,#222)
-  color: #fff
-  .inner
-    a
-      color: #fff
-    max-width: 1024px!important
-    margin: auto!important
-    padding: 40px 10px 80px
-    .col-sm b:first-child
-      font-weight: 900
-      font-size: 1.1em
-    i.fa
-      font-size: 1.2em
-      margin-right: 20px
-  img
-    margin-bottom: 20px
-*/
 .news .item .date {
   font-family: sans-serif;
   background: #999;
@@ -238,16 +221,23 @@ iframe.video {
 .para h3 {
   margin-top: 48px;
 }
-.para h2.sticky,
-.para h3.sticky {
+.para .sticky {
   z-index: 2;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   padding: 10px 10px 10px 0;
+}
+.para .sticky h1,
+.para .sticky h2,
+.para .sticky h3,
+.para .sticky h4,
+.para .sticky h5,
+.para .sticky h6 {
+  margin-top: 0;
 }
 .main > .inner {
   max-width: 1024px;
-  padding: 100px 0 0 60px;
-  margin-right: 240px;
+  padding: 100px 200px 0 0;
+  margin: auto;
 }
 .main .sticky {
   top: 0;
@@ -267,11 +257,21 @@ iframe.video {
 .main .sticky .inner a {
   display: block;
 }
+.project .thumb {
+  height: 350px;
+  background: #eee;
+  background: #eee center center no-repeat;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  border: 1px solid #999;
+}
+.project h3 {
+  margin-top: 12px;
+}
 body > .foot {
-  margin-top: 20px;
+  margin-top: 100px;
   padding: 30px;
-  border-top: 4px solid #c42026;
-  background: linear-gradient(60deg, #000, #191a1b);
+  background: linear-gradient(60deg, #000, #490a0b);
   color: #fff;
   position: relative;
   min-height: 220px;
@@ -310,16 +310,9 @@ body > .foot .dark-shape:after {
   height: 100%;
   background: rgba(0,0,0,0.5);
 }
-.project .thumb {
-  width: 270px;
-  height: 350px;
-  background: #eee;
-  background: #eee center center no-repeat;
-  background-size: cover;
-  margin-left: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  border: 1px solid #999;
-}
-.project h3 {
-  margin-top: 12px;
+#navtop {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
 }
