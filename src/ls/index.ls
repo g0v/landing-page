@@ -2,6 +2,7 @@
 
 smoothScroll!
 
+/*
 fonturl = do
   root:
     \https://plotdb.github.io/xl-fontset/alpha
@@ -26,3 +27,4 @@ texts = Array.from(document.querySelectorAll('h1,h2,h3,h4,h5,h6'))
   .map -> it.innerText
   .join('')
 <- font.sync texts, _
+*/

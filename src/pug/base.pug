@@ -4,6 +4,7 @@ doctype html
 - var ctrl = {navtop: {show: true}};
 - var use = {}
 include /../../static/assets/ldui/pug/ldui.pug
+include /data/all.pug
 block vars
 html(lang="en")
   head(prefix="og: http://ogp.me/ns#")
@@ -25,5 +26,6 @@ html(lang="en")
     +script(root + "assets/ldui/ldui.min.js")
     +script(root + "assets/xfl/xfl.js")
     +script(root + "js/index.js")
+    +script("//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-59395.js")
     block script
 

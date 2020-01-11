@@ -1,0 +1,20 @@
+- link: https://budget.g0v.tw
+  slug: budget
+  zh:
+    name: 中央政府總預算視覺化
+    description: |
+      The project supercharges citizens with the power of visualization and social network to supervise government spending. It displays different perspectives of budget data like historical trend, cross-department comparison, public opinion and component breakdown of tax by government spending with interactive treemap, bubble chart and feedback mechanism.
+  en:
+    name: Government Budget Visualization
+    description: |
+      The project supercharges citizens with the power of visualization and social network to supervise government spending. It displays different perspectives of budget data like historical trend, cross-department comparison, public opinion and component breakdown of tax by government spending with interactive treemap, bubble chart and feedback mechanism.
+- link: https://www.facebook.com/events/2053095108093579/
+  slug: treasure
+  zh:
+    name: 遺落在世界角落的台灣國家寶藏
+    description: |
+      包括英美等國家這一百多年以來對台灣社會、地理、人物所做下的情蒐紀錄，提供了台灣人在回顧自己的過去時，更豐富的材料與角度，以及不同的思維，去重新描繪台灣人曾經的生活面貌。 在這裡，我們希望將這些資料重新進入公眾視野內，結合每個人獨特的視角，去重新書寫出台灣人生活的故事。
+  en:
+    name: 遺落在世界角落的台灣國家寶藏
+    description: |
+      包括英美等國家這一百多年以來對台灣社會、地理、人物所做下的情蒐紀錄，提供了台灣人在回顧自己的過去時，更豐富的材料與角度，以及不同的思維，去重新描繪台灣人曾經的生活面貌。 在這裡，我們希望將這些資料重新進入公眾視野內，結合每個人獨特的視角，去重新書寫出台灣人生活的故事。
