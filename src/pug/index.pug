@@ -4,8 +4,8 @@ block vars
 block head
 block body
 
-  #landing
-    .dark-shape
+  #landing(style="background:url(/assets/img/fluid-bk-left.svg) no-repeat -100px 0")
+    //-.dark-shape
     .lang
       .btn.btn-light.ml-1.btn-sm EN
       .btn.btn-light.ml-1.btn-sm 中文
@@ -67,24 +67,37 @@ block body
         hr
         p 了解 g0v 最快的方式就是實際來參與一次。無論線上或線下，你都可以找得到各種管道與社群參與者互動。
 
-        h3 雙月黑客松與基礎松
-        p 自 g0v 發起以來每兩個月舉辦一次的雙月黑客松 ( 大松 ) 已是 g0v 的常駐活動了，在這裡你可以找到形形色色的參與者，無論是老手、新手、各種不同領域的人，都在這個一整天的活動中熱烈地討論、實作、並在活動結束時將成果向大家發表。
-        p 除了雙月黑客松以外，揪松團亦定期舉辦以社群基礎建設專案為主的「基礎松」，其他亦有各個 g0v 專案大大小小不定期的活動，可依自己關注的領域來選擇。
-        p 雙月黑客松活動的更多細節可以在 #[a(href="https://hack.g0v.tw/") 黑客松入口網「揪松網」] 找到，你亦可關注 #[a(href="http://g0v-jothon.kktix.cc") 揪松團] 的公開活動頁面來隨時獲得最新活動的訊息。
+        h3 線下：大小黑客松雙月黑客松與社群小松
+        h4 雙月黑客松 / 大松
+        p 自 g0v 發起以來每兩個月舉辦一次的雙月黑客松 ( #[b.text-info 大松] ) 已是 g0v 的常駐活動了，在這裡你可以找到形形色色的參與者，無論是老手、新手、各種不同領域的人，都在這個一整天的活動中熱烈地討論、實作、並在活動結束時將成果向大家發表。
+        p 最重要的是，不會寫程式也可以參加大松！關於活動的更多細節可以在 #[a(href="https://hack.g0v.tw/") 黑客松入口網「揪松網」] 找到，你亦可關注 #[a(href="http://g0v-jothon.kktix.cc") 揪松團] 的公開活動頁面來隨時獲得最新活動的訊息。
+        h4 專案黑客松 / 小松
+        p 除了大松以外，揪松團亦定期舉辦以社群基礎建設專案為主的「基礎松」，其他亦有各個 g0v 專案大大小小不定期的活動 ( #[b.text-info 小松] )，可依自己關注的領域來選擇。
+        p 社群小松各有不同的性質，通常會在活動資訊中說明適合參與的對象，可定期關注臉書後勤中心與 g0v Slack 討論群組以取得活動的最新資訊。
 
-        h3 臉書後勤中心與 slack 討論群組
+        h3 線上：臉書後勤中心與 slack 討論群組
         p 除了線下活動外，社群參與者們也頻繁積極地在線上討論群組中交換專案的意見，是一個即時獲得社群回饋的方便管道。目前主要的討論群組包括：
         ul
           li: a(href="https://www.facebook.com/groups/g0v.general/") g0v 後勤中心 ( 臉書 )
           li: a(href="https://join.g0v.today") g0v 線上聊天室 ( Slack )
         p 使用線上討論群組請注意群組規範，並保持良好的態度與禮貌。
-
-        .text-center
-          small.text-muted.d-block.mb-1 其他參與 g0v 的管道與方式：
-          a.btn.btn-outline-danger.text-danger.mr-2(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30&_ga=2.218722001.93807760.1535621686-361420765.1511415990") 捐款認養 g0v 大松
-          a.btn.btn-outline-danger.text-danger.mr-2(href="https://grants.g0v.tw") 至公民科技獎助金提案
-          a.btn.btn-outline-danger.text-danger(href="https://g0v.network") 在自己國家發起 g0v 活動
-
+        h3 其它管道
+        p 只要發揮 g0v 的草根精神，開工就等於參與！不過若你想要更具體的參與感，以下提供幾個其它的管道：
+        .row
+          .col-md: .card: .card-body
+            h4.text-center 捐款認養大松
+            p g0v 雙月大黑客松主要由志工維持，場地、食物及所需經費皆由參與者協助籌措。透過線上捐款，你也可以成為支持活動的一份子！
+            a.btn.btn-outline-danger.text-danger.d-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30&_ga=2.218722001.93807760.1535621686-361420765.1511415990") 現在就捐款
+          .col-md: .card: .card-body
+            h4.text-center 參與獎助金提案
+            p g0v 揪松團為提升公民科技專案的續航力籌辦公民科技創新獎助金，只要符合公民科技專案的條件，皆可提案參與。
+            a.btn.btn-outline-danger.text-danger.d-block(href="https://grants.g0v.tw") 現在就提案
+          .col-md: .card: .card-body
+            h4.text-center 發起相關活動
+            p 目前 g0v 黑客松主要仍在台灣舉行，但海外已有若干國家響應。在你的國家沒有嗎？何不考慮在你的國家發起 g0v 黑客松呢？
+            a.btn.btn-outline-danger.text-danger.d-block(href="https://g0v.network") 現在就發起
+        h3 更多資訊
+        p 若你想參與 g0v 卻仍不得其門而入，就來看看#[a(href="#") 新手指南]吧！
 
     //-.inner.typeset.heading-contrast
       br
