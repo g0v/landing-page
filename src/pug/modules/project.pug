@@ -7,12 +7,7 @@ mixin project(id,title)
       h3= title
       hr
       block
-+project("budget","中央政府總預算視覺化")
-  p The project supercharges citizens with the power of visualization and social network to supervise government spending. It displays different perspectives of budget data like historical trend, cross-department comparison, public opinion and component breakdown of tax by government spending with interactive treemap, bubble chart and feedback mechanism.
-+project("national-treasure","遺落在世界的國家寶藏")
-  p 包括英美等國家這一百多年以來對台灣社會、地理、人物所做下的情蒐紀錄，提供了台灣人在回顧自己的過去時，更豐富的材料與角度，以及不同的思維，去重新描繪台灣人曾經的生活面貌。 在這裡，我們希望將這些資料重新進入公眾視野內，結合每個人獨特的視角，去重新書寫出台灣人生活的故事。
-+project("hackfoldr","Hackfoldr")
-  p Hackfoldr is hacking briefcase. It is a tool developed to organize documents, websites, and online materials on one interface with a unified url.
-
-  p Users can set up and manage a hackfoldr simply by editing a Google spreadsheet. Hackfoldr has been used to manage hackathon projects, to provide a collaborative space for government agencies, and to serve as an information hub for events such as the Sunflower Movement and the Umbrella Revolution, among many others.
+each item in data.project
+  +project(item.slug, item.zh.name)
+    | !{item.zh.description}
 
