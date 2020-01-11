@@ -12,7 +12,8 @@ html(lang="en")
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
     include /modules/library.pug
-    +css("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+    //-+css("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+    +css("/assets/bootstrap/4.3.1/bootstrap.min.css")
     +css("https://fonts.googleapis.com/css?family=Roboto")
     +css(root + "assets/ldui/ldui.min.css")
     +css(root + "css/index.css")
@@ -22,7 +23,8 @@ html(lang="en")
       include /modules/navtop.pug
     block body
     include /modules/foot.pug
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.26/bootstrap-native-v4.min.js")
+    //-script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.26/bootstrap-native-v4.min.js")
+    +script("/assets/bootstrap.native/2.0.15/bootstrap.native.v4.min.js")
     +script(root + "assets/ldui/ldui.min.js")
     +script(root + "assets/xfl/xfl.js")
     +script(root + "js/index.js")

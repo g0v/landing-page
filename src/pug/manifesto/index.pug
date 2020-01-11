@@ -4,44 +4,51 @@ block head
     p { text-align: justify }
 block body
   .w-1024.mx-auto.typeset.heading-contrast.pb-4.mb-4
-    +nbr(3)
-    .text-center
+    +nbr(2)
+    .text-center.my-4
       h1.display-4 零時政府宣言
       .text-center.text-danger English Version
-    +nbr(3)
-    .row.mb-4
-      .col-md-7
-        h3 我們來自四方
-        p g0v 是一個致力於推動開放協作的社群。g0v 的參與者來自四方，有程式開發者、設計師、社會運動工作者、教育工作者、文字工作者，還有各種專業的公民與鄉民。這些人聚在一起，希望透過科技與協作改善台灣的公民環境。只要有心，願意貢獻自己的技能，就可以參與 g0v。
-      .col-md-5
-        h3 &nbsp;
-        .text-sm
-          .text-muted.mb-4 * 包括但不限於 程式開發者、設計師、社會運動工作者、文字工作者、行銷工作者、教育工作者、公務員、政務委員、律師、記者、農夫、漁夫、廚師、學生、藝術家 等。
-          .text-muted * 根據統計，至 2020 年初為止，g0v 黑客松參與者以軟體工程師、設計師與社會運動工作者為大宗。
-    .row.mb-4
-      .col-md-7
-        h3 我們多中心運作、打造自主貢獻文化
-        p 每個參與者自主決定貢獻專案，或發起新專案，以本宣言為基礎共識，各專案各自運作、決定治理模式。g0v 社群由各式各樣的專案組成，沒有單一的中心、代表、或負責人。
-    .row.mb-4
-      .col-md-7
-        h3 我們實踐公民參與，創造改變
-        p g0v 從開放原始碼運動出發，以行動實現公民精神。g0v 貢獻者支持言論自由、資訊開放，提供更容易閱讀的資訊、更容易使用的資訊服務，推進公民參與公共議題、影響政府。
+    .text-center.text-sm.my-4.text-muted 2019.10.20 修訂 ( #[a(href="https://g0v.hackmd.io/x-ngci7LQ1-UrAFKL5FLAQ") 編修紀錄] )
+    .shadow.border.rounded.p-4: .m-2
+      .text-center.text-muted.text-sm.my-4.py-2.border-top.border-bottom 宣言開始
+      .row.mb-4
+        .col-md-7
+          h3 我們來自四方
+          p g0v 是一個致力於推動開放協作的社群。g0v 的參與者來自四方，有程式開發者、設計師、社會運動工作者、教育工作者、文字工作者，還有各種專業的公民與鄉民。這些人聚在一起，希望透過科技與協作改善台灣的公民環境。只要有心，願意貢獻自己的技能，就可以參與 g0v。
+        .col-md-5
+          .d-flex.align-items-end
+            .text-sm.text-muted.mb-2: b 說明文字 ( 參考性質，非宣言本文 )
+            h3.mt-0 &nbsp;
+          .text-sm
+            .text-muted.mb-4 * 包括但不限於 程式開發者、設計師、社會運動工作者、文字工作者、行銷工作者、教育工作者、公務員、政務委員、律師、記者、農夫、漁夫、廚師、學生、藝術家 等。
+            .text-muted * 根據統計，至 2020 年初為止，g0v 黑客松參與者以軟體工程師、設計師與社會運動工作者為大宗。
+      .row.mb-4
+        .col-md-7
+          h3 我們多中心運作、打造自主貢獻文化
+          p 每個參與者自主決定貢獻專案，或發起新專案，以本宣言為基礎共識，各專案各自運作、決定治理模式。g0v 社群由各式各樣的專案組成，沒有單一的中心、代表、或負責人。
+      .row.mb-4
+        .col-md-7
+          h3 我們實踐公民參與，創造改變
+          p g0v 從開放原始碼運動出發，以行動實現公民精神。g0v 貢獻者支持言論自由、資訊開放，提供更容易閱讀的資訊、更容易使用的資訊服務，推進公民參與公共議題、影響政府。
 
-    .row.mb-4
-      .col-md-7
-        h3 我們成果開放，取之開源，用之開源
-        p g0v 貢獻者以網路工具溝通協作，參與、舉辦黑客松。各專案成果（包括但不限於文件、圖像、程式碼、運算資料、數據分析結果及過程執行方式）需以開放授權釋出，讓更多人能使用、改善、回饋，發揮最大效用。
-      .col-md-5
-        h3 &nbsp;
-        .text-sm
-          .text-muted.mb-4 * 隨著時代演進，溝通協作可使用的平台也跟著不同。以往以 IRC, Hackpad, Github 為主的協作漸漸也拓展至 Facebook, Hackmd, Slack, Google Docs, Google Spreadsheet 等線上協作工具。
+      .row.mb-4
+        .col-md-7
+          h3 我們成果開放，取之開源，用之開源
+          p g0v 貢獻者以網路工具溝通協作，參與、舉辦黑客松。各專案成果（包括但不限於文件、圖像、程式碼、運算資料、數據分析結果及過程執行方式）需以開放授權釋出，讓更多人能使用、改善、回饋，發揮最大效用。
+        .col-md-5
+          h3 &nbsp;
+          .text-sm
+            .text-muted.mb-4 * 隨著時代演進，溝通協作可使用的平台也跟著不同。以往以 IRC, Hackpad, Github 為主的協作漸漸也拓展至 Facebook, Hackmd, Slack, Google Docs, Google Spreadsheet 等線上協作工具。
 
-    .row.mb-4
-      .col-md-7
-        h3 我們很歡樂，也想改變現狀
-        p 我們喜歡找到問題，樂於討論解決方案，願意動手，嘗試解決問題。我們在不同領域之間找到合作的途徑，讓力量相乘，以想像力指引新的方向。我們以行動改變現狀，不淪為沉默的幫凶。
+      .row.mb-4
+        .col-md-7
+          h3 我們很歡樂，也想改變現狀
+          p 我們喜歡找到問題，樂於討論解決方案，願意動手，嘗試解決問題。我們在不同領域之間找到合作的途徑，讓力量相乘，以想像力指引新的方向。我們以行動改變現狀，不淪為沉默的幫凶。
 
-    .row.mb-4
-      .col-md-7
-        h3 我們就是你
-        p g0v 是無黨派、非營利、草根集結的公民運動。你可以參與專案，贊助腦力、勞力，也可以捐款，贊助舉辦黑客松、或支持特定專案。如果你認同本宣言，歡迎參與 g0v，來聊聊你想作些什麼、想貢獻什麼專案、想看到我們身處的世界有什麼改變。歡迎你，一起成為改變社會的力量。
+      .row.mb-4
+        .col-md-7
+          h3 我們就是你
+          p g0v 是無黨派、非營利、草根集結的公民運動。你可以參與專案，贊助腦力、勞力，也可以捐款，贊助舉辦黑客松、或支持特定專案。如果你認同本宣言，歡迎參與 g0v，來聊聊你想作些什麼、想貢獻什麼專案、想看到我們身處的世界有什麼改變。歡迎你，一起成為改變社會的力量。
+      .text-center.text-muted.text-sm.my-2.py-2.border-top.border-bottom 宣言結尾
+  .w-1024.mx-auto.typeset.heading-contrast.pb-4.mb-4
+    p.text-muted 零時政府宣言由 #[a(href="https://github.com/g0v/dev/wiki/g0v-manifesto-(draft)/d325083cc084c31c17686a6e61090393d0a1ceb8") 瞿筱葳 / ipaaa 起草]，經社群共識定板，並隨時宜由社群討論逐次修訂。最近一次修改於 2019.09.07 時提出「#[a(href="https://www.youtube.com/watch?v=sOQd9MYdHKU") 要修憲了嗎？g0v 宣言修訂討論]」修正因社群發展而改變的社群運作模式，討論新版宣言。 詳細討論請至 #[a(href="https://g0v.hackmd.io/x-ngci7LQ1-UrAFKL5FLAQ") 2019 g0v 宣言修憲案] 。
