@@ -1,9 +1,9 @@
 //- module
 mixin project(id,title)
   .row.mb-4.pb-4.project
-    .col-4
-      .thumb(style="background-image:url(assets/img/projects/" + id + ".jpg)")
-    .col-8: .vertical-center: div
+    .col-md-4
+      .thumb.mb-4(style="background-image:url(assets/img/projects/" + id + ".jpg)")
+    .col-md-8: .vertical-center: div
       h3= title
       hr
       block
