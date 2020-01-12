@@ -1,6 +1,26 @@
 extends /base.pug
 block body
   +nbr(2)
-  .w-1024.m-auto
-    h2 活動資訊
-  +nbr(4)
+  .w-1024.rwd.m-auto.typeset.heading-contrast
+    .text-center.my-4.pb-4
+      h1.display-4.font-weight-bold 活動資訊
+      .text-muted Events and Activities
+
+    p g0v 社群實體活動與線上討論兼具，一個月會有一到兩場聚會。實體活動以黑客松為大宗，不定期也會有演講、分享會、教學、unconference 等活動。
+    p 各項活動的確切日期可參考社群活動行事曆：
+    .w-100: .aspect-ratio.ratio-2by1: .w-100.h-100: iframe.w-100.h-100.border-0(src="https://www.google.com/calendar/embed?src=cpcf6iv5pt9l6gl2ue3svo63e8%40group.calendar.google.com&ctz=Asia/Taipei")
+    h3 什麼是黑客松
+    hr
+    p 黑客松是兩個英文字的組合， hack marathon ，簡稱為 hackathon。就是一群工作者，在一個時空裡面（通常是一天到兩天），進行馬拉松式的協作活動。在密集的時間、空間，大家把自己的腦力、體力全部貢獻在某個專案上面。
+
+    p.text-muted.text-sm 註：「黑客」是指對計算機科學、程式設計方面具高度理解的人，也泛指願意用不同方式解決問題的人。
+    h4 關於 g0v 黑客松
+    p 運用資訊科技、分析問題、協作分工，數位工具為公民帶來更多的可能性，群眾不只是等著被號召累積連署數字的散戶，我們可以一起作點什麼，來累積公民參與所需要的基礎工具。g0v.tw 每兩個月舉行一次大型黑客松（雙月），各專案不定期會舉辦小松，是社群實體協作的主要方式。
+    p 更多關於雙月黑客松的資訊，請參考 #[a(href="https://jothon.g0v.tw") 揪松網]。
+
+    h4 其它社群小松
+    p 以下為目前 / 曾經活躍的社群活動，活動族繁不及備載，請關注 #[a(href="https://www.facebook.com/groups/g0v.general/") g0v 後勤中心 fb 社團] 以獲得更多活動資訊。
+    ul
+      li vTaiwan #[a(href="https://vtaiwan.kktix.cc") 活動報名頁] / #[a(href="https://www.facebook.com/groups/vtaiwan/") 臉書社團]
+      li 真的假的 Line Bot #[a(href="https://cofacts.kktix.cc/") 活動報名頁] / #[a(href="https://www.facebook.com/groups/cofacts/") 臉書社團]
+      li 萌典 #[a(href="http://moe.kktix.cc/") 活動報名頁] / #[a(href="https://www.facebook.com/MoeDict/") 臉書專頁]
