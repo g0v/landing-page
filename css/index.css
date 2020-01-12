@@ -41,7 +41,10 @@ h6 {
   font-family: jf-jinxuan, serif;
   font-weight: 700;
 }
-a {
+a,
+a:hover,
+a:focus,
+a:active {
   color: #d60000;
 }
 .bg-black {
