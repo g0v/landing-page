@@ -1,40 +1,66 @@
 extends /base.pug
 block body
+  mixin ruby(text)
+    each c in text
+      b.char.cjk= c
   .w-1024.mx-auto.rwd.typeset.heading-contrast
-    +nbr(3)
-    .text-center
+    .text-center.my-4.py-4
       h1.display-4.font-weight-bold 與社群聯繫
       .text-muted Contact with g0v Community
-    +nbr(3)
+    .row
+      .col-md-9
+        h3#about 關於「與 g0v 合作」
+        hr
+        p 台灣零時政府 ( g0v.tw ) 是一個開放的社群，不是公司、團體、組織、法人，主要由參與者自行以提案方式向其它社群參與者號召加入專案計畫。
+        p
+          span 因此，如果你有專案希望招募 g0v 參與者投入，可透過 g0v 社群的線上平台或黑客松活動以
+          +ruby("公開提案")
+          span 以及
+          +ruby("成果開源")
+          span 的方式進行。各種黑客松訊息請參考「#[a(href="http://g0v.tw/events/") 活動訊息]」頁面。
+        h4#project 特定專案
+        p 此外，各個於 g0v 場域提案的專案 ( g0v 專案 ) 皆由專案發起人各自負責，若你對特定專案有興趣，可透過 g0v 社群的線上 / 線下平台尋找專案主，洽談合作事宜。例如：
+        .row
+          .col-md: .card.shadow-sm: .card-body
 
-    p 你可以在線上/線下接觸到 g0v 社群的討論與活動，包括：
-    ul
-      li #[a(href="https://www.facebook.com/groups/g0v.general/") 臉書 g0v 後勤中心]
-      li #[a(href="https://groups.google.com/forum/#!forum/g0v-general") 公共郵件論壇 g0v-general] ( 較不活躍 )
-      li #[a(href="https://hack.g0v.tw/irc/") 線上聊天室]，包括 IRC 與 Slack ( 可透過 #[a(href="http://join.g0v.today/") join.g0v.today] 獲得 Slack 邀請郵件 )
-    +nbr(2)
-    h3 採訪/演講邀約
-    hr
-    ul
-      li 採訪或演講如無特定人選可來信至 g0v-talks 群組，社群將協調是否有適合人選。#[br] 群組位置: g0v-talks [at] googlegroups.com（#[a(href="https://g0v.hackpad.com/g0v-Media-Policy--Rbpc5FiUyA5#:h=%E4%BB%80%E9%BA%BC%E6%98%AF-g0v-talks-%E5%B0%8F%E7%B5%84") g0v-talks 群組介紹])
-      li 黑客松不開放旁聽、採訪，想來現場請報名參與活動。
-      li
-        span 社群採訪多採
-        span.char.cjk 共
-        span.char.cjk 筆
-        span.char.cjk 形
-        span.char.cjk 式
+            h6 雙月大黑客松
+            p #[a(href="https://jothon.g0v.tw/about/") g0v 揪松團] 為目前雙月黑客松與社群基礎建設的執行團隊，本身亦為一 g0v 專案，主要目標為引導 g0v 社群發展並發揚 g0v 精神。
+          .col-md: .card.shadow-sm: .card-body
+            h6 零時政府公民科技創新獎助金
+            p #[a(href="https://jothon.g0v.tw/about/") g0v 揪松團] 亦為 #[a(href="https://grants.g0v.tw") 零時政府公民科技創新獎助金] 的執行團隊，若您有合作提案，亦歡迎與 #[a(href="https://jothon.g0v.tw/about/") g0v 揪松團] 聯繫。
+        p 其它常見的專案與窗口如下：
+        ul
+          li Cofacts / 真的假的 Line Bot
+          li 萌典 / 教育部國語辭典民間版
+          li 愛台語 / itaigi
+          li ...
 
-        span ，可參考過#[a(href="https://g0v.hackpad.com/ep/group/FCfDxuRKD2m") 往媒體採訪共筆]。
-    +nbr(2)
-    h3 關於「與 g0v 合作」......
-    hr
-    p
-      span g0v 零時政府是一個開放的社群，不是公司、團體、組織、法人，主要以提案方式向不特定社群參與者號召加入專案計畫。如果希望招募 g0v 參與者投入，可透過線上論壇與實體黑客松活動。
-      span.char.cjk 公
-      span.char.cjk 開
-      span.char.cjk 提
-      span.char.cjk 案
-      span 開提案。各種黑客松訊息請參考「#[a(href="http://g0v.tw/actinfo.html") 活動介紹]」。
-    p 此外，目前 g0v 社群基礎建設與雙月黑客松是由 #[a(href="https://jothon.g0v.tw/") g0v 揪松團] 維持運作；g0v 揪松團亦為一 g0v 專案，主要目標為引導 g0v 社群發展並發揚 g0v 精神。揪松團亦為 #[a(href="https://grants.g0v.tw") 零時政府公民科技創新獎助金] 的執行團隊，若您有合作提案，亦歡迎與 g0v 揪松團聯系。
-    +nbr(2)
+        h4#contact 聯繫管道
+        p 若你無法直接聯絡上特定專案的發起人，亦可向社群求援；除了參與黑客松堵人外，也可透過線上社群平台詢問：
+        ul
+          li #[a(href="https://www.facebook.com/groups/g0v.general/") 臉書 g0v 後勤中心]
+          li #[a(href="https://groups.google.com/forum/#!forum/g0v-general") 公共郵件論壇 g0v-general] ( 較不活躍 )
+          li g0v Slack 聊天室 ( 可透過 #[a(href="https://join.g0v.tw") join.g0v.tw] 取得 Slack 邀請郵件 )
+          li #[a(href="https://jothon.g0v.tw/irc/") IRC 線上聊天室]
+          li 或者，寫信給 g0v 揪松團 ( g0v-jothon[at]googlegroups.com ) 請求協助。
+
+        h3#talks 採訪/演講邀約
+        hr
+        p 採訪或演講如無特定人選可來信至 g0v-talks 群組 ( g0v-talks [at] googlegroups.com ) ，社群將協調是否有適合人選。
+        h4 g0v-talks？
+        p g0v-talks 是一個任務性質的群組，工作內容為釐清演講與採訪邀約需求，轉發給適當的專案貢獻者。群組設定為非公開，目的是提供外界一個和社群私下聯繫的管道，處理牽涉到個人資料、個人隱私等不便在公開場合討論的事務。群組成立之初是為了處理演講邀約，後來隨著其他類型的邀約出現，演變為處理所有需要對外出席或發言的邀約，包括：演講、採訪、諮詢等。
+        p 想了解更多關於 g0v-talks 的事情，請參考 #[a(href="https://g0v.hackpad.tw/g0v-Media-Policy--Rbpc5FiUyA5#:h=%E4%BB%80%E9%BA%BC%E6%98%AF-g0v-talks-%E5%B0%8F%E7%B5%84") 什麼是 g0v-talks 小組 / 零時政府媒體政策]
+        h4 注意事項
+        ul
+          li 黑客松不開放旁聽、採訪，想來現場請報名參與活動。
+          li 社群採訪多採#[+ruby("共筆形式")]，可參考過#[a(href="https://g0v.hackpad.com/ep/group/FCfDxuRKD2m") 往媒體採訪共筆]。
+
+      .col-md-3
+        h3 &nbsp;
+        .sticky
+          .list-group
+            .list-group-item(data-scrollto="#about") 關於合作
+            .list-group-item(data-scrollto="#project") 特定專案
+            .list-group-item(data-scrollto="#contact") 聯繫管道
+            .list-group-item(data-scrollto="#talks") 採訪/演講邀約
+
