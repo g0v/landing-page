@@ -3,8 +3,16 @@ block body
   .w-1024.mx-auto.rwd.typeset.heading-contrast.mt-4.pt-4
     h1.mb-0 常見問題
     hr
-    each item in data.faq
-      h3(id=item.Q) !{item.Q}
-      div !{item.A}
+    .row
+      .col-md-9
+        each item in data.faq
+          h3(id=item.Q) !{item.Q}
+          div !{item.A}
+      .col-md-3
+        .list-group.text-sm.sticky
+          each item in data.faq
+            .list-group-item.text-truncate(data-scrollto=`#${item.Q}`) !{item.Q}
+
     hr
-    p FAQ 亦透過 #[a(href="https://g0v.hackpad.tw/g0v-FAQ-ULNGIs20R9X",target="_blank") 線上系統協作] 整理中，歡迎參考。
+    h3 找不到你想問的問題嗎？
+    p FAQ 亦透過 #[a(href="https://g0v.hackpad.tw/g0v-FAQ-ULNGIs20R9X",target="_blank") 線上系統協作] 整理中，歡迎參考。你也可以透過 #[a(href="https://join.g0v.tw") 社群線上 Slack 聊天室] 尋求解答。

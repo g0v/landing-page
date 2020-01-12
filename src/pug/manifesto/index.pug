@@ -2,14 +2,17 @@ extends /base.pug
 block head
   style(type="text/css"): :stylus
     p { text-align: justify }
+    body { background: #fdfeff; }
 block body
   .w-1024.mx-auto.typeset.heading-contrast.pb-4.mb-4
     +nbr(2)
-    .text-center.my-4
+    .text-center.mb-4.mt-2
+      img.mb-2(src="/assets/img/g0v-only.svg",style="width:3em")
       h1.display-4 零時政府宣言
       .text-center.text-danger English Version
-    .text-center.text-sm.my-4.text-muted 2019.10.20 修訂 ( #[a(href="https://g0v.hackmd.io/x-ngci7LQ1-UrAFKL5FLAQ") 編修紀錄] )
-    .shadow.border.rounded.p-4: .m-2
+
+    .text-center.text-sm.my-4.text-muted 2019.10.20 修訂 ( #[a(href="https://g0v.hackmd.io/x-ngci7LQ1-UrAFKL5FLAQ") 編修共筆] / #[a(href="#edit-history") 修訂歷史] )
+    .shadow.border.rounded.p-4(style="background:#fff"): .m-2
       .text-center.text-muted.text-sm.my-4.py-2.border-top.border-bottom 宣言開始
       .row.mb-4
         .col-md-7
@@ -52,3 +55,9 @@ block body
       .text-center.text-muted.text-sm.my-2.py-2.border-top.border-bottom 宣言結尾
   .w-1024.mx-auto.typeset.heading-contrast.pb-4.mb-4
     p.text-muted 零時政府宣言由 #[a(href="https://github.com/g0v/dev/wiki/g0v-manifesto-(draft)/d325083cc084c31c17686a6e61090393d0a1ceb8") 瞿筱葳 / ipaaa 起草]，經社群共識定板，並隨時宜由社群討論逐次修訂。最近一次修改於 2019.09.07 時提出「#[a(href="https://www.youtube.com/watch?v=sOQd9MYdHKU") 要修憲了嗎？g0v 宣言修訂討論]」修正因社群發展而改變的社群運作模式，討論新版宣言。 詳細討論請至 #[a(href="https://g0v.hackmd.io/x-ngci7LQ1-UrAFKL5FLAQ") 2019 g0v 宣言修憲案] 。
+
+    h5#edit-history 修訂歷史
+    ul
+      li: a(href="https://g0v.hackmd.io/x-ngci7LQ1-UrAFKL5FLAQ") 2019/10/20 修憲案
+      li: a(href="https://github.com/g0v/dev/wiki/g0v-manifesto-(draft)/_history") 2013/01/21 ~ 02/01 初版編修歷程
+      li: a(href="https://github.com/g0v/dev/wiki/g0v-manifesto-(draft)/_history")  2013/01/21 起草
