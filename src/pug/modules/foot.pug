@@ -1,11 +1,18 @@
 //- module
 .foot: .inner
-  .mb-4(style="width:90%;max-width:140px")
-    img.w-100(src="/assets/img/g0v-only-white.svg")
+  .d-flex.mb-4.align-items-center
+    .flex-grow-1: div(style="width:90%;max-width:140px")
+        img.w-100(src="/assets/img/g0v-only-white.svg")
+    div
+      .input-group.input-group-sm
+        input.form-control
+        .input-group-append
+          .btn.btn-outline-light 搜尋
+  .sep.sep-light
   .pb-4
   .row
     .col-md-4.mb-4
-      h5 關於 g0v 零時政府
+      h5 關於 g0v
       .row
         .col-md: .mt-0.list
             .item: a(href="/manifesto/") g0v 宣言
@@ -31,7 +38,7 @@
         .item: a(href="https://g0v.hackpad.tw/",target="_blank") Hackpad 共筆
         .item: a(href="/tool/",target="_blank") 協作工具
 
-    .col-md-2.mb-4
+    .col-md-3.mb-4
       h5 參與貢獻
       .mt-2.list
         .item: a(href="#") 新手指南
