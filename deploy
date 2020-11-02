@@ -7,11 +7,10 @@ rm -rf _public
 git clone git@github.com:g0v/landing-page --depth 1 -b gh-pages _public
 cd _public
 git rm -rf *
-cp -R ../static/* ./
+cp -R ../web/static/* ./
 git add *
 git commit -m "regen for $REV"
 git push
 cd ..
 rm -rf _public
 echo "Done."
-
