@@ -25,6 +25,12 @@ block body
   .w-1024.mx-auto.rwd.d-flex
     div
       .typeset.heading-contrast.pt-4
+        h2#more.m-0 g0v news
+        hr
+        #g0vnews
+        p.text-right.my-4
+          a(href="https://g0v.news/" target="_blank") more...
+      .typeset.heading-contrast.pt-2
         .text-muted what is g0v?
         h2#more.m-0 零時政府是什麼？
         hr
@@ -120,6 +126,7 @@ block body
         target="_blank") 小額捐款
 
 block script
+  +script(root + "js/news.js")
   +script(root + "assets/threejs/r98/three.min.js")
   +script(root + "assets/svg-mesh/svg-mesh.js")
   +script(root + "js/landing.js")
