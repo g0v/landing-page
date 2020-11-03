@@ -19,6 +19,9 @@ strong {
   font-weight: 700;
   font-family: jf-jinxuan, serif;
 }
+p {
+  text-align: justify;
+}
 html,
 body,
 .typeset {
@@ -277,11 +280,10 @@ iframe.video {
   border: 1px solid #999;
 }
 .project h3 {
-  margin-top: 12px;
+  margin-top: 1em !important;
 }
 body > .foot {
   margin-top: 100px;
-  padding: 30px;
   background: linear-gradient(60deg, #000, #222);
   color: #fff;
   position: relative;
