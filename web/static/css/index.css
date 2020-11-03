@@ -291,6 +291,7 @@ iframe.video {
   display: block;
 }
 .project .thumb {
+  margin-top: 1rem !important;
   height: 0;
   padding-top: 100%;
   background: #eee;
@@ -300,7 +301,7 @@ iframe.video {
   border: 1px solid #999;
 }
 .project h3 {
-  margin-top: 1em !important;
+  margin-top: 1rem !important;
 }
 body > .foot {
   margin-top: 100px;
