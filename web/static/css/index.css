@@ -130,6 +130,26 @@ nav.navbar .collapse {
   -webkit-text-emphasis: circle;
   -webkit-text-emphasis-position: under;
 }
+.card-body .btn-block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  height: 3em;
+  line-height: 3em;
+  border: 1px solid;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.card-body .btn-block:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #dc3545;
+}
 #landing {
   position: relative;
   width: 100%;

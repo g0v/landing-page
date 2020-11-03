@@ -60,7 +60,7 @@ block body
         .text-center.my-4.py-4
           a.btn.btn-outline-danger.mr-2.mb-2(href="#") g0v 緣起
           a.btn.btn-outline-danger.mr-2.mb-2(href=root + "faq/") 常見問題
-          a.btn.btn-outline-danger(href=root + "media/") 媒體報導
+          a.btn.btn-outline-danger.mb-2(href=root + "media/") 媒體報導
         .text-center.text-sm.text-muted OSDC 2013 Keynote 「g0v 黑客松 - 寫程式改造社會」 by Kirby
         .w-100.mb-4.mt-1
           .aspect-ratio(style="padding-top:75%"): .w-100.h-100: iframe.w-100.h-100(src="https://www.youtube.com/embed/0HURMy0l4Ck")
@@ -101,18 +101,19 @@ block body
         h3 其它管道
         p 只要發揮 g0v 的草根精神，開工就等於參與！不過若你想要更具體的參與感，以下提供幾個其它的管道：
         .row
-          .col-md: .card.shadow-sm.mb-4: .card-body
+          .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
             h4.text-center 捐款認養大松
             p g0v 雙月大黑客松主要由志工維持，場地、食物及所需經費皆由參與者協助籌措。透過線上捐款，你也可以成為支持活動的一份子！
-            a.btn.btn-outline-danger.d-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30&_ga=2.218722001.93807760.1535621686-361420765.1511415990" target="_blank") 現在就捐款
-          .col-md: .card.shadow-sm.mb-4: .card-body
+            a.btn-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30&_ga=2.218722001.93807760.1535621686-361420765.1511415990" target="_blank") 現在就捐款
+          .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
             h4.text-center 參與獎助金提案
             p g0v 揪松團為提升公民科技專案的續航力籌辦公民科技創新獎助金，只要符合公民科技專案的條件，皆可提案參與。
-            a.btn.btn-outline-danger.d-block(href="https://grants.g0v.tw" target="_blank") 現在就提案
-          .col-md: .card.shadow-sm.mb-4: .card-body
+            a.btn-block(href="https://grants.g0v.tw" target="_blank") 現在就提案
+          .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
             h4.text-center 發起相關活動
             p 目前 g0v 黑客松主要仍在台灣舉行，但海外已有若干國家響應。在你的國家沒有嗎？何不考慮在你的國家發起 g0v 黑客松呢？
-            a.btn.btn-outline-danger.d-block(href="http://g0v.network" target="_blank") 現在就發起
+            a.btn-block(href="http://g0v.network" target="_blank") 現在就發起
+        
         h3 更多資訊
         p 若你想參與 g0v 卻仍不得其門而入，就來看看#[a(href="/get-start/") 新手指南]吧！
 
