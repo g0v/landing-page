@@ -1,0 +1,16 @@
+extends /base.pug
+block head
+  style(type="text/css"): :stylus
+    p { text-align: justify }
+    body { background: #fdfeff; }
+block body
+  .w-1024.px-2.px-lg-4.rwd.mx-auto.typeset.heading-contrast.pb-4.mb-4
+    +nbr(2)
+    .text-center.mb-4.mt-2
+      img.mb-2(src="/assets/img/g0v-only.svg",style="width:3em")
+      h1.display-4 g0v Manifesto
+      a(href="/manifesto") 正體中文
+
+    .text-center.text-sm.my-4.text-muted 2019.10.20 edited ( #[a(href="https://g0v.hackmd.io/x-ngci7LQ1-UrAFKL5FLAQ") collaboration document])
+    .shadow.border.rounded.p-4(style="background:#fff"): .m-2
+      | !{data.manifesto.en}
