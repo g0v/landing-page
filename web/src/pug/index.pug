@@ -26,7 +26,7 @@ block body
     div
       .typeset.heading-contrast.pt-4
         //iframe(src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fg0v.tw&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=790774158155903" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media")
-        h2#more.m-0 g0v news
+        h2#news.m-0 g0v news
         hr
         #g0vnews
         p.text-right.my-4
@@ -50,9 +50,9 @@ block body
         h3 更多面向
         p 幾句簡單的話，實在無法說明完整的 g0v 樣貌。不過，你可以透過其他的面向來了解 g0v ，或者參考 Kirby 於 OSDC 2013 Keynote 所分享的「#[a(href="https://www.youtube.com/watch?v=0HURMy0l4Ck") g0v 黑客松 - 寫程式改造社會]」演講影片：
         .text-center.my-4.py-4
-          a.btn.btn-outline-danger.text-danger.mr-2(href="#") g0v 緣起
-          a.btn.btn-outline-danger.text-danger.mr-2(href=root + "faq/") 常見問題
-          a.btn.btn-outline-danger.text-danger(href=root + "media/") 媒體報導
+          a.btn.btn-outline-danger.mr-2(href="#") g0v 緣起
+          a.btn.btn-outline-danger.mr-2(href=root + "faq/") 常見問題
+          a.btn.btn-outline-danger(href=root + "media/") 媒體報導
         .text-center.text-sm.text-muted OSDC 2013 Keynote 「g0v 黑客松 - 寫程式改造社會」 by Kirby
         .w-100.mb-4.mt-1
           .aspect-ratio(style="padding-top:75%"): .w-100.h-100: iframe.w-100.h-100(src="https://www.youtube.com/embed/0HURMy0l4Ck")
@@ -97,22 +97,22 @@ block body
           .col-md: .card.shadow-sm.mb-4: .card-body
             h4.text-center 捐款認養大松
             p g0v 雙月大黑客松主要由志工維持，場地、食物及所需經費皆由參與者協助籌措。透過線上捐款，你也可以成為支持活動的一份子！
-            a.btn.btn-outline-danger.text-danger.d-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30&_ga=2.218722001.93807760.1535621686-361420765.1511415990") 現在就捐款
+            a.btn.btn-outline-danger.d-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30&_ga=2.218722001.93807760.1535621686-361420765.1511415990") 現在就捐款
           .col-md: .card.shadow-sm.mb-4: .card-body
             h4.text-center 參與獎助金提案
             p g0v 揪松團為提升公民科技專案的續航力籌辦公民科技創新獎助金，只要符合公民科技專案的條件，皆可提案參與。
-            a.btn.btn-outline-danger.text-danger.d-block(href="https://grants.g0v.tw") 現在就提案
+            a.btn.btn-outline-danger.d-block(href="https://grants.g0v.tw") 現在就提案
           .col-md: .card.shadow-sm.mb-4: .card-body
             h4.text-center 發起相關活動
             p 目前 g0v 黑客松主要仍在台灣舉行，但海外已有若干國家響應。在你的國家沒有嗎？何不考慮在你的國家發起 g0v 黑客松呢？
-            a.btn.btn-outline-danger.text-danger.d-block(href="http://g0v.network") 現在就發起
+            a.btn.btn-outline-danger.d-block(href="http://g0v.network") 現在就發起
         h3 更多資訊
         p 若你想參與 g0v 卻仍不得其門而入，就來看看#[a(href="/get-start/") 新手指南]吧！
 
     .d-none.d-md-block(style="min-width:8em"): .sticky.ml-4.pl-4.pt-4.border-left.border-danger
       br
       .mb-4
-        .clickable(href="#") 最新消息
+        .text-danger.clickable(data-scrollto="#news") 最新消息
       .mb-4
         a.clickable.d-block(href="#",data-scrollto="#more") 了解更多
         a.clickable.d-block(href="#",data-scrollto="#projects") 成果列表
