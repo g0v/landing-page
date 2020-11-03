@@ -1,13 +1,12 @@
 //- module
 mixin project(id,title)
   .row.mb-4.pb-4.project
-    .col-md-4
-      .thumb.mb-4(style="background-image:url(assets/img/projects/" + id + ".jpg)")
-    .col-md-8: .vertical-center: div
+    .col-md-4.h-100
+      .thumb(style="background-image:url(assets/img/projects/" + id + ".jpg)")
+    .col-md-8.h-100: .vertical-center: div
       h3= title
       hr
       block
 each item in data.project
   +project(item.slug, item.zh.name)
     | !{item.zh.description}
-
