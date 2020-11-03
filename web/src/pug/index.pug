@@ -5,6 +5,8 @@ block head
 block body
 
   //-#landing(style="background:url(/assets/img/fluid-bk-left.svg) no-repeat -100px 0")
+  #fb-root
+  script(async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v8.0&appId=790774158155903&autoLogAppEvents=1" nonce="GYDp0yoU")
   #landing
     .dark-shape
     .lang
@@ -29,8 +31,10 @@ block body
         hr
         p g0v 為開放社群，在媒體平台上的貼文，提供「所有」參與者都有可以發表的機會，因此建立一套治理機制，通過發文審核後，文章將會透過擁有平台權限的參與者協助排程貼出。詳情可參考 #[a(href="https://g0v.hackmd.io/@chihao/Hkm9tPaxr" target="_blank") g0v SNS 社群治理機制共筆]#[br] #自己的小編自己當
         h3 粉絲專頁
-        iframe(src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fg0v.tw&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=790774158155903" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media")            
-        
+        .fb-page(data-href="https://www.facebook.com/g0v.tw" data-tabs="timeline" data-width="500" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false")
+          blockquote(cite="https://www.facebook.com/g0v.tw" class="fb-xfbml-parse-ignore")
+            a(href="https://www.facebook.com/g0v.tw") g0v.tw 台灣零時政府
+            
         h3 g0v.news
         #g0vnews
         p.text-right.my-4
