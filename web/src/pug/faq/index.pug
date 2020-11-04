@@ -5,13 +5,13 @@ block body
     hr
     .row
       .col-md-9
-        each item in data.faq
-          h3(id=item.Q) !{item.Q}
+        each item, id in data.faq
+          h3(id="faq"+id) !{item.Q}
           div !{item.A}
       .col-md-3
         .list-group.text-sm.sticky
-          each item in data.faq
-            .list-group-item.text-truncate(data-scrollto=`#${item.Q}`) !{item.Q}
+          each item, id in data.faq
+            .list-group-item.text-truncate(data-scrollto=`#${"faq"+id}`) !{item.Q}
 
     hr
     h3 找不到你想問的問題嗎？
