@@ -3,7 +3,6 @@ block vars
   - ctrl.navtop.show = false;
 block head
 block body
-
   //-#landing(style="background:url(/assets/img/fluid-bk-left.svg) no-repeat -100px 0")
   #fb-root
   script(async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v8.0&appId=790774158155903&autoLogAppEvents=1" nonce="GYDp0yoU")
@@ -16,7 +15,7 @@ block body
       .thumb.col: img(src="assets/img/g0v-hero.jpg")
       .desc.col
         img.d-block.mr-auto.ml-auto(src="assets/img/g0v-only.svg")
-        p 自台灣發起、去中心化的公民科技社群「零時政府」，以資訊透明、開放成果、開放協作為核心，透過群眾草根的力量來關心公共事務。 #[a(href="#",data-scrollto="#more") ... 了解更多]
+        p 自台灣發起、去中心化的公民科技社群「零時政府」，以資訊透明、開放成果、開放協作為核心，透過群眾草根的力量來關心公共事務。 #[a(href="#",data-scrollto="#more") ... #{i18n("learn more")}]
         hr
         .text-center
           //-.btn.btn-outline-danger.mr-1.d-none.d-md-inline-block(data-scrollto="#more") 了解更多

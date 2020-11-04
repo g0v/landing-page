@@ -2,5 +2,9 @@
   "port": 4000,
   "watcher": {
     "ignores": []
+  },
+  "i18n": {
+    "enabled": true,
+    "lng": ["en", "zh-TW"]
   }
 }
