@@ -13,7 +13,7 @@
     "npm": ">=5.6.0"
   },
   "scripts": {
-    "start": "cd web; ../node_modules/.bin/lsc ../node_modules/template/server.ls",
+    "start": "cd web; ../node_modules/.bin/server",
     "build": "find . | grep \\.pug | xargs touch"
   },
   "dependencies": {
@@ -25,7 +25,7 @@
     "markdown": "=0.5.0",
     "pug": "^2.0.3",
     "stylus": "^0.54.5",
-    "template": "github:zbryikt/template#v2",
+    "template": "github:zbryikt/template",
     "uglify-js": "=3.2.0"
   }
 }
