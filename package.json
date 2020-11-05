@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "cd web; ../node_modules/.bin/server",
-    "build": "find . | grep \\.pug | xargs touch"
+    "build": "find . | grep \\.pug | xargs touch; node_modules/.bin/lsc tool/parse-yaml.ls"
   },
   "dependencies": {
     "LiveScript": "^1.3.0",

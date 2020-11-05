@@ -1,1 +1,58 @@
-0
+zh:
+  - t: 關於 g0v
+    d: |
+      給記者、研究者、參訪團：
+
+      你可能已經知道，g0v 是一個去中心、多中心的社群。[「沒有人能代表 g0v」](https://g0v.hackpad.tw/Rbpc5FiUyA5)，因為這個原則，g0v 能做出許多有趣、有意義、不一樣的事。在接觸 g0v 社群前，建議先閱讀 [g0v 宣言](https://g0v.tw/zh-TW/manifesto.html)、[g0v 行為守則](/COC)。
+
+      基於「沒有人能代表 g0v」這個原則，所有以 g0v 為對象的採訪，都應該以**開放共筆**為第一個步驟，讓所有社群貢獻者都能參與。這樣能避免極少數人掌握太大的發言權，保護社群多樣、不同的聲音。
+
+      請參考這份文件所列的建議事項，協助維持 g0v 社群的多樣性。感謝你，花費寶貴的時間閱讀這份文件。
+
+  - t: 聯絡 g0v
+    d: |
+      #### 加入 IRC 聊天室
+      - 這是開放的聊天頻道
+      - 加入聊天的步驟
+        - 加入 Freenode 上的 #g0v.tw
+
+      #### 加入 Slack 聊天室
+      - 這是開放的工作空間
+      - #general 是開放的聊天頻道
+      - 也有一些私密的聊天頻道
+      - 任何人都可以自創頻道
+      - 加入聊天的步驟
+        - 瀏覽器打開 http://join.g0v.tw/
+        - 輸入自己的 email
+        - 收信，按照邀請函的指示註冊 Slack 帳號、加入 g0v-tw.slack.com 工作空間
+
+      #### 寄信到 g0v-talks email 群組
+      - 這是封閉的 email 群組，只有在群組裡的 g0v 參與者、貢獻者才看得到你的 email
+      - 聯絡的步驟
+        - 寄信到 g0v-talks@googlegroups.com
+
+  - t: 採訪 g0v
+    d: |
+      - 瀏覽器打開 https://g0v.hackmd.io
+      - 用 email 創立帳號，或用社交媒體登入
+      - 開一個新的共筆
+      - 介紹一下你是誰、想要採訪的動機、採訪共筆的授權條款
+        - [選擇 CC 授權條款](https://creativecommons.org/choose/)
+        - [選擇其他開放授權條款](https://choosealicense.com/)
+        - > [name=chihao] 建議使用 [CC BY 4.0 by [your name] & g0v contributors](https://creativecommons.org/licenses/by/4.0/)
+      - 貼上你的問題
+      - 權限設定為「Editable」或「Freely」讓所有參與者、貢獻者都可以編輯 ![](https://g0vhackmd.blob.core.windows.net/g0v-hackmd-images/upload_cf5371db29235cbae0ee9b0489c0f93c)
+      - 把連結丟到 g0v Slack #general 頻道，讓所有參與者、貢獻者看到
+
+  - t: 在 g0v 活動拍攝 g0v
+    d: |
+      - 事前向活動主辦者取得同意
+      - 拍攝過程遵守 [g0v 行為守則](/COC)
+      - 遵守個別參與者不被拍攝的要求
+      - 如果詢問參與者與 g0v 社群整體相關問題，請閱讀本文件開頭「關於 g0v」的說明並評量你的作法。
+
+  - t: 採訪、研究、拍攝案例
+    d: |
+      - [歷年採訪共筆、採訪共筆空白模板](https://g0v.hackmd.io/S7EmxFJ6ROCubISQB5vA8g)
+      - [以 g0v 為主題的學術研究](https://g0v.hackmd.io/tpWNQTFvSOS_ZrSt2MiPWg)
+      - [與 g0v 社群參與者相關的影片拍攝](https://g0v.hackmd.io/@chewei/SJndN7dTB)

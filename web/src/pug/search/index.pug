@@ -1,0 +1,16 @@
+extends /base.pug
+block body
+  .w-1024.px-2.px-lg-4.m-auto.rwd
+
+    +nbr(3)
+    .text-center
+      h1.display-4.font-weight-bold g0v 搜尋
+      .text-muted g0v Search
+      .text-muted source: #[a(href="https://github.com/g0v/search-g0v" target="_blank") https://github.com/g0v/search-g0v]
+    +nbr(3)
+    div
+      .input-group.input-group-sm
+        input.form-control
+        .input-group-append
+          .btn.btn-outline-dark 搜尋
+    #results

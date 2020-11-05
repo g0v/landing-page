@@ -3,6 +3,7 @@ block vars
   - ctrl.navtop.show = false;
 block head
 block body
+
   //-#landing(style="background:url(/assets/img/fluid-bk-left.svg) no-repeat -100px 0")
   #fb-root
   script(async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v8.0&appId=790774158155903&autoLogAppEvents=1" nonce="GYDp0yoU")
@@ -15,7 +16,7 @@ block body
       .thumb.col: img(src="assets/img/g0v-hero.jpg")
       .desc.col
         img.d-block.mr-auto.ml-auto(src="assets/img/g0v-only.svg")
-        p 自台灣發起、去中心化的公民科技社群「零時政府」，以資訊透明、開放成果、開放協作為核心，透過群眾草根的力量來關心公共事務。 #[a(href="#",data-scrollto="#more") ... #{i18n("learn more")}]
+        p 自台灣發起、去中心化的公民科技社群「零時政府」，以資訊透明、開放成果、開放協作為核心，透過群眾草根的力量來關心公共事務。 #[a(href="#",data-scrollto="#more") ... 了解更多]
         hr
         .text-center
           //-.btn.btn-outline-danger.mr-1.d-none.d-md-inline-block(data-scrollto="#more") 了解更多
@@ -75,7 +76,7 @@ block body
         p 每次 g0v 大松提案皆透過線上直播，因此你可以從 g0v Youtube 頻道找到 #[a(href="https://www.youtube.com/user/g0vTW/playlists" target="_blank") 專案簡報與成果分享] 的影片紀錄。若你對黑客松的活動現場感到興趣，黑客松亦有#[a(href="https://flickr.com/g0v/" target="_blank") 平面影像紀錄]。
               
         h3 獎助金成果
-        p 由 #[a(href="https://jothon.g0v.tw/about/" target="_blank") g0v 揪松團]」 規畫執行的「#[a(href="https://grants.g0v.tw/" target="_blank") g0v 公民科技創新獎助金]」亦協助了包含「金流百科」、「農業災損幾多錢」、「開源神手」、「美國國會觀測站」、「投票指南」等許多專案。關於更多獎助金專案的成果，你可以到「#[a(href="https://grants.g0v.tw/power/") 公民科技創新獎助金成果報告]」中取得更多資訊。
+        p 由 「#[a(href="https://jothon.g0v.tw/about/" target="_blank") g0v 揪松團]」 規畫執行的「#[a(href="https://grants.g0v.tw/" target="_blank") g0v 公民科技創新獎助金]」亦協助了包含「金流百科」、「農業災損幾多錢」、「開源神手」、「美國國會觀測站」、「投票指南」等許多專案。關於更多獎助金專案的成果，你可以到「#[a(href="https://grants.g0v.tw/power/") 公民科技創新獎助金成果報告]」中取得更多資訊。
 
       .typeset.heading-contrast.pt-4
         .text-muted Participate
@@ -114,7 +115,7 @@ block body
             a.btn-block(href="http://g0v.network" target="_blank") 現在就發起
         
         h3 更多資訊
-        p 若你想參與 g0v 卻仍不得其門而入，就來看看#[a(href="/get-start/") 新手指南]吧！
+        p 若你想參與 g0v 卻仍不得其門而入，就來看看#[a(href="/novice/") 新手指南]吧！
 
     .d-none.d-md-block(style="min-width:8em"): .sticky.ml-4.pl-4.pt-4.border-left.border-danger
       br
@@ -127,7 +128,7 @@ block body
       .mb-4
         a.clickable.d-block(href="/manifesto/") g0v 宣言
         a.clickable.d-block(href="/tool/") 協作工具
-        a.clickable.d-block(href="/get-start/") 新手指南
+        a.clickable.d-block(href="/novice/") 新手指南
         a.clickable.d-block(href="/faq/") 常見問題
         a.clickable.d-block(href="/contact/") 聯絡我們
         a.clickable.d-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30",
