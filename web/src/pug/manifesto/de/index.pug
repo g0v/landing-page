@@ -1,0 +1,18 @@
+extends /base.pug
+block head
+  style(type="text/css"): :stylus
+    p { text-align: justify }
+    body { background: #fdfeff; }
+block body
+  .w-1024.px-2.px-lg-4.rwd.mx-auto.typeset.heading-contrast.pb-4.mb-4
+    .text-center.my-4.py-4
+      img.mb-2(src="/assets/img/g0v-only.svg",style="width:3em")
+      h1.display-4 g0v Manifests
+      a.mr-2(href="/manifesto") 正體中文
+      a(href="/manifesto/en") English
+
+    .text-center.text-sm.my-4.text-muted 
+      h4 Über die Modifikation des Manifests
+      | Am 7. September 2019 bei dem 36. g0v Hackathon wurde erstmals "die Diskussion der Modifikation des g0v Manifests" vorgeschlagen, um das Manifest mit dem Arbeitsmodell, das sich im Laufe der Entwicklung der Gemeinschaft verändert hat, in Einklang zu bringen. #[a(href="https://g0v.hackmd.io/x-ngci7LQ1-UrAFKL5FLAQ" target="_blank") Details siehe]
+    .shadow.border.rounded.p-4(style="background:#fff"): .m-2
+      | !{data.manifesto.de}
