@@ -14,7 +14,9 @@ $ npm start
 
 ## How to Deploy / 怎麼發佈更新
 ```
-./deploy
+$ npm run build
+$ npm start
+$ ./deploy
 ```
 
 就會自動將statics push上gh-pages了
