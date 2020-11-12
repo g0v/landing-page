@@ -12,6 +12,13 @@ $ npm start
 然後 Server 就會自動聆聽 port 4000 了，這時候您可以連接 http://localhost:4000 來進行開發
 
 
+## How to Deploy / 怎麼發佈更新
+```
+./deploy
+```
+
+就會自動將statics push上gh-pages了
+
 ## LICENSE
 
 MIT License
