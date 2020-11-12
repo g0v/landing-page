@@ -11,12 +11,13 @@ html(lang="en")
     meta(charset="utf-8")
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel="shortcut icon" type="image/x-icon" href="/assets/g0v.ico")
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet")
     title g0v 台灣零時政府
     base(href="/")
     include /modules/library.pug
     //-+css("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
     +css("/assets/bootstrap/4.3.1/bootstrap.min.css")
-    +css("https://fonts.googleapis.com/css?family=Roboto")
     +css(root + "assets/ldui/ldui.min.css")
     +css(root + "css/index.css")
     block head
