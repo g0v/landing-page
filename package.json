@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "LiveScript": "^1.3.0",
+    "debounce": "^1.2.0",
     "fs-extra": "^8.0.0",
     "js-yaml": "^3.13.1",
     "marked": "0.7.0",
