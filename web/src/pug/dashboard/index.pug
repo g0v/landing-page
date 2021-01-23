@@ -5,12 +5,13 @@ block body
   .w-1024.px-2.px-lg-4.mx-auto.rwd.typeset.heading-contrast
     .text-center.my-4.py-4
       img(src="/assets/img/g0v-only.svg",style="width:3em")
-      h1.display-4.font-weight-bold g0v 儀錶板
+      h1.display-4.font-weight-bold g0v #[:i18n dashboard:dashboard]
       .text-muted g0v dashboard    
     hr    
     .text-center
-      a#update-time.btn.btn-outline-dark(role="button" href="https://yunlin-teng-437911.middle2.me/all" target="_blank") 上次更新時間: #[span n/a]
-      p.text-center#loading-text 讀取資料中......
+      a#update-time.btn.btn-outline-dark(role="button" href="https://yunlin-teng-437911.middle2.me/all" target="_blank"): :i18n dashboard:current
+        span n/a
+      p.text-center#loading-text: :i18n dashboard:loading
     .container.py-4
       .card-columns
         .card#slack-users
@@ -19,7 +20,7 @@ block body
               span 0
               a(style='font-size: 2em;') +
               br
-              a(href='https://join.g0v.tw/', target='_blank') slack參與者
+              a(href='https://join.g0v.tw/', target='_blank'): :i18n dashboard:slack_user
 
         .card#slack-channels
           .card-body.text-center
@@ -27,7 +28,7 @@ block body
               span 0
               | 個
               br
-              | slack討論頻道
+              :i18n dashboard:slack_channels
 
         .card#slack-messages
           .card-body.text-center
@@ -35,51 +36,52 @@ block body
               span 0
               a(style='font-size: 2em;') +
               br
-              a(href='https://g0v-slack-archive.g0v.ronny.tw/', target='_blank') slack討論訊息              
+              a(href='https://g0v-slack-archive.g0v.ronny.tw/', target='_blank'): :i18n dashboard:slack_message
         .card#summit-count
           .card-body.text-center
             p.card-text
               span 0
               | 次
               br
-              a(href='https://summit.g0v.tw/', target='_blank') 國際雙年會
+              a(href='https://summit.g0v.tw/', target='_blank'): :i18n dashboard:summit
         .card#hackathon-count
           .card-body.text-center
             p.card-text
               span 0
               | 次
               br
-              a(href='https://jothon.g0v.tw/events/', target='_blank') 雙月大黑客松
+              a(href='https://jothon.g0v.tw/events/', target='_blank'): :i18n dashboard:hackathon
         .card#hackathon-proposals
           .card-body.text-center
             p.card-text
               span 0
               | 個
               br
-              a(href='https://docs.google.com/spreadsheets/d/1C9-g1pvkfqBJbfkjPB0gvfBbBxVlWYJj6tTVwaI5_x8/', target='_blank') 大松提案
+              a(href='https://docs.google.com/spreadsheets/d/1C9-g1pvkfqBJbfkjPB0gvfBbBxVlWYJj6tTVwaI5_x8/', target='_blank'): :i18n dashboard:proposal
         .card#fanpage-like
           .card-body.text-center
             p.card-text
               span 0
               | 人
               br
-              a(href='https://www.facebook.com/g0v.tw', target='_blank') 說g0v粉專讚
+              a(href='https://www.facebook.com/g0v.tw', target='_blank'): :i18n dashboard:likes
         .card#fanpage-follow
           .card-body.text-center
             p.card-text
               span 0
               | 人
               br
-              a 追蹤g0v粉專
+              a: :i18n dashboard:follows
         .card#github-repos
           .card-body.text-center
             p.card-text
               span 0
               a(style='font-size: 2em;') +
               br
-              a(href='https://github.com/g0v', target='_blank') github專案
+              a(href='https://github.com/g0v', target='_blank'): :i18n dashboard:repo
     p.text-center
-      | #[a(href="https://github.com/g0v/g0v-dashboard" target="_blank") g0v dashboard] 亦為一個開源專案
+      | #[a(href="https://github.com/g0v/g0v-dashboard" target="_blank") g0v dashboard]
+      :i18n dashboard:is_opensource
 block script
   script(src='https://code.jquery.com/jquery-3.5.1.min.js', integrity='sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=', crossorigin='anonymous')
   script(type='text/javascript').            
