@@ -44,10 +44,10 @@ block body
           a(href="https://g0v.news/" target="_blank") more...
       .typeset.heading-contrast.pt-2
         .text-muted what is g0v?
-        h2#more.m-0 零時政府是什麼？
+        h2#more.m-0: :i18n index:g0v_intro
         hr
-        p g0v 是一個草根式的公民社群，致力於加深公民對社會的貢獻以及彼此間的連結。透過 g0v 社群，你可以在這裡尋找志同道合的夥伴，以草根的方式實踐你的理念，並將成果以開放授權模式釋出，讓更多的人可以站在你的成果上接力賽跑。
-        p 將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也代表數位原生世代從 0 與 1 世界的視野。
+        p: :i18n index:g0v_description
+        p: :i18n index:g0v_description2
         h3: :i18n index:operatingStyle
         p: :i18n index:operatingBlurb
         p.text-muted.text-sm: :i18n index:hackathonBlurb
@@ -55,11 +55,14 @@ block body
         p: :i18n index:communityBlurb
         p: :i18n index:cantCode
 
-        h3 零時政府宣言
-        p 最初由瞿筱葳起草，經社群多次討論與修改，零時政府宣言明確定義 g0v 的精神、協作與開源的中心思想，可以類比為零時政府的「憲法」。想更了解零時政府，請直接參考「#[a(href=intlbase("/manifesto/")) 零時政府宣言]」全文。
+        h3: :i18n index:g0vManifesto_title
+        p: :i18n index:g0vManifesto_description
+          a(href=intlbase("/manifesto/")): :i18n index:g0vManifesto_link
+          p: :i18n index:g0vManifesto_description2
 
-        h3 更多面向
-        p 幾句簡單的話，實在無法說明完整的 g0v 樣貌。不過，你可以透過其他的面向來了解 g0v ，或者參考 Kirby 於 OSDC 2013 Keynote 所分享的「#[a(href="https://www.youtube.com/watch?v=0HURMy0l4Ck") g0v 黑客松 - 寫程式改造社會]」演講影片：
+        h3: :i18n index:g0vManySides_title
+        p: :i18n index:g0vManySides_description	
+          a(href="https://www.youtube.com/watch?v=0HURMy0l4Ck"): :i18n index:g0vManySides_link
         .text-center.my-4.py-4
           a.btn.btn-outline-danger.mr-2.mb-2(href=intlbase("event/")) 活動資訊
           a.btn.btn-outline-danger.mr-2.mb-2(href=intlbase("novice/")) 新手指南
@@ -72,19 +75,28 @@ block body
         .text-muted Projects
         h2#projects.m-0: :i18n index:portfolio
         hr
-        p 自 2012 年底開始，零時政府以 g0v 黑客松作為起點，已舉辦了 4 次國際年會、4 屆公民科技獎助金、42+ 場黑客松、 40+ 場受邀演講、 150+ 次媒體報導，8000+ 遍布三大洲的貢獻者，成果皆以開放授權模式釋出，更多數據可參考#[a(href="/dashboard") g0v 儀錶板]，亦可參考 John Huang 製作的
-          a(href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank"): :i18n index:portfolioLink
-        p 數十次的黑客松亦產出了相當多的專案，所有專案成果及源碼均以開放授權分享於全體大眾。以下簡單介紹幾個知名 g0v 專案：
+        p: :i18n index:portfolioBlurb 
+          a(href="/dashboard"): :i18n index:dashboardLink 
+            p: :i18n index:joshHuang 
+            a(href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank"): :i18n index:portfolioLink
+        p: :i18n index:portfolio_description2	
         include modules/project.pug
                   
-        p 每次 g0v 大松提案皆透過線上直播，因此你可以從 g0v Youtube 頻道找到 #[a(href="https://www.youtube.com/user/g0vTW/playlists" target="_blank") 專案簡報與成果分享] 的影片紀錄。若你對黑客松的活動現場感到興趣，黑客松亦有#[a(href="https://flickr.com/g0v/" target="_blank") 平面影像紀錄]。
+        p: :i18n index:g0vLivestream_description	
+          a(href="https://www.youtube.com/user/g0vTW/playlists" target="_blank"): :i18n index:g0vLivestream_description2	
+          p: :i18n index:g0vLivestream_description3
+            a(href="https://flickr.com/g0v/" target="_blank"): :i18n index:g0vLivestream_description4
               
-        h3 獎助金成果
-        p 由 「#[a(href="https://jothon.g0v.tw/about/" target="_blank") g0v 揪松團]」 規畫執行的「#[a(href="https://grants.g0v.tw/" target="_blank") g0v 公民科技創新獎助金]」亦協助了包含「金流百科」、「農業災損幾多錢」、「開源神手」、「美國國會觀測站」、「投票指南」等許多專案。關於更多獎助金專案的成果，你可以到「#[a(href="https://grants.g0v.tw/power/") 公民科技創新獎助金成果報告]」中取得更多資訊。
+        h3: :i18n index:g0vGrantResults_title
+        p: :i18n index:g0vGrantResults_description
+          a: :i18n index:g0vGrantResults_description1
+          t: :i18n index:g0vGrantResults_description2
+            a(href="https://grants.g0v.tw/power/"): :i18n index:g0vGrantResults_description3
+            t: :i18n index:g0vGrantResults_description4
 
       .typeset.heading-contrast.pt-4
         .text-muted Participate
-        h2#participate.m-0 如何參與？
+        h2#participate.m-0: :i18n index:getInvolved_title
         hr
         p 了解 g0v 最快的方式就是實際來參與一次。無論線上或線下，你都可以找得到各種管道與社群參與者互動。
           | 想要更了解開源協作的模式，可以參考
