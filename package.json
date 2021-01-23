@@ -14,7 +14,7 @@
     "npm": ">=5.6.0"
   },
   "scripts": {
-    "start": "npx server -r web -o true -p 4000",
+    "start": "npx server -r web -c web/config.json",
     "build": "find . | grep \\.pug | xargs touch; npx lsc tool/parse-yaml.ls"
   },
   "dependencies": {
