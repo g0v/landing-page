@@ -4,6 +4,9 @@ latestNews: "Latest News"
 governNotice: "g0v is an open community which provides an oppurtunity for all participants to join in the conversation on its social media posts. Becuase of this, g0v has established certain governance mechanisms. All posts are first checked by members of the community who have admin privelages. To learn more, please view"
 governDoc: "g0v SNS community governance document."
 governHashtag: "#redacted"
+g0v_intro:
+g0v_description:
+g0v_description2: 
 operatingStyle: "Operating Style"
 operatingBlurb: "g0v.tw primarily operates online with a large hackathon occurring once every two months. Participants propose different projects and call for volunteers. Oftentimes, in addition to meeting at the hackathons, projects will split off, holding their own smaller meetups and hackathons independent of the larger g0v events. This operating mode encourages bottom-up ideation, fostering activism over slacktivism."
 hackathonBlurb: "(Note: Hackathon is a portmanteau of \"hacker\" and \"marathon\", a large-scale event that takes place over the course of one to two days. Volunteers form groups, work and report their progress. Many projects will meet before the event and form a plan for the day, to make sure they can get as much done as possible in the limited time available.)"
