@@ -16,7 +16,8 @@ block body
       .thumb.col: img(src="assets/img/g0v-hero.jpg")
       .desc.col
         img.d-block.mr-auto.ml-auto(src="assets/img/g0v-only.svg")
-        p 自台灣發起、多中心化的公民科技社群「零時政府」，以資訊透明、開放成果、開放協作為核心，透過群眾草根的力量來關心公共事務。 #[a(href="#",data-scrollto="#more") ... 了解更多]
+        p: :i18n index:introBlurb 
+          a(href="#",data-scrollto="#more"): :i18n index:learnMore
         hr
         .text-center
           //-.btn.btn-outline-danger.mr-1.d-none.d-md-inline-block(data-scrollto="#more") 了解更多
@@ -27,9 +28,11 @@ block body
   .w-1024.px-2.px-lg-4.mx-auto.rwd.d-flex
     div
       .typeset.heading-contrast.pt-4
-        h2#news.m-0 最新消息
+        h2#news.m-0: :i18n index:latestNews
         hr
-        p g0v 為開放社群，在媒體平台上的貼文，提供「所有」參與者都有可以發表的機會，因此建立一套治理機制，通過發文審核後，文章將會透過擁有平台權限的參與者協助排程貼出。詳情可參考 #[a(href="https://g0v.hackmd.io/@chihao/Hkm9tPaxr" target="_blank") g0v SNS 社群治理機制共筆]#[br] #自己的小編自己當
+        p: :i18n index:governNotice
+          a(href="https://g0v.hackmd.io/@chihao/Hkm9tPaxr" target="_blank"): :i18n index:governDoc
+          p 自己的小編自己當
         h3 粉絲專頁
         .fb-page(data-href="https://www.facebook.com/g0v.tw" data-tabs="timeline" data-width="500" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false")
           blockquote(cite="https://www.facebook.com/g0v.tw" class="fb-xfbml-parse-ignore")
@@ -45,12 +48,12 @@ block body
         hr
         p g0v 是一個草根式的公民社群，致力於加深公民對社會的貢獻以及彼此間的連結。透過 g0v 社群，你可以在這裡尋找志同道合的夥伴，以草根的方式實踐你的理念，並將成果以開放授權模式釋出，讓更多的人可以站在你的成果上接力賽跑。
         p 將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也代表數位原生世代從 0 與 1 世界的視野。
-        h3 運作模式
-        p g0v.tw 的推動結合線上與實體，以各種網路工具加上兩個月一次的黑客松工作坊#[span.text-danger.text-sm (註)]，參與者自主提出專案邀集不同專業者加入，透過 g0v.tw 的實體、線上平台媒合各方資源，協作並開源專案成果，不定期會舉辦小型黑客松工作坊。分散式的組織強調自主參與的能量，鼓勵大家找出問題、提出解決方案、參與討論分享資源，以實作代替按讚。
-        p.text-muted.text-sm (註：「黑客松」hackathon 即 hacker's marathon，是自主參加的密集合作活動，通常在一到兩天的限定時間內由提案、分組、工作、成果報告都自發加入，許多提案在活動前展開線上討論，當天實體活動迅速整合，能在短時間衝刺出初步成果。)
-        h3 社群組成
-        p g0v 參與者包含線上線下，來自各個領域，只要遵循「開源協作」理念，並不限於軟體專案。社群參與者組成從早期大多為工程師背景，到現在已有六成以上的參與者為非技術背景，其中包括設計、法律、社運、文字工作者等多種不同領域來的參與者。
-        p 不會寫程式可以參加嗎？#[b 可以喔！]
+        h3: :i18n index:operatingStyle
+        p: :i18n index:operatingBlurb
+        p.text-muted.text-sm: :i18n index:hackathonBlurb
+        h3: :i18n index:communityMakeup
+        p: :i18n index:communityBlurb
+        p: :i18n index:cantCode
 
         h3 零時政府宣言
         p 最初由瞿筱葳起草，經社群多次討論與修改，零時政府宣言明確定義 g0v 的精神、協作與開源的中心思想，可以類比為零時政府的「憲法」。想更了解零時政府，請直接參考「#[a(href="/manifesto/") 零時政府宣言]」全文。
@@ -67,9 +70,10 @@ block body
 
       .typeset.heading-contrast.pt-4
         .text-muted Projects
-        h2#projects.m-0 社群成果
+        h2#projects.m-0: :i18n index:portfolio
         hr
-        p 自 2012 年底開始，零時政府以 g0v 黑客松作為起點，已舉辦了 4 次國際年會、4 屆公民科技獎助金、42+ 場黑客松、 40+ 場受邀演講、 150+ 次媒體報導，8000+ 遍布三大洲的貢獻者，成果皆以開放授權模式釋出，更多數據可參考#[a(href="/dashboard") g0v 儀錶板]，亦可參考 John Huang 製作的#[a(href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank") 令人驚奇的零時政府 Awesome g0v projects]。
+        p 自 2012 年底開始，零時政府以 g0v 黑客松作為起點，已舉辦了 4 次國際年會、4 屆公民科技獎助金、42+ 場黑客松、 40+ 場受邀演講、 150+ 次媒體報導，8000+ 遍布三大洲的貢獻者，成果皆以開放授權模式釋出，更多數據可參考#[a(href="/dashboard") g0v 儀錶板]，亦可參考 John Huang 製作的
+          a(href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank"): :i18n index:portfolioLink
         p 數十次的黑客松亦產出了相當多的專案，所有專案成果及源碼均以開放授權分享於全體大眾。以下簡單介紹幾個知名 g0v 專案：
         include modules/project.pug
                   
@@ -90,34 +94,35 @@ block body
         h4 雙月黑客松 / 大松
         p 自 g0v 發起以來每兩個月舉辦一次的雙月黑客松 ( #[b.text-info 大松] ) 已是 g0v 的常駐活動了，在這裡你可以找到形形色色的參與者，無論是老手、新手、各種不同領域的人，都在這個一整天的活動中熱烈地討論、實作、並在活動結束時將成果向大家發表。
         p 最重要的是，不會寫程式也可以參加大松！關於活動的更多細節可以在 #[a(href="https://jothon.g0v.tw/" target="_blank") 黑客松入口網「揪松網」] 找到，你亦可關注 #[a(href="http://g0v-jothon.kktix.cc" target="_blank") 揪松團] 的公開活動頁面來隨時獲得最新活動的訊息。
-        h4 專案黑客松 / 小松
-        p 除了大松以外，揪松團亦定期舉辦以社群基礎建設專案為主的「基礎松」，其他亦有各個 g0v 專案大大小小不定期的活動 ( #[b.text-info 小松] )，可依自己關注的領域來選擇。
-        p 社群小松各有不同的性質，通常會在活動資訊中說明適合參與的對象，可定期關注臉書後勤中心與 g0v Slack 討論群組以取得活動的最新資訊。
+        h4: :i18n index:otherHackathons
+        p: :i18n index:infraHackathons
+        p: :i18n index:smallHackathons
 
-        h3 線上：臉書後勤中心與 slack 討論群組
-        p 除了線下活動外，社群參與者們也頻繁積極地在線上討論群組中交換專案的意見，是一個即時獲得社群回饋的方便管道。目前主要的討論群組包括：
+        h3: :i18n index:onlinePlatform
+        p: :i18n index:onlinePlatformBlurb
         ul
-          li: a(href="https://www.facebook.com/groups/g0v.general/" target="_blank") g0v 後勤中心 ( 臉書 )
-          li: a(href="https://join.g0v.tw" target="_blank") g0v 線上聊天室 ( Slack )
-        p 使用線上討論群組請注意群組規範，並保持良好的態度與禮貌。
-        h3 其它管道
-        p 只要發揮 g0v 的草根精神，開工就等於參與！不過若你想要更具體的參與感，以下提供幾個其它的管道：
+          li: a(href="https://www.facebook.com/groups/g0v.general/" target="_blank"): :i18n index:g0vFacebook
+          li: a(href="https://join.g0v.tw" target="_blank"): :i18n index:g0vSlack
+        p: :i18n index:codeOfConduct
+        h3: :i18n index:otherChannels
+        p: :i18n index:participateMore
         .row
           .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
-            h4.text-center 捐款認養大松
-            p g0v 雙月大黑客松主要由志工維持，場地、食物及所需經費皆由參與者協助籌措。透過線上捐款，你也可以成為支持活動的一份子！
-            a.btn-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30&_ga=2.218722001.93807760.1535621686-361420765.1511415990" target="_blank") 現在就捐款
+            h4.text-center: :i18n index:donate
+            p: :i18n index:donateBlurb
+            a.btn-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30&_ga=2.218722001.93807760.1535621686-361420765.1511415990" target="_blank"): :i18n index:donateLink
           .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
-            h4.text-center 參與獎助金提案
-            p g0v 揪松團為提升公民科技專案的續航力籌辦公民科技創新獎助金，只要符合公民科技專案的條件，皆可提案參與。
-            a.btn-block(href="https://grants.g0v.tw" target="_blank") 現在就提案
+            h4.text-center: :i18n index:propose
+            p: :i18n index:proposeBlurb
+            a.btn-block(href="https://grants.g0v.tw" target="_blank"): :i18n index:proposeLink
           .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
-            h4.text-center 發起相關活動
-            p 目前 g0v 黑客松主要仍在台灣舉行，但海外已有若干國家響應。在你的國家沒有嗎？何不考慮在你的國家發起 g0v 黑客松呢？
-            a.btn-block(href="http://g0v.network" target="_blank") 現在就發起
+            h4.text-center: :i18n index:organize
+            p: :i18n index:organizeBlurb
+            a.btn-block(href="http://g0v.network" target="_blank"): :i18n index:organizeLink
         
-        h3 更多資訊
-        p 若你想參與 g0v 卻仍不得其門而入，就來看看#[a(href="/novice/") 新手指南]吧！
+        h3: :i18n index:moreInfo
+        p: :i18n index:callToAction
+          a(href="/novice/"): :i18n index:newcomerGuide
 
     .d-none.d-md-block(style="min-width:8em"): .sticky.ml-4.pl-4.pt-4.border-left.border-danger
       br
@@ -142,3 +147,7 @@ block script
   +script(root + "assets/threejs/r98/three.min.js")
   +script(root + "assets/svg-mesh/svg-mesh.js")
   +script(root + "js/landing.js")
+
+
+        p: :i18n key
+          a(href="#",data-scrollto="#more") ... 了解更多]
