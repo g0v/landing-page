@@ -1,10 +1,12 @@
 {
   "port": 4000,
+  "open": true,
   "watcher": {
     "ignores": []
   },
   "i18n": {
     "enabled": true,
-    "lng": ["en"]
+    "lng": ["en", "zh-TW"],
+    "ns": ["default", "nav"]
   }
 }

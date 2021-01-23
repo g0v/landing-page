@@ -1,6 +1,5 @@
 //- module
 doctype html
-- var root = "/";
 - var ctrl = {navtop: {show: true}};
 - var use = {}
 include /../../static/assets/ldui/pug/ldui.pug
@@ -18,8 +17,8 @@ html(lang="en")
     include /modules/library.pug
     //-+css("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
     +css("/assets/bootstrap/4.3.1/bootstrap.min.css")
-    +css(root + "assets/ldui/ldui.min.css")
-    +css(root + "css/index.css")
+    +css("/assets/ldui/ldui.min.css")
+    +css("/css/index.css")
     block head
   body
     if ctrl.navtop.show
@@ -28,8 +27,8 @@ html(lang="en")
     include /modules/foot.pug
     //-script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.26/bootstrap-native-v4.min.js")
     +script("/assets/bootstrap.native/2.0.15/bootstrap.native.v4.min.js")
-    +script(root + "assets/ldui/ldui.min.js")
-    +script(root + "assets/xfl/xfl.js")
-    +script(root + "js/index.js")
+    +script("/assets/ldui/ldui.min.js")
+    +script("/assets/xfl/xfl.js")
+    +script("/js/index.js")
     +script("//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-59395.js")
     block script

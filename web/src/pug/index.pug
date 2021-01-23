@@ -10,10 +10,10 @@ block body
   #landing
     .dark-shape
     .lang
-      //-.btn.btn-light.ml-1.btn-sm EN
-      .btn.btn-light.ml-1.btn-sm 中文
+      a.btn.btn-light.ml-1.btn-sm(href="/intl/en/") EN
+      a.btn.btn-light.ml-1.btn-sm(href="/intl/zh-TW/") 中文
     .row.content
-      .thumb.col: img(src="assets/img/g0v-hero.jpg")
+      .thumb.col: img(src="/assets/img/g0v-hero.jpg")
       .desc.col
         img.d-block.mr-auto.ml-auto(src="assets/img/g0v-only.svg")
         p: :i18n index:introBlurb 
@@ -23,7 +23,7 @@ block body
           //-.btn.btn-outline-danger.mr-1.d-none.d-md-inline-block(data-scrollto="#more") 了解更多
           .btn.btn-outline-danger.mr-1.mb-2(data-scrollto="#projects") 成果列表
           .btn.btn-outline-danger.mr-1.mb-2(data-scrollto="#participate") 如何參與
-          a.btn.btn-outline-danger.mb-2(href="/manifesto/" rol="button") g0v 宣言
+          a.btn.btn-outline-danger.mb-2(href=intlbase("/manifesto/"),rol="button") g0v 宣言
 
   .w-1024.px-2.px-lg-4.mx-auto.rwd.d-flex
     div
@@ -56,14 +56,14 @@ block body
         p: :i18n index:cantCode
 
         h3 零時政府宣言
-        p 最初由瞿筱葳起草，經社群多次討論與修改，零時政府宣言明確定義 g0v 的精神、協作與開源的中心思想，可以類比為零時政府的「憲法」。想更了解零時政府，請直接參考「#[a(href="/manifesto/") 零時政府宣言]」全文。
+        p 最初由瞿筱葳起草，經社群多次討論與修改，零時政府宣言明確定義 g0v 的精神、協作與開源的中心思想，可以類比為零時政府的「憲法」。想更了解零時政府，請直接參考「#[a(href=intlbase("/manifesto/")) 零時政府宣言]」全文。
 
         h3 更多面向
         p 幾句簡單的話，實在無法說明完整的 g0v 樣貌。不過，你可以透過其他的面向來了解 g0v ，或者參考 Kirby 於 OSDC 2013 Keynote 所分享的「#[a(href="https://www.youtube.com/watch?v=0HURMy0l4Ck") g0v 黑客松 - 寫程式改造社會]」演講影片：
         .text-center.my-4.py-4
-          a.btn.btn-outline-danger.mr-2.mb-2(href=root + "event/") 活動資訊
-          a.btn.btn-outline-danger.mr-2.mb-2(href="novice/") 新手指南
-          a.btn.btn-outline-danger.mb-2(href=root + "faq/") 常見問題
+          a.btn.btn-outline-danger.mr-2.mb-2(href=intlbase("event/")) 活動資訊
+          a.btn.btn-outline-danger.mr-2.mb-2(href=intlbase("novice/")) 新手指南
+          a.btn.btn-outline-danger.mb-2(href=intlbase("faq/")) 常見問題
         .text-center.text-sm.text-muted OSDC 2013 Keynote 「g0v 黑客松 - 寫程式改造社會」 by Kirby
         .w-100.mb-4.mt-1
           .aspect-ratio(style="padding-top:75%"): .w-100.h-100: iframe.w-100.h-100(src="https://www.youtube.com/embed/0HURMy0l4Ck")
@@ -90,10 +90,14 @@ block body
           | 想要更了解開源協作的模式，可以參考
           a(href="https://g0v.hackmd.io/@jothon/g0v-cowork-guideline" target="_blank") g0v 開源協作手冊
           | 。
-        h3 線下：大小黑客松雙月黑客松與社群小松
-        h4 雙月黑客松 / 大松
-        p 自 g0v 發起以來每兩個月舉辦一次的雙月黑客松 ( #[b.text-info 大松] ) 已是 g0v 的常駐活動了，在這裡你可以找到形形色色的參與者，無論是老手、新手、各種不同領域的人，都在這個一整天的活動中熱烈地討論、實作、並在活動結束時將成果向大家發表。
-        p 最重要的是，不會寫程式也可以參加大松！關於活動的更多細節可以在 #[a(href="https://jothon.g0v.tw/" target="_blank") 黑客松入口網「揪松網」] 找到，你亦可關注 #[a(href="http://g0v-jothon.kktix.cc" target="_blank") 揪松團] 的公開活動頁面來隨時獲得最新活動的訊息。
+        h3: :i18n index:events
+        h4: :i18n index:hackathons
+        p: :i18n index:eventsBlurb
+        p: :i18n index:eventsBlurbCont
+          a(href="https://jothon.g0v.tw/" target="_blank"): :i18n index:jothonWebsite
+          t: :i18n index:jothonFollow
+            a(href="http://g0v-jothon.kktix.cc" target="_blank"): :i18n index:jothonLink
+            t: :i18n index:jothonEventInfo
         h4: :i18n index:otherHackathons
         p: :i18n index:infraHackathons
         p: :i18n index:smallHackathons
@@ -133,21 +137,17 @@ block body
         a.clickable.d-block(href="#",data-scrollto="#projects") 成果列表
         a.clickable.d-block(href="#",data-scrollto="#participate") 如何參與
       .mb-4
-        a.clickable.d-block(href="/manifesto/") g0v 宣言
-        a.clickable.d-block(href="/dashboard/") 儀錶板
-        a.clickable.d-block(href="/novice/") 新手指南
-        a.clickable.d-block(href="/event/") 活動資訊
-        a.clickable.d-block(href="/faq/") 常見問題
-        a.clickable.d-block(href="/contact/") 聯絡我們
+        a.clickable.d-block(href=intlbase("/manifesto/")) g0v 宣言
+        a.clickable.d-block(href=intlbase("/dashboard/")) 儀錶板
+        a.clickable.d-block(href=intlbase("/novice/")) 新手指南
+        a.clickable.d-block(href=intlbase("/event/")) 活動資訊
+        a.clickable.d-block(href=intlbase("/faq/")) 常見問題
+        a.clickable.d-block(href=intlbase("/contact/")) 聯絡我們
         a.clickable.d-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30",
         target="_blank") 小額捐款
 
 block script
-  +script(root + "js/news.js")
-  +script(root + "assets/threejs/r98/three.min.js")
-  +script(root + "assets/svg-mesh/svg-mesh.js")
-  +script(root + "js/landing.js")
-
-
-        p: :i18n key
-          a(href="#",data-scrollto="#more") ... 了解更多]
+  +script("/js/news.js")
+  +script("/assets/threejs/r98/three.min.js")
+  +script("/assets/svg-mesh/svg-mesh.js")
+  +script("/js/landing.js")

@@ -15,34 +15,34 @@
 
     button.navbar-toggler(type="button",data-toggle="collapse",data-target="#navbar-list"): span.navbar-toggler-icon
     #navbar-list.collapse.navbar-collapse
-      a.navbar-brand(href="/"): img(src="/assets/img/g0v-banner.svg",style="height:27px;margin-top:-8px")
+      a.navbar-brand(href=intlbase("/")): img(src="/assets/img/g0v-banner.svg",style="height:27px;margin-top:-8px")
       ul.navbar-nav
-        li.nav-item: a.nav-link(href=root + "manifesto/") 零時政府宣言
-        li.nav-item: a.nav-link(href=root + "dashboard/") 儀錶板
-        li.nav-item: a.nav-link(href=root + "novice/") 新手指南
-        li.nav-item: a.nav-link(href=root + "event/") 活動資訊
-        li.nav-item: a.nav-link(href=root + "faq/") 常見問題
-        li.nav-item: a.nav-link(href=root + "contact/") 聯繫我們
-        li.nav-item: a.nav-link(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30",target="_blank") 小額捐款
+        li.nav-item: a.nav-link(href=intlbase("manifesto/")): :i18n nav:manifesto
+        li.nav-item: a.nav-link(href=intlbase("dashboard/")): :i18n nav:dashboard
+        li.nav-item: a.nav-link(href=intlbase("novice/")): :i18n nav:novice
+        li.nav-item: a.nav-link(href=intlbase("event/")): :i18n nav:event
+        li.nav-item: a.nav-link(href=intlbase("faq/")): :i18n nav:faq
+        li.nav-item: a.nav-link(href=intlbase("contact/")): :i18n nav:contact
+        li.nav-item: a.nav-link(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30",target="_blank"): :i18n nav:donate
         //li.nav-item.dropdown
           a.nav-link.dropdown-toggle(href="#",data-toggle="dropdown") 關於我們
           .dropdown-menu
-            a.dropdown-item(href=root + "manifesto/") 零時政府宣言
-            a.dropdown-item(href=root + "contact/") 聯繫我們
-            a.dropdown-item(href=root + "dashboard/") 儀錶板
+            a.dropdown-item(href=intlbase("manifesto/")) 零時政府宣言
+            a.dropdown-item(href=intlbase("contact/")) 聯繫我們
+            a.dropdown-item(href=intlbase("dashboard/")) 儀錶板
             a.dropdown-item(href="http://hack.g0v.tw/transaction/",target="_blank") 收支明細
 
         //li.nav-item.dropdown
           a.nav-link.dropdown-toggle(href="#",data-toggle="dropdown") 如何參與
           .dropdown-menu
-            a.dropdown-item(href=root + "novice/") 新手指南
-            a.dropdown-item(href=root + "faq/") 常見問題
+            a.dropdown-item(href=intlbase("novice/")) 新手指南
+            a.dropdown-item(href=intlbase("faq/")) 常見問題
             a.dropdown-item(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30",target="_blank") 小額捐款 #[i.fa.fa-usd]#[i.fa.fa-usd]
             .dropdown-divider
             a.dropdown-item(href="https://www.facebook.com/groups/g0v.general",target="_blank") 臉書後勤中心
-            a.dropdown-item(href=root + "event/") 活動資訊
+            a.dropdown-item(href=intlbase("event/")) 活動資訊
 
-        //li.nav-item: a.nav-link(href=root + "project/") 成果列表
+        //li.nav-item: a.nav-link(href=intlbase("project/")) 成果列表
 
       .navbar-nav.ml-auto
         //-
