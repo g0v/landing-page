@@ -22,6 +22,6 @@
     "fs-extra": "^8.0.0",
     "js-yaml": "^3.13.1",
     "marked": "0.7.0",
-    "template": "github:zbryikt/template#v2.1.8"
+    "template": "github:zbryikt/template#v2.1.9"
   }
 }
