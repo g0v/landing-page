@@ -6,7 +6,7 @@
   },
   "i18n": {
     "enabled": true,
-    "lng": ["en", "zh-TW"],
+    "lng": ["en", "zh-TW", "ja"],
     "ns": ["default", "nav", "dashboard", "index"]
   }
 }
