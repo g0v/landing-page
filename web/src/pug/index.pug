@@ -11,6 +11,7 @@ block body
     .dark-shape
     .lang
       a.btn.btn-light.ml-1.btn-sm(href="/intl/en/") EN
+      a.btn.btn-light.ml-1.btn-sm(href="/intl/ja/") JA
       a.btn.btn-light.ml-1.btn-sm(href="/intl/zh-TW/") 中文
     .row.content
       .thumb.col: img(src="/assets/img/g0v-hero.jpg")
@@ -32,7 +33,7 @@ block body
         hr
         p: :i18n index:governNotice
           a(href="https://g0v.hackmd.io/@chihao/Hkm9tPaxr" target="_blank"): :i18n index:governDoc
-          p 自己的小編自己當
+          p: :i18n index:governHashtag
         h3 粉絲專頁
         .fb-page(data-href="https://www.facebook.com/g0v.tw" data-tabs="timeline" data-width="500" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false")
           blockquote(cite="https://www.facebook.com/g0v.tw" class="fb-xfbml-parse-ignore")
@@ -58,11 +59,10 @@ block body
         h3: :i18n index:g0vManifesto_title
         p: :i18n index:g0vManifesto_description
           a(href=intlbase("/manifesto/")): :i18n index:g0vManifesto_link
-          p: :i18n index:g0vManifesto_description2
+          :i18n index:g0vManifesto_description2
 
         h3: :i18n index:g0vManySides_title
-        p: :i18n index:g0vManySides_description	
-          a(href="https://www.youtube.com/watch?v=0HURMy0l4Ck"): :i18n index:g0vManySides_link
+        p: :i18n index:g0vManySides_description
         .text-center.my-4.py-4
           a.btn.btn-outline-danger.mr-2.mb-2(href=intlbase("event/")) 活動資訊
           a.btn.btn-outline-danger.mr-2.mb-2(href=intlbase("novice/")) 新手指南
@@ -76,9 +76,9 @@ block body
         h2#projects.m-0: :i18n index:portfolio
         hr
         p: :i18n index:portfolioBlurb 
-          a(href="/dashboard"): :i18n index:dashboardLink 
-            p: :i18n index:joshHuang 
-            a(href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank"): :i18n index:portfolioLink
+          a(href="/dashboard"): :i18n index:dashboardLink
+          :i18n index:johnHuang 
+          a(href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank"): :i18n index:portfolioLink
         p: :i18n index:portfolio_description2	
         include modules/project.pug
                   
@@ -88,20 +88,20 @@ block body
             a(href="https://flickr.com/g0v/" target="_blank"): :i18n index:g0vLivestream_description4
               
         h3: :i18n index:g0vGrantResults_title
-        p: :i18n index:g0vGrantResults_description
-          a: :i18n index:g0vGrantResults_description1
-          t: :i18n index:g0vGrantResults_description2
-            a(href="https://grants.g0v.tw/power/"): :i18n index:g0vGrantResults_description3
-            t: :i18n index:g0vGrantResults_description4
+        p
+          :i18n index:g0vGrantResults_description
+          a(href="https://grants.g0v.tw/"): :i18n index:g0vGrantResults_description1
+          :i18n index:g0vGrantResults_description2
+          a(href="https://grants.g0v.tw/power/"): :i18n index:g0vGrantResults_description_link2
+          :i18n index:g0vGrantResults_description4
 
       .typeset.heading-contrast.pt-4
         .text-muted Participate
         h2#participate.m-0: :i18n index:getInvolved_title
         hr
-        p 了解 g0v 最快的方式就是實際來參與一次。無論線上或線下，你都可以找得到各種管道與社群參與者互動。
-          | 想要更了解開源協作的模式，可以參考
-          a(href="https://g0v.hackmd.io/@jothon/g0v-cowork-guideline" target="_blank") g0v 開源協作手冊
-          | 。
+        p 
+          :i18n index:getInvolved_description
+          a(href="https://g0v.hackmd.io/@jothon/g0v-cowork-guideline" target="_blank"): :i18n index:getInvolved_link
         h3: :i18n index:events
         h4: :i18n index:hackathons
         p: :i18n index:eventsBlurb
