@@ -5,6 +5,7 @@
     "ignores": []
   },
   "i18n": {
+    "default_locale": "zh-TW",
     "enabled": true,
     "lng": ["en", "zh-TW", "ja"],
     "ns": ["default", "nav", "dashboard", "index"]
