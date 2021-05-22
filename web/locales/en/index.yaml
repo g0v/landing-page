@@ -14,8 +14,8 @@ facebookPage: "Facebook Page"
 
 # What is g0v
 g0v_intro: "What is g0v?"
-g0v_description: "g0v 是一個草根式的公民社群，致力於加深公民對社會的貢獻以及彼此間的連結。透過 g0v 社群，你可以在這裡尋找志同道合的夥伴，以草根的方式實踐你的理念，並將成果以開放授權模式釋出，讓更多的人可以站在你的成果上接力賽跑。"
-g0v_description2: "將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也代表數位原生世代從 0 與 1 世界的視野。"
+g0v_description: "g0v is a grassroots level social movement community dedicated to deepening the civic engagements and connections between social arena and citizen. You can find like-minded partners in the g0v community, achieve your ideas in a grassroots manner, then release the results under an opensource license, thus more people can stand on your shoudlers."
+g0v_description2: "g0v replaces \"o\" in gov with \"0\", which reimagines the role of government from scratch zero and reflects the vision from 0 to 1 of the digital natives."
 operatingStyle: "How g0v Works"
 operatingBlurb: "g0v.tw primarily operates online with a large hackathon occurring once every two months. Participants propose different projects and call for volunteers. Oftentimes, in addition to meeting at the hackathons, projects will split off, holding their own smaller meetups and hackathons independent of the larger g0v events. This operating mode encourages bottom-up ideation, fostering activism over slacktivism."
 hackathonBlurb: "(Note: Hackathon is a portmanteau of \"hacker\" and \"marathon\", a large-scale event that takes place over the course of one to two days. Volunteers form groups, work and report their progress. Many projects will meet before the event and form a plan for the day, to make sure they can get as much done as possible in the limited time available.)"
