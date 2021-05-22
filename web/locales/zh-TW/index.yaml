@@ -1,72 +1,74 @@
+# Intro
 introBlurb: "自台灣發起、多中心化的公民科技社群「零時政府」，以資訊透明、開放成果、開放協作為核心，透過群眾草根的力量來關心公共事務。"
-learnMore: "... 了解更多"
+introLearnMore: "了解更多"
+projectList: "成果列表"
+howToJoin: "如何參與"
+manifesto: "g0v 宣言"
+
+# Latest news
 latestNews: "最新消息"
 governNotice: "g0v 為開放社群，在媒體平台上的貼文，提供「所有」參與者都有可以發表的機會，因此建立一套治理機制，通過發文審核後，文章將會透過擁有平台權限的參與者協助排程貼出。詳情可參考 g0v SNS 社群治理機制共筆"
 governDoc: "g0v SNS 社群治理機制共筆"
 governHashtag: "#自己的小編自己當"
+facebookPage: "Facebook 粉絲專頁"
+
+# What is g0v
 g0v_intro: "零時政府是什麼？"
 g0v_description: "g0v 是一個草根式的公民社群，致力於加深公民對社會的貢獻以及彼此間的連結。透過 g0v 社群，你可以在這裡尋找志同道合的夥伴，以草根的方式實踐你的理念，並將成果以開放授權模式釋出，讓更多的人可以站在你的成果上接力賽跑。"
 g0v_description2: "將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也代表數位原生世代從 0 與 1 世界的視野。"
 operatingStyle: "運作模式"
 operatingBlurb: "g0v.tw 的推動結合線上與實體，以各種網路工具加上兩個月一次的黑客松工作坊<span class='text-danger text-sm'> (註)</span>，參與者自主提出專案邀集不同專業者加入，透過 g0v.tw 的實體、線上平台媒合各方資源，協作並開源專案成果，不定期會舉辦小型黑客松工作坊。分散式的組織強調自主參與的能量，鼓勵大家找出問題、提出解決方案、參與討論分享資源，以實作代替按讚。"
-hackathonBlurb: "(註：「黑客松」hackathon 即 hacker's marathon，是自主參加的密集合作活動，通常在一到兩天的限定時間內由提案、分組、工作、成果報告都自發加入，許多提案在活動前展開線上討論，當天實體活動迅速整合，能在短時間衝刺出初步成果。)"
+hackathonBlurb: "註：「黑客松」hackathon 即 hacker's marathon，是自主參加的密集合作活動，通常在一到兩天的限定時間內由提案、分組、工作、成果報告都自發加入，許多提案在活動前展開線上討論，當天實體活動迅速整合，能在短時間衝刺出初步成果。"
 communityMakeup: "社群組成"
 communityBlurb: "g0v 參與者包含線上線下，來自各個領域，只要遵循「開源協作」理念，並不限於軟體專案。社群參與者組成從早期大多為工程師背景，到現在已有六成以上的參與者為非技術背景，其中包括設計、法律、社運、文字工作者等多種不同領域來的參與者。"
 cantCode: "不會寫程式可以參加嗎？<b>可以喔！</b>"
 g0vManifesto_title: "零時政府宣言"
-g0vManifesto_description: "最初由瞿筱葳起草，經社群多次討論與修改，零時政府宣言明確定義 g0v 的精神、協作與開源的中心思想，可以類比為零時政府的「憲法」。想更了解零時政府，請直接參考「"
+g0vManifesto_description: "最初由瞿筱葳起草，經社群多次討論與修改，零時政府宣言明確定義 g0v 的精神、協作與開源的中心思想，可以類比為零時政府的「憲法」。想更了解零時政府，請直接參考"
 g0vManifesto_link: "零時政府宣言"
-g0vManifesto_description2: "」全文。"
+g0vManifesto_description2: "。"
 g0vManySides_title: "更多面向"
 g0vManySides_description: "幾句簡單的話，實在無法說明完整的 g0v 樣貌。不過，你可以透過其他的面向來了解 g0v ，或者參考 Kirby 於 OSDC 2013 Keynote 所分享的「g0v 黑客松 - 寫程式改造社會」演講影片："
+eventInfo: "活動資訊"
+newcomersGuide: "新手指南"
+faq: "常見問題"
+
+# Community Porfolio
 portfolio: "社群成果"
-portfolioBlurb: "自 2012 年底開始，零時政府以 g0v 黑客松作為起點，已舉辦了 4 次國際年會、4 屆公民科技獎助金、42+ 場黑客松、 40+ 場受邀演講、 150+ 次媒體報導，8000+ 遍布三大洲的貢獻者，成果皆以開放授權模式釋出，更多數據可參考"
-dashboardLink: "g0v 儀錶板"
-johnHuang: "，亦可參考 John Huang 製作的"
-portfolioLink: "令人驚奇的零時政府 Awesome g0v projects。"
-portfolio_description2: "數十次的黑客松亦產出了相當多的專案，所有專案成果及源碼均以開放授權分享於全體大眾。以下簡單介紹幾個知名 g0v 專案："
-hackfolder_title: "Hackfoldr 黑客公事包"
-hackfolder_description: "Hackfoldr 為一協作式文件整理介面，讓整理線上文件更容易。目前已有相當多運用 Hackfoldr 的案例，包括八仙塵爆、高雄氣爆、香港雨傘運動、太陽花學運等社會事件與運動，同時亦為 g0v 大小黑客松最常運用的線上工具之一。"
-cofacts_title: "「真的假的」Line Bot"
-cofacts_description1: "用聊天機器人和群眾協作查核澄清 Line 封閉群組中的不實資訊。"
-cofacts_description2: "「真的假的 LINE Bot」讓不擅於使用 Google，資訊搜尋能力較低的使用者，可以在加入「真的假的 LINE Bot」之後，遇上任何 LINE 上不知真假的訊息時，直接轉發給機器人，接著就會收到回覆，判斷訊息的真假。"
-treasureArchive_title: "遺落在世界角落的台灣國家寶藏"
-treasureArchive_description: "包括英美等國家這一百多年以來對台灣社會、地理、人物所做下的情蒐紀錄，提供了台灣人在回顧自己的過去時，更豐富的材料與角度，以及不同的思維，去重新描繪台灣人曾經的生活面貌。 在這裡，我們希望將這些資料重新進入公眾視野內，結合每個人獨特的視角，去重新書寫出台灣人生活的故事。"
-govBudgetVisualization_title: "中央政府總預算視覺化"
-govBudgetVisualization_description: "中央政府總預算視覺化專案利用資料視覺化與社群網路的力量提升公民對政府預算規畫的監督能力。此專案利用各種互動式的視覺化技巧，包含樹狀圖 ( Treemap ) 、泡泡圖 ( Bubble Chart ) 搭配民眾反饋機制來展示預算數字的各種面向，例如歷史趨勢、跨部門比較、公眾意見與稅金的拆解。"
-moedict_title: "萌典 - 教育部國臺客語辭典民間版"
-moedict_description: "教育部國語辭典進化版，後亦整合英、法、德、閔南語對照以及筆畫、發音等功能，並基於開放協作精神而衍生出 iOS 、Android 、桌面應用程式、阿美語盟典等子專案，並持續舉辦小型黑客松「萌典松」至 2018 左右。"
-g0vLivestream_description: "每次 g0v 大松提案皆透過線上直播，因此你可以從 g0v Youtube 頻道找到 專案簡報與成果分享 的影片紀錄。若你對黑客松的活動現場感到興趣，黑客松亦有平面影像紀錄。"
-g0vLivestream_description2: ""
-g0vLivestream_description3: ""
-g0vLivestream_description4: ""
-g0vGrantResults_title: "獎助金成果"
-g0vGrantResults_description: '由 「<a href="https://jothon.g0v.tw" target="_blank">g0v 揪松團</a>」 規畫執行的「'
-g0vGrantResults_description1: "g0v 公民科技創新獎助金"
-g0vGrantResults_description2: "」亦協助了包含「金流百科」、「農業災損幾多錢」、「開源神手」、「美國國會觀測站」、「投票指南」等許多專案。關於更多獎助金專案的成果，你可以到「"
-g0vGrantResults_description_link2: "公民科技創新獎助金成果報告"
-g0vGrantResults_description4: "」中取得更多資訊。"
-g0vJothon_link: "g0v 揪松團"
-g0vGrant_link: "g0v 公民科技創新獎助金"
+portfolioData: '自 2012 年底開始，零時政府以 g0v 黑客松作為起點，已舉辦了 4 次國際年會、4 屆公民科技獎助金、42+ 場黑客松、40+ 場受邀演講、150+ 次媒體報導，8000+ 遍布三大洲的貢獻者，成果皆以開放授權模式釋出。'
+portfolioMoreData: '更多數據可參考'
+dashboardLinkText: 'g0v 儀錶板'
+awesomeProjects: '以外，亦可參考 John Huang 製作的<a href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank">令人驚奇的零時政府 Awesome g0v projects</a>。'
+famousProjects: "數十次的黑客松亦產出了相當多的專案，所有專案成果及源碼均以開放授權分享於全體大眾，以下簡單介紹幾個知名 g0v 專案。"
+hackathonRecords: '每次 g0v 大松提案皆透過線上直播，因此你可以從 <a href="https://www.youtube.com/user/g0vTW/playlists">g0v YouTube 頻道</a>找到專案簡報與成果分享的影片紀錄。若你對黑客松的活動現場感到興趣，黑客松亦在 <a href="https://flickr.com/g0v/">g0v Flickr</a> 有平面影像紀錄。'
+grantsTitle: "獎助金成果"
+grantsDescription: '由「<a href="https://jothon.g0v.tw" target="_blank">g0v 揪松團</a>」規畫執行的「<a href="https://grants.g0v.tw/">g0v 公民科技創新獎助金</a>」亦協助了包含「金流百科」、「農業災損幾多錢」、「開源神手」、「美國國會觀測站」、「投票指南」等許多專案。關於更多獎助金專案的成果，你可以到「<a href="https://grants.g0v.tw/power/">公民科技創新獎助金成果報告</a>」中取得更多資訊。'
+
+# How to Join
 getInvolved_title: "如何參與？"
 getInvolved_description: "了解 g0v 最快的方式就是實際來參與一次。無論線上或線下，你都可以找得到各種管道與社群參與者互動。想要更了解開源協作的模式，可以參考"
 getInvolved_link: "g0v 開源協作手冊。"
+
+## Offline
 events: "線下：大小黑客松雙月黑客松與社群小松"
-hackathons: "雙月黑客松 / 大松"
-eventsBlurb: "自 g0v 發起以來每兩個月舉辦一次的雙月黑客松 ( 大松 ) 已是 g0v 的常駐活動了，在這裡你可以找到形形色色的參與者，無論是老手、新手、各種不同領域的人，都在這個一整天的活動中熱烈地討論、實作、並在活動結束時將成果向大家發表。"
+hackathons: "雙月黑客松／大松"
+eventsBlurb: "自 g0v 發起以來每兩個月舉辦一次的雙月黑客松（大松）已是 g0v 的常駐活動了，在這裡你可以找到形形色色的參與者，無論是老手、新手、各種不同領域的人，都在這個一整天的活動中熱烈地討論、實作、並在活動結束時將成果向大家發表。"
 eventsBlurbCont: "最重要的是，不會寫程式也可以參加大松！關於活動的更多細節可以在"
 jothonWebsite: "黑客松入口網「揪松網」"
 jothonFollow: "找到，你亦可關注"
 jothonLink: "揪松團"
 jothonEventInfo: "的公開活動頁面來隨時獲得最新活動的訊息。"
-otherHackathons: "專案黑客松 / 小松"
-infraHackathons: "除了大松以外，揪松團亦定期舉辦以社群基礎建設專案為主的「基礎松」，其他亦有各個 g0v 專案大大小小不定期的活動 ( 小松 )，可依自己關注的領域來選擇。"
+otherHackathons: "專案黑客松／小松"
+infraHackathons: "除了大松以外，揪松團亦定期舉辦以社群基礎建設專案為主的「基礎松」，其他亦有各個 g0v 專案大大小小不定期的活動（小松），可依自己關注的領域來選擇。"
 smallHackathons: "社群小松各有不同的性質，通常會在活動資訊中說明適合參與的對象，可定期關注臉書後勤中心與 g0v Slack 討論群組以取得活動的最新資訊。"
-onlinePlatform: "線上：臉書後勤中心與 slack 討論群組"
+
+## Online
+onlinePlatform: "線上：Facebook g0v 後勤中心與 Slack 聊天室"
 onlinePlatformBlurb: "除了線下活動外，社群參與者們也頻繁積極地在線上討論群組中交換專案的意見，是一個即時獲得社群回饋的方便管道。目前主要的討論群組包括："
-g0vFacebook: "g0v 後勤中心 ( 臉書 )"
-g0vSlack: "g0v 線上聊天室 ( Slack )"
+g0vFacebook: "g0v 後勤中心（Facebook）"
+g0vSlack: "g0v 線上聊天室（Slack）"
 codeOfConduct: "使用線上討論群組請注意群組規範，並保持良好的態度與禮貌。"
+
+## Other
 otherChannels: "其它管道"
 participateMore: "只要發揮 g0v 的草根精神，開工就等於參與！不過若你想要更具體的參與感，以下提供幾個其它的管道"
 donate: "捐款認養大松"
@@ -79,5 +81,6 @@ organize: "發起相關活動"
 organizeBlurb: "目前 g0v 黑客松主要仍在台灣舉行，但海外已有若干國家響應。在你的國家沒有嗎？何不考慮在你的國家發起 g0v 黑客松呢？"
 organizeLink: "現在就發起"
 moreInfo: "更多資訊"
-callToAction: "若你想參與 g0v 卻仍不得其門而入，就來看看"
-newcomerGuide: "新手指南!"
+callToAction: '若你想參與 g0v 卻仍不得其門而入，就來看看'
+newcomersGuideLinkText: '新手指南'
+baam: '！'

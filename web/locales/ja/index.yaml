@@ -1,10 +1,19 @@
+# Intro
 introBlurb: "台湾で設立された「g0v」は、情報の透明性、オープンな結果、オープンな協働をコアバリューとする自律分散型のシビックテックコミュニティです。g0vは、コミュニティの草の根の力を利用してパブリックな活動を行っています。"
-learnMore: "詳しくはこちら"
+introLearnMore: "詳しくはこちら"
+projectList: "プロジェクト一覧"
+howToJoin: "参加する"
+manifesto: "g0v 宣言"
+
+# Latest News
 latestNews: "最新のお知らせ"
 governNotice: "g0vは、すべての参加者がソーシャルメディアでの会話に参加する機会を提供するオープンなコミュニティです。そのため、g0vでは一定のガバナンス機構を設けています。すべての投稿は、管理者権限を持つコミュニティのメンバーによって最初にチェックされます。詳しくはこちらをご覧ください。"
 governDoc: "g0v SNSコミュニティのガバナンスに関するドキュメント"
-governHashtag: "#beyourownauthor"
-g0v_intro: "g0vって何?"
+governHashtag: "#beYourOwnAuthor"
+facebookPage: "Facebook Page"
+
+# What is g0v
+g0v_intro: "g0vって何？"
 g0v_description: "g0vは、市民の社会への貢献を深め、市民同士をつなぐことを目的とした草の根の市民コミュニティです。 g0vコミュニティを通じて、志を同じくするパートナーを見つけ、草の根的にアイデアを実践し、その結果をオープンライセンス形式で公開することで、より多くの人がその結果に立脚してレースを走ることができるようになります。"
 g0v_description2: "govを「0」に置き換え、政府の役割をゼロから見直すg0vは、0と1の世界から来たデジタルネイティブ世代のビジョンでもあるということを表現しています。"
 operatingStyle: "運営スタイル"
@@ -19,38 +28,27 @@ g0vManifesto_link: "こちらのページをご覧ください。"
 g0vManifesto_description2: ""
 g0vManySides_title: "g0vの多面性"
 g0vManySides_description: "g0vの多面性を少しの文章で説明するのは不可能です。そこで、g0vについてより詳しく知りたい方は、2013年のOSDCでカービーが行った基調講演の様子をご覧ください。"
+eventInfo: "イベント"
+newcomersGuide: "ビギナーズガイド"
+faq: "よくある質問"
+
+# Community Portfolio
 portfolio: "プロジェクトポートフォリオ"
-portfolioBlurb: "2012年後半の最初の g0v ハッカソン以来、g0v では 4 回の国際サミット、4 回のシビックテック助成金、 40 回以上のハッカソン、 40 回以上の登壇発表、150 以上のメディアによる報道、 8,000 人を超える参加者が世界各地から集まっており、全てのプロジェクトはオープンソースライセンスのもと行われています。より詳しい情報は、次のリンクを参照してください:"
-dashboardLink: "g0v ダッシュボード"
-johnHuang: "または John Huang の作った"
-portfolioLink: "g0v の素敵なプロジェクト一覧"
-portfolio_description2: "40 を超えるハッカソンで、多くのプロジェクトが生まれています。全てのプロジェクトではコードもオープンソースにし、オープンソースライセンスで、全ての人に開放しています。以下ではプロジェクトのいくつかを紹介します。"
-hackfolder_title: "Hackfoldr"
-hackfolder_description: "Hackfoldr はオンラインでのメモ取りをはるかに簡単にする、共同文書作成のプラットフォームです。Hackfoldr はすでに New Taipei water park fire incident, Kaohsiung gas explosions, Hong Kong umbrella movement, Taiwanese sunflower student movement を含む、多くのプロジェクトに導入されています。また、 g0v ハッカソンで最もよく使われている定番のデジタルツールです。"
-cofacts_title: "CoFacts LINE ボット"
-cofacts_description1: "これは、誤った情報を事実から分離するのに役立つ LINE チャットボットです。"
-cofacts_description2: "CoFacts LINE ボットを LINE の友だちとして登録して、デマの疑いのあるものをこのチャットボットに送ると、素早くファクトチェックした結果が得られます。"
-treasureArchive_title: "世界の片隅に残された台湾の国宝"
-treasureArchive_description: "イギリスやアメリカを含む多くの国が、ここ100年の、台湾の社会、地理、人物などに関する情報をアーカイブに残しています。これらは台湾人が過去を振り返るときに、より豊かな資料、視点や考え方をもたらしてきました。このプロジェクトではこれらの資料を各個人がスキャンしてアップロードし、再び一般の人々の目に触れるようにしています。"
-govBudgetVisualization_title: "中央政府予算の可視化"
-govBudgetVisualization_description: "中央政府予算の可視化プロジェクトでは、データ可視化とコミュニティの力を使って、公共の目による政府の支出の監督を強化します。このプロジェクトではツリーマップやバブルチャートといった、多様なデータ可視化の技法を用い、時間経過と共に政府の支出を比較したり対比したりします。"
-moedict_title: "萌辞書: コミュニティ版、マンダリン、福建語、客家辞書"
-moedict_description: "文部科学省 (Ministry of Education: MoE) 辞書の発展版で、英語、フランス語、ドイツ語、福建語の対訳、文字の書き順と発音を含み、そしてオープンコラボレーションの精神に基づいて、iOS、Android、デスクトップアプリケーションの開発、阿美語萌典などのサブプロジェクトを派生させ、2018年ごろまで小規模なハッカソン「萌典ソン」を開催していました。"
-g0vLivestream_description: "g0vハッカソンでのすべてのプロジェクト提案は、ライブストリームで共有され、次からアクセスできます。"
-g0vLivestream_description2: "g0v youtube channel."
-g0vLivestream_description3: "g0vハッカソンに興味がある方はg0v FlickerのURLにアクセスして下さい。"
-g0vLivestream_description4: "g0v Flickr."
-g0vGrantResults_title: "助成金成果について"
-g0vGrantResults_description: ""
-g0vGrantResults_description1: "g0vシビックテックプロトタイプ開発助成金制度"
-g0vGrantResults_description2: ' <a href="https://jothon.g0v.tw" target="_blank">g0v-jothon</a>が主催し、「Money-Flow」（金流百科）、「Agriculture Loss ValueEstimation」（農業損価値多錢）、「Taiwan God Hand project」（開源神手）、「US Taiwan Watch」（美國國會觀見站）、「評議員投票者ガイド」（投票指南）などのプロジェクトを支援してきました。この助成金によってサポートされているプロジェクトの詳細については、'
-g0vGrantResults_description_link2: "「シビックテックプロトタイプ開発助成金に関する最終報告書」"
-g0vGrantResults_description4: "をご参照ください。"
-g0vJothon_link: "g0v-jothon"
-g0vGrant_link: "シビックテックプロトタイプ開発助成金制度"
+portfolioData: '2012年後半の最初のg0vハッカソン以来、g0vでは4回の国際サミット、4回のシビックテック助成金、40回以上のハッカソン、40回以上の登壇発表、150以上のメディアによる報道、8,000人を超える参加者が世界各地から集まっており、全てのプロジェクトはオープンソースライセンスのもと行われています。'
+portfolioMoreData: 'より詳しい情報は、次のリンクを参照してください：'
+dashboardLinkText: 'g0v ダッシュボード'
+awesomeProjects: 'を参照してください，または John Huang の作った <a href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank">g0vの素敵なプロジェクト一覧</a>を参照してください。'
+famousProjects: "を超えるハッカソンで、多くのプロジェクトが生まれています。全てのプロジェクトではコードもオープンソースにし、オープンソースライセンスで、全ての人に開放しています。以下ではプロジェクトのいくつかを紹介します。"
+hackathonRecords: 'g0vハッカソンでのすべてのプロジェクト提案は、<a href="https://www.youtube.com/user/g0vTW/playlists">YouTubeライブストリーム</a>で共有され、次からアクセスできます。g0vハッカソンに興味がある方は<a href="https://flickr.com/g0v/">g0v Flickr</a>にアクセスして下さい。'
+grantsTitle: "助成金成果について"
+grantsDescription: '<a href="https://grants.g0v.tw/">g0vシビックテックプロトタイプ開発助成金制度</a>は<a href="https://jothon.g0v.tw" target="_blank">g0v-jothon</a>が主催し、「Money-Flow」（金流百科）、「Agriculture Loss ValueEstimation」（農業損価値多錢）、「Taiwan God Hand project」（開源神手）、「US Taiwan Watch」（美國國會觀見站）、「評議員投票者ガイド」（投票指南）などのプロジェクトを支援してきました。この助成金によってサポートされているプロジェクトの詳細については、「<a href="https://grants.g0v.tw/power/">シビックテックプロトタイプ開発助成金に関する最終報告書</a>」をご参照ください。'
+
+# How to Join
 getInvolved_title: "参加するには?"
 getInvolved_description: "g0vを知る1番早い方法は参加することです。オンライン、オフラインに関わらず、コミュニティのメンバーと交流するための多くのチャネルがあります。オープンソースコラボレーションについて詳しく知りたい場合は、"
 getInvolved_link: "g0vのオープンソースコラボレーションガイドをご覧ください。"
+
+## Offline
 events: "オフライン：2ヶ月に1度開催されるg0vハッカソンとローカルコミュニティハッカソン"
 hackathons: "g0vハッカソン（2ヶ月に1度開催）"
 eventsBlurb: "g0vハッカソンは私たちが長期に渡って開催しているイベントです。ここではあらゆる分野に精通した参加者に会うことができます。ハッカソンでは参加者が好きなプロジェクトをハッキングし課題に取り組み、1日の終わりに進捗と成果を報告します。"
@@ -62,11 +60,15 @@ jothonEventInfo: "ソーシャルメディアでは最新の情報を確認す�
 otherHackathons: "プロジェクトハッカソンとローカルコミュニティハッカソン"
 infraHackathons: "g0vハッカソンとは別に、g0v-jothonは、基本的なコミュニティインフラストラクチャの維持を支援するために、定期的に「インフラストラクチャハッカソン」を開催しています。"
 smallHackathons: "ローカルコミュニティハッカソンはそれぞれ性質が異なっており。多くのイベントで必要としている人材がわかるようになっています。この情報はg0v-facebookグループまたはg0v-slackにアクセスして見つけることができます。"
+
+## Online
 onlinePlatform: "オンライン: g0v facebook と slack のチャンネル"
 onlinePlatformBlurb: "オフラインのイベントに加えて、コミュニティの参加者は、オンラインのディスカッショングループでプロジェクトに関するアイデアを頻繁かつ活発に交換しており、コミュニティからのフィードバックを即座に得られる便利な方法となっています。 現在、主なディスカッショングループは以下の通りです。"
 g0vFacebook: "g0v facebook グループ"
 g0vSlack: "g0v Slack チャットプラットフォーム"
 codeOfConduct: "オンライン・ディスカッション・グループを利用する際には、グループのガイドラインを理解し、マナーとエチケットを守ってください。"
+
+## Others
 otherChannels: "その他のチャンネル"
 participateMore: "g0vの草の根精神に基づき、参加するための方法は様々です。いくつかの他の方法を示します。"
 donate: "寄付によるハッカソンのサポート"
@@ -79,5 +81,6 @@ organize: "関連するイベントを始める"
 organizeBlurb: "現在、g0vハッカソンは台湾を中心に開催されていますが、海外のいくつかの国が注目し始めています。あなたの国にまだありませんか？ あなたの国でg0vハッカソンを始めることを考えてみませんか？"
 organizeLink: "今すぐ始める"
 moreInfo: "もっと詳しく"
-callToAction: "g0vに参加したいけど、どうすればいいのかわからないという方は、こちらをご覧ください。"
-newcomerGuide: "ビギナーズガイド"
+callToAction: 'g0vに参加したいけど、どうすればいいのかわからないという方は、こちらをご覧ください：'
+newcomersGuideLinkText: 'ビギナーズガイド'
+baam: '。'
