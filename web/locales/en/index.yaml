@@ -7,8 +7,7 @@ manifesto: "g0v Manifesto"
 
 # Latest News
 latestNews: "Latest News"
-governNotice: "g0v is an open community which provides an oppurtunity for all participants to join in the conversation on its social media posts. Becuase of this, g0v has established certain governance mechanisms. All posts are first checked by members of the community who have admin privileges. To learn more, please view "
-governDoc: "g0v SNS community governance document."
+governNotice: 'g0v is an open community which provides an oppurtunity for all participants to join in the conversation on its social media posts. Becuase of this, g0v has established certain governance mechanisms. All posts are first checked by members of the community who have admin privileges. To learn more, please read the <a href="https://g0v.hackmd.io/@chihao/Hkm9tPaxr" target="_blank">g0v SNS community governance document</a>.'
 governHashtag: "#beYourOwnAuthor"
 facebookPage: "Facebook Page"
 
@@ -27,7 +26,7 @@ g0vManifesto_description: 'Originally drafted by <code>ipa</code>, the g0v manif
 g0vManifesto_link: "g0v Manifesto"
 g0vManifesto_description2: " page."
 g0vManySides_title: "The Many Sides of g0v"
-g0vManySides_description: "It is impossible to explain the many sides of g0v in a few sentences. So to learn more about g0v, please watch the keynote speach Kirby gave at OSDC in 2013 on"
+g0vManySides_description: 'It is impossible to explain the many sides of g0v in a few sentences. So to learn more about g0v, please watch the keynote speach Kirby gave at OSDC in 2013 on "g0v hackathon - code to refactor society."'
 eventInfo: "Events"
 newcomersGuide: "Newcomers Guide"
 faq: "FAQ"
@@ -45,15 +44,14 @@ grantsDescription: 'Organized by <a href="https://jothon.g0v.tw" target="_blank"
 
 ## How to Join
 getInvolved_title: "How to get involved?"
-getInvolved_description: "The best way to get to know g0v is to come participate. Whether online or offline, there are many channels to interact with members of the community. If you would like to learn more about open-source collaboration, you can take a look at "
-getInvolved_link: "g0v's open-source collaboration guide"
+getInvolved_description: 'The best way to get to know g0v is to come participate. Whether online or offline, there are many channels to interact with members of the community. If you would like to learn more about open-source collaboration, you can take a look at <a href="https://g0v.hackmd.io/@jothon/g0v-cowork-guideline" target="_blank">g0v open-source collaboration guide</a>.'
 
 ## Offline
 events: "Offline: Bimonthly g0v hackathons and smaller community hackathons"
 hackathons: "The bimonthly g0v hackathon"
 eventsBlurb: "The Bimontlhy g0v Hackathon is our long-running event. Here, you can meet participants of all walks of life. At hackathons, they hack away on their projects before presenting their progress at the end of the day."
 eventsBlurbCont: "The most important thing is, you can participate even if you don't write code! You can find out more details on our "
-jothonWebsite: "Hackathon Jothon website"
+jothonWebsite: "Jothon website"
 jothonFollow: " You can also follow the "
 jothonLink: "g0v-jothon"
 jothonEventInfo: " social media to get the newest event information."
