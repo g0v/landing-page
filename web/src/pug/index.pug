@@ -34,8 +34,7 @@ block body
         h2#news.m-0: :i18n index:latestNews
         hr
         p: :i18n index:governNotice
-          a(href="https://g0v.hackmd.io/@chihao/Hkm9tPaxr" target="_blank"): :i18n index:governDoc
-          p: :i18n index:governHashtag
+        p: :i18n index:governHashtag
         h3: :i18n index:facebookPage
         .fb-page(data-href="https://www.facebook.com/g0v.tw" data-tabs="timeline" data-width="500" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false")
           blockquote(cite="https://www.facebook.com/g0v.tw" class="fb-xfbml-parse-ignore")
@@ -77,9 +76,11 @@ block body
         hr
         p
           :i18n index:portfolioData
-          :i18n index:portfoliomoreData
+          | 
+          :i18n index:portfolioMoreData
           | 
           a(href=intlbase("dashboard/")): :i18n index:dashboardLinkText
+          | 
           :i18n index:awesomeProjects
         p
           :i18n index:famousProjects
@@ -96,9 +97,7 @@ block body
       .typeset.heading-contrast.pt-4
         h2#participate.m-0: :i18n index:getInvolved_title
         hr
-        p 
-          :i18n index:getInvolved_description
-          a(href="https://g0v.hackmd.io/@jothon/g0v-cowork-guideline" target="_blank"): :i18n index:getInvolved_link
+        p: :i18n index:getInvolved_description
         h3: :i18n index:events
         h4: :i18n index:hackathons
         p: :i18n index:eventsBlurb
@@ -136,6 +135,7 @@ block body
         h3: :i18n index:moreInfo
         p
           :i18n index:callToAction
+          | 
           a(href=intlbase("novice/")): :i18n index:newcomersGuideLinkText
           :i18n index:baam
 
