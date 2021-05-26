@@ -9,7 +9,7 @@ block body
       .text-muted g0v dashboard    
     hr    
     .text-center
-      a#update-time.btn.btn-outline-dark(role="button" href="https://yunlin-teng-437911.middle2.me/all" target="_blank"): :i18n dashboard:current
+      a#update-time.btn.btn-outline-dark(role="button" href="https://dashboard.g0v.tw/all" target="_blank"): :i18n dashboard:current
         span n/a
       p.text-center#loading-text: :i18n dashboard:loading
     .container.py-4
@@ -85,7 +85,7 @@ block body
 block script
   script(type='text/javascript').            
     $(window).on('load', function(){ 
-      $.get("https://yunlin-teng-437911.middle2.me/", function(data){      
+      $.get("https://dashboard.g0v.tw/", function(data){      
         $("#loading-text").fadeOut();
         //console.log(data);
         var date = new Date(data.create_at);
