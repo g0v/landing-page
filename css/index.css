@@ -214,6 +214,11 @@ nav.navbar .collapse {
   width: 300px;
   display: block;
 }
+.sticky a.clickable {
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  word-break: keep-all;
+}
 @media (max-width: 1200px) {
   #landing .dark-shape {
     left: -800px;
