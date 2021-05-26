@@ -18,10 +18,10 @@
     "build": "find . | grep \\.pug | xargs touch; npx lsc tool/parse-yaml.ls"
   },
   "dependencies": {
-    "livescript": "^1.6.0",
-    "fs-extra": "^8.0.0",
+    "fs-extra": "^8.1.0",
     "js-yaml": "^3.13.1",
+    "livescript": "^1.6.0",
     "marked": "0.7.0",
-    "template": "github:zbryikt/template#v2.1.10"
+    "template": "github:zbryikt/template#v2.3.13"
   }
 }
