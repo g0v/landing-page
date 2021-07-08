@@ -28,3 +28,8 @@ texts = Array.from(document.querySelectorAll('h1,h2,h3,h4,h5,h6'))
   .join('')
 <- font.sync texts, _
 */
+
+$('#intl-btn-group button').on 'click' ->
+  target_href = window.location.href.split('/')
+  target_href[4] = $(this).data('target')
+  window.location.href = target_href.join('/')

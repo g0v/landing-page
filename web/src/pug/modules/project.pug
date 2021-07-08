@@ -8,5 +8,11 @@ mixin project(id,title)
       hr
       block
 each item in data.project
-  +project(item.slug, item.zh.name)
-    | !{item.zh.description}
+  -
+    if(item[i18n.language()]) {
+      prjinfo = item[i18n.language()];
+    } else {
+      prjinfo = item.zh;
+    }
+  +project(item.slug, prjinfo.name)
+    | !{prjinfo.description}
