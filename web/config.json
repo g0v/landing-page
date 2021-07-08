@@ -7,7 +7,7 @@
   "i18n": {
     "default_locale": "zh-TW",
     "enabled": true,
-    "lng": ["en", "zh-TW", "ja"],
+    "lng": ["en", "zh-TW", "ja", "de"],
     "ns": ["default", "nav", "dashboard", "index"]
   }
 }
