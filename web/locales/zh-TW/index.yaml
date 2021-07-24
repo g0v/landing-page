@@ -7,8 +7,7 @@ manifesto: "g0v 宣言"
 
 # Latest news
 latestNews: "最新消息"
-governNotice: "g0v 為開放社群，在媒體平台上的貼文，提供「所有」參與者都有可以發表的機會，因此建立一套治理機制，通過發文審核後，文章將會透過擁有平台權限的參與者協助排程貼出。詳情可參考 g0v SNS 社群治理機制共筆"
-governDoc: "g0v SNS 社群治理機制共筆"
+governNotice: 'g0v 為開放社群，在媒體平台上的貼文，提供「所有」參與者都有可以發表的機會，因此建立一套治理機制，通過發文審核後，文章將會透過擁有平台權限的參與者協助排程貼出。詳情可參考 <a href="https://g0v.hackmd.io/@chihao/Hkm9tPaxr" target="_blank">g0v SNS 社群治理機制共筆</a>。'
 governHashtag: "#自己的小編自己當"
 facebookPage: "Facebook 粉絲專頁"
 
@@ -37,7 +36,7 @@ portfolio: "社群成果"
 portfolioData: '自 2012 年底開始，零時政府以 g0v 黑客松作為起點，已舉辦了 4 次國際年會、4 屆公民科技獎助金、42+ 場黑客松、40+ 場受邀演講、150+ 次媒體報導，8000+ 遍布三大洲的貢獻者，成果皆以開放授權模式釋出。'
 portfolioMoreData: '更多數據可參考'
 dashboardLinkText: 'g0v 儀錶板'
-awesomeProjects: '以外，亦可參考 John Huang 製作的<a href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank">令人驚奇的零時政府 Awesome g0v projects</a>。'
+awesomeProjects: '以及 John Huang 製作的<a href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank">令人驚奇的零時政府 Awesome g0v projects</a>。'
 famousProjects: "數十次的黑客松亦產出了相當多的專案，所有專案成果及源碼均以開放授權分享於全體大眾，以下簡單介紹幾個知名 g0v 專案。"
 hackathonRecords: '每次 g0v 大松提案皆透過線上直播，因此你可以從 <a href="https://www.youtube.com/user/g0vTW/playlists">g0v YouTube 頻道</a>找到專案簡報與成果分享的影片紀錄。若你對黑客松的活動現場感到興趣，黑客松亦在 <a href="https://flickr.com/g0v/">g0v Flickr</a> 有平面影像紀錄。'
 grantsTitle: "獎助金成果"
@@ -45,8 +44,7 @@ grantsDescription: '由「<a href="https://jothon.g0v.tw" target="_blank">g0v �
 
 # How to Join
 getInvolved_title: "如何參與？"
-getInvolved_description: "了解 g0v 最快的方式就是實際來參與一次。無論線上或線下，你都可以找得到各種管道與社群參與者互動。想要更了解開源協作的模式，可以參考"
-getInvolved_link: "g0v 開源協作手冊。"
+getInvolved_description: '了解 g0v 最快的方式就是實際來參與一次。無論線上或線下，你都可以找得到各種管道與社群參與者互動。想要更了解開源協作的模式，可以參考 <a href="https://g0v.hackmd.io/@jothon/g0v-cowork-guideline" target="_blank">g0v 開源協作手冊</a>。'
 
 ## Offline
 events: "線下：大小黑客松雙月黑客松與社群小松"
