@@ -7,19 +7,19 @@ manifesto: "g0v Manifesto"
 
 # Latest News
 latestNews: "Latest News"
-governNotice: 'g0v is an open community which provides an oppurtunity for all participants to join in the conversation on its social media posts. Becuase of this, g0v has established certain governance mechanisms. All posts are first checked by members of the community who have admin privileges. To learn more, please read the <a href="https://g0v.hackmd.io/@chihao/Hkm9tPaxr" target="_blank">g0v SNS community governance document</a>.'
+governNotice: 'g0v is an open community which provides an opportunity for all participants to join the conversation on its social media posts. Because of this, g0v has established certain governance mechanisms. All posts are first checked by members of the community who have admin privileges. To learn more, please read the <a href="https://g0v.hackmd.io/@chihao/Hkm9tPaxr" target="_blank">g0v SNS community governance document</a>.'
 governHashtag: "#beYourOwnAuthor"
 facebookPage: "Facebook Page"
 
 # What is g0v
 g0v_intro: "What is g0v?"
-g0v_description: "g0v is a grassroots level social movement community dedicated to deepening the civic engagements and connections between social arena and citizen. You can find like-minded partners in the g0v community, achieve your ideas in a grassroots manner, then release the results under an opensource license, thus more people can stand on your shoudlers."
+g0v_description: "g0v is a grassroots social movement community dedicated to deepening the civic engagements and connections between the social arena and citizens. You can find like-minded partners in the g0v community, achieve your ideas in a grassroots manner, and then release the results under an open-source license, letting people stand on your shoulders."
 g0v_description2: "g0v replaces \"o\" in gov with \"0\", which reimagines the role of government from scratch zero and reflects the vision from 0 to 1 of the digital natives."
 operatingStyle: "How g0v Works"
 operatingBlurb: "g0v.tw primarily operates online with a large hackathon occurring once every two months. Participants propose different projects and call for volunteers. Oftentimes, in addition to meeting at the hackathons, projects will split off, holding their own smaller meetups and hackathons independent of the larger g0v events. This operating mode encourages bottom-up ideation, fostering activism over slacktivism."
-hackathonBlurb: "(Note: Hackathon is a portmanteau of \"hacker\" and \"marathon\", a large-scale event that takes place over the course of one to two days. Volunteers form groups, work and report their progress. Many projects will meet before the event and form a plan for the day, to make sure they can get as much done as possible in the limited time available.)"
+hackathonBlurb: "(Note: Hackathon is a portmanteau of \"hacker\" and \"marathon\", a large-scale event that takes place over the course of one to two days. Volunteers form groups, work and report their progress. Many projects will meet before the event and form a plan for the day to make sure they can get as much done as possible in the limited time available.)"
 communityMakeup: "People Who Make g0v"
-communityBlurb: "Members of g0v are both online and offline and come from all fields. The only requirement is that you believe in the principal of open-source collaboration, you don’t need to be a software engineer. In the early days, most members of g0v were software engineers, but now over 60% of participants are not from a tehcnical background."
+communityBlurb: "Members of g0v are both online and offline and come from all fields. The only requirement is that you believe in the principle of open-source collaboration. You don't need to be a software engineer; although most members in the early days of g0v were software engineers, now over 60% of participants are not from a technical background."
 cantCode: "Is it a problem if I can’t write code? <b>Not at all!</b>"
 g0vManifesto_title: "g0v Manifesto"
 g0vManifesto_description: 'Originally drafted by <code>ipa</code>, the g0v manifesto, after many rounds of community deliberation and discussion, now clearly represents and define the g0v spirit, the logic of open-source collaboration. It is a kind of "constitution" for the g0v community. If you want to learn more, you can view the '
@@ -33,12 +33,12 @@ faq: "FAQ"
 
 # Community Portfolio
 portfolio: "Community Portfolio"
-portfolioData: 'Since the first g0v hackathon in late 2012, g0v has hosted 4 international summits, 4 civic tech grants, over 40 hackathons, over 40 speeches, been involved in over 150 media reports and there are now over 8,000 participants from all over the world, all projects use an opern-source lisence.'
+portfolioData: 'Since the first g0v hackathon in late 2012, g0v has hosted 4 international summits, 4 civic tech grants, over 40 hackathons, and over 40 speeches, and g0v has been involved in over 150 media reports. There are now over 8,000 participants from all over the world.'
 portfolioMoreData: 'Visit'
 dashboardLinkText: 'g0v Dashboard'
 awesomeProjects: 'for more information, or visit <a href="https://chunyenhuang.github.io/awesome-g0v-projects/#/" target="_blank">Awesome g0v projects</a> by John Huang.'
 famousProjects: "After over 40 hackathons, there have been many projects which have come about. All projects use open-source code and open-source licenses that are open to all. Below are an introduction to some of the projects."
-hackathonRecords: 'All project proposals at g0v hackathons are shared through livestream and accessible through the <a href="https://www.youtube.com/user/g0vTW/playlists">g0v YouTube channel</a>. If you are interested in g0v hackathons, you can acess the media records at <a href="https://flickr.com/g0v/">g0v Flickr</a>.'
+hackathonRecords: 'All project proposals at g0v hackathons are shared through livestream and accessible through the <a href="https://www.youtube.com/user/g0vTW/playlists">g0v YouTube channel</a>. If you are interested in g0v hackathons, you can access the media records at <a href="https://flickr.com/g0v/">g0v Flickr</a>.'
 grantsTitle: "g0v Civic Tech Prototype Grant"
 grantsDescription: 'Organized by <a href="https://jothon.g0v.tw" target="_blank">g0v-jothon</a>, the <a href="https://grants.g0v.tw/">g0v Civic Tech Prototype Grant</a> has helped projects such as "Money-Flow" (金流百科), "Agriculture Loss Value Estimation" (農業災損幾多錢), "Taiwan God Hand Project" (開源神手), "U.S. Taiwan Watch" (美國國會觀測站) and "Voting Guide" (投票指南). For more information on the projects that have been supported by this grant, visit the <a href="https://grants.g0v.tw/power/">grant website</a>.'
 
@@ -52,7 +52,7 @@ hackathons: "The bimonthly g0v hackathon"
 eventsBlurb: "The Bimontlhy g0v Hackathon is our long-running event. Here, you can meet participants of all walks of life. At hackathons, they hack away on their projects before presenting their progress at the end of the day."
 eventsBlurbCont: "The most important thing is, you can participate even if you don't write code! You can find out more details on our "
 jothonWebsite: "Jothon website"
-jothonFollow: " You can also follow the "
+jothonFollow: ". You can also follow the "
 jothonLink: "g0v-jothon"
 jothonEventInfo: " social media to get the newest event information."
 otherHackathons: "project hackathons/small hackathons"
@@ -70,7 +70,7 @@ codeOfConduct: "Please be kind and abide by our code of conduct when participati
 otherChannels: "Other channels"
 participateMore: "In the spirit of our grassroots movement, there are many ways to participate. Here are some additional examples:"
 donate: "Support the hackathon by donation"
-donateBlurb: "g0v's bimonlthy hackathons are most run by volunteers. The venue, food and all money required to run the event are all raised by community members. You can also support us through online donation."
+donateBlurb: "g0v's bimonthly hackathons are mostly run by volunteers. The venue, food, and all money required to run the event are all raised by community members. You can also support us through online donation."
 donateLink: "Donate"
 propose: "Propose a Project Grant"
 proposeBlurb: "The g0v Jothon Organizing Group stewards the civic hacker community by funding relevant projects. Anyone with a relevant civic hacker project can apply with a proposal."
