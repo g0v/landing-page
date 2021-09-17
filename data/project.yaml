@@ -12,7 +12,7 @@
     description: |
       We need a way to organize many dynamic documents before and during hackathons.
       Thus, we built this small single-page static web application that reads a list of URLs from an EtherCalc document, rendering it in a way similar to a Google docs folder. If the document supports read-only mode, we use that by default when it is opened by the user, and provide an additional edit link.
-      Hackfoldr is a collaborative writing platform which makes online note-taking much easier. There are already many projects which have used hackfoldr, including the New Taipei water park fire incident, Kaohsiung gas explosions, Hong Kong umbrella movement, and Taiwanese sunflower student movement. It is also the most common digital tool used at g0v hackathons.
+      Hackfoldr is a collaborative writing platform which makes online note-taking much easier. There are already many projects which have used hackfoldr, including the New Taipei water park fire incident, the Kaohsiung gas explosions, the Hong Kong Umbrella Movement, and the Taiwan Sunflower Student Movement. It is also the most common digital tool used at g0v hackathons.
   ja:
     name: Hackfoldr
     description: |
@@ -48,7 +48,7 @@
   en:
     name: A Search for Lost Taiwanese Treasures
     description: |
-      For the past hundred years, many countries – including Britain and the United States – have collected information about Taiwan in their national archives. We encouraged volunteers to enter these public archives and scan them, making them an accessible part of the public discourse in Taiwan.
+      For the past hundred years, many countries – including Britain and the United States – have collected information about Taiwan in their national archives. We encouraged volunteers to enter these public archives and scan the information, making it an accessible part of the public discourse in Taiwan.
   ja:
     name: 世界の片隅に残された台湾の国宝
     description: |
@@ -65,7 +65,7 @@
   en:
     name: Government Budget Visualization
     description: |
-      The Taiwan Central Government Budget project supercharges citizens with the power of visualization and social networking to supervise government spending.
+      The Taiwan Central Government Budget project supercharges citizens with the power of visualization and social networks to supervise government spending.
       
       By combining interactive techniques like treemaps and bubble charts with a feedback mechanism, this project provides various perspectives on budget data like historical trends, cross-department comparisons, public opinion, and breakdowns of government tax expenditures.
   ja:
@@ -82,7 +82,7 @@
   en:
     name: Moedict, the community's Mandarin, Hokkien and Hakka dictionary
     description: |
-      The improved version of the Ministry of Education (MoE) dictionary will include side-by-side translation of English, French, German, and Hokkien, the stroke-order and pronounciation of characters, as well as versions fit for iOS, Android and Desktop built on open-source collaboration. The Amis language dictionary and other forked projects are still frequently hosting small hackathons.
+      The improved version of the Ministry of Education (MoE) dictionary will include side-by-side translations of English, French, German, and Hokkien; the stroke-order and pronunciation of characters; as well as versions for iOS, Android, and Desktop built on open-source collaboration. The Amis language dictionary and other forked projects are still frequently hosting small hackathons.
   ja:
     name: 萌辞書：コミュニティ版、マンダリン、福建語、客家辞書
     description: |
