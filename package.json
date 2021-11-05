@@ -22,6 +22,11 @@
     "js-yaml": "^3.13.1",
     "livescript": "^1.6.0",
     "marked": "0.7.0",
+    "fedep": "0.0.17",
     "@zbryikt/template": "^2.3.22"
+  },
+  "frontendDependencies": {
+    "root": "web/static/assets/lib",
+    "modules": []
   }
 }
