@@ -22,6 +22,6 @@
     "js-yaml": "^3.13.1",
     "livescript": "^1.6.0",
     "marked": "0.7.0",
-    "template": "github:zbryikt/template#v2.3.13"
+    "@zbryikt/template": "^2.3.22"
   }
 }
