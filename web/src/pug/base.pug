@@ -16,8 +16,8 @@ html(lang="en")
     base(href="/")
     include /modules/library.pug
     //-+css("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
-    +css("/assets/bootstrap/4.3.1/bootstrap.min.css")
-    +css("/assets/ldui/ldui.min.css")
+    +css("/assets/lib/bootstrap/4.3.1/bootstrap.min.css")
+    +css("/assets/lib/ldui/ldui.min.css")
     +css("/css/index.css")
     block head
   body
@@ -26,10 +26,10 @@ html(lang="en")
     block body
     include /modules/foot.pug
     //-script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.26/bootstrap-native-v4.min.js")
-    +script("/assets/bootstrap.native/2.0.15/bootstrap.native.v4.min.js")
-    +script("/assets/ldui/ldui.min.js")
-    +script("/assets/xfl/xfl.js")
+    +script("/assets/lib/bootstrap.native/2.0.15/bootstrap.native.v4.min.js")
+    +script("/assets/lib/ldui/ldui.min.js")
+    +script("/assets/lib/xfl/xfl.js")
     +script("//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-59395.js")
-    +script("/assets/jquery/jquery-3.5.1.min.js")
+    +script("/assets/lib/jquery/jquery-3.5.1.min.js")
     +script("/js/index.min.js")
     block script
