@@ -24,6 +24,8 @@ Which installs required packages and start the server for you at [http://localho
 The folder structure basically follows `@zbryikt/template` and the location for source files and resource files:
 
  - `web` - all frontend stuff
+   - `config.json` - server configuration
+   - `locales` - i18n resources
    - `src` - source files
      - `pug` - all pug files
      - `ls` - all livescript files
