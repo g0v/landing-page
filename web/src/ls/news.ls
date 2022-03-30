@@ -1,4 +1,4 @@
-RSS_URL = "https://cors-anywhere.herokuapp.com/https://g0v.news/feed"
+RSS_URL = "https://cors.g0v.ronny.tw/g0vrss.php"
 
 newsDom = document.getElementById("g0vnews")
 fetch(RSS_URL)
