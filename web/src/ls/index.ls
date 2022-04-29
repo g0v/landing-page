@@ -29,7 +29,8 @@ texts = Array.from(document.querySelectorAll('h1,h2,h3,h4,h5,h6'))
 <- font.sync texts, _
 */
 
-$('#intl-btn-group button').on 'click' ->
-  target_href = window.location.href.split('/')
-  target_href[4] = $(this).data('target')
-  window.location.href = target_href.join('/')
+Array.from(document.querySelectorAll '#intl-btn-group button').map (btn) ->
+  (evt) <- btn.addEventListener \click, _
+  lng = evt.target.getAttribute \data-target
+  new-path = window.location.pathname.replace(/^\/intl\/[^/]+/, "/intl/#lng")
+  window.location.href = "#{window.location.origin}#{new-path}"

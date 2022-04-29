@@ -25,9 +25,11 @@ texts = Array.from(document.querySelectorAll('h1,h2,h3,h4,h5,h6'))
   .join('')
 <- font.sync texts, _
 */
-$('#intl-btn-group button').on('click', function(){
-  var target_href;
-  target_href = window.location.href.split('/');
-  target_href[4] = $(this).data('target');
-  return window.location.href = target_href.join('/');
+Array.from(document.querySelectorAll('#intl-btn-group button')).map(function(btn){
+  return btn.addEventListener('click', function(evt){
+    var lng, newPath;
+    lng = evt.target.getAttribute('data-target');
+    newPath = window.location.pathname.replace(/^\/intl\/[^/]+/, "/intl/" + lng);
+    return window.location.href = window.location.origin + "" + newPath;
+  });
 });
