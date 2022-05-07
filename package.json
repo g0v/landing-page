@@ -21,8 +21,8 @@
     "fs-extra": "^8.1.0",
     "js-yaml": "^3.13.1",
     "livescript": "^1.6.0",
-    "fedep": "0.0.17",
-    "@zbryikt/template": "^2.3.22"
+    "fedep": "1.1.7",
+    "@zbryikt/template": "^2.3.37"
   },
   "frontendDependencies": {
     "root": "web/static/assets/lib",
