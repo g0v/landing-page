@@ -26,7 +26,7 @@ block body
           .card-body.text-center
             p.card-text
               span 0
-              | 個
+              :i18n dashboard:quantifier_1
               br
               :i18n dashboard:slack_channels
 
@@ -41,35 +41,35 @@ block body
           .card-body.text-center
             p.card-text
               span 0
-              | 次
+              :i18n dashboard:quantifier_2
               br
               a(href='https://summit.g0v.tw/', target='_blank'): :i18n dashboard:summit
         .card#hackathon-count
           .card-body.text-center
             p.card-text
               span 0
-              | 次
+              :i18n dashboard:quantifier_2
               br
               a(href='https://jothon.g0v.tw/events/', target='_blank'): :i18n dashboard:hackathon
         .card#hackathon-proposals
           .card-body.text-center
             p.card-text
               span 0
-              | 個
+              :i18n dashboard:quantifier_1
               br
               a(href='https://docs.google.com/spreadsheets/d/1C9-g1pvkfqBJbfkjPB0gvfBbBxVlWYJj6tTVwaI5_x8/', target='_blank'): :i18n dashboard:proposal
         .card#fanpage-like
           .card-body.text-center
             p.card-text
               span 0
-              | 人
+              :i18n dashboard:quantifier_3
               br
               a(href='https://www.facebook.com/g0v.tw', target='_blank'): :i18n dashboard:likes
         .card#fanpage-follow
           .card-body.text-center
             p.card-text
               span 0
-              | 人
+              :i18n dashboard:quantifier_3
               br
               a: :i18n dashboard:follows
         .card#github-repos
@@ -83,6 +83,7 @@ block body
       | #[a(href="https://github.com/g0v/g0v-dashboard" target="_blank") g0v dashboard]
       :i18n dashboard:is_opensource
 block script
+  script(src='https://code.jquery.com/jquery-3.6.1.min.js' integrity='sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=' crossorigin='anonymous')
   script(type='text/javascript').            
     $(window).on('load', function(){ 
       $.get("https://dashboard.g0v.tw/", function(data){      
