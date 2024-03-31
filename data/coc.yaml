@@ -1,9 +1,10 @@
+lastupdated: "2023.04.05"
 zh: |
   g0v 社群參與者應共同致力於提供一個友善且無騷擾的環境給每一位參與者，無論其性別、性傾向、年紀、身心理狀態、外貌、族群、信仰、政治立場或技術偏好。
 
   在任何社群線上、線下活動使用含有影射性、暴力、與歧視的言語及意象，包括在黑客松、研討會、講座、工作坊、聚會、社群媒體、聊天室等場域，甚至源碼或各類文件中，皆是不恰當的。
 
-  若違反守則，其它參與者應主動制止其騷擾或不恰當的行為。管理員或坑主亦有權驅離違反守則者，任何參與者皆沒有責任對任何遭驅離者已投入的金錢、資源等（如報名費、捐款等）做退還或補償。
+  若違反守則，管理員或坑主應當且有權驅離違反守則者，其它參與者亦得主動制止其騷擾或不恰當的行為。任何參與者皆沒有責任對任何遭驅離者已投入的金錢、資源等（如報名費、捐款等）做退還或補償。講者、贊助者、貢獻者與坑主等角色亦為參與者的一員，因此這些角色同樣受到此守則的規範。
 
   騷擾包含：
 
@@ -16,11 +17,9 @@ zh: |
 
   當參與者要求停止騷擾行為時，請即刻停止相關的騷擾行為。
 
-  講者、贊助者、貢獻者與坑主等角亦為參與者的一員，因此這些角色同樣受到此守則的規範。若這些角色有違反守則的行為出現，其它參與者亦應主動制止其騷擾或不恰當的行為。管理員或坑主亦有權驅離違反守則者，任何參與者皆沒有責任對任何遭驅離者已投入的金錢、資源等（如報名費、捐款等）做退還或補償。
-
   如果您被騷擾，或者發現有人被騷擾，或有任何其他疑慮，請立刻向其他參與者、管理員或活動籌備團隊求助。
 
-  g0v 社群預期所有的參與者無論在任何線上 / 線下場域，都能夠遵守上述規則。
+  g0v 社群預期所有的參與者無論在任何線上／線下場域，都能夠遵守上述規則。
 
   ## 需要協助嗎？
 
@@ -30,10 +29,10 @@ zh: |
 
   ## 授權
 
-  g0v 社群守則原始版本改作自: [Conference Code of Conduct](https://confcodeofconduct.com/)，原文以 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US) 授權釋出。
+  g0v 社群守則原始版本改作自：[Conference Code of Conduct](https://confcodeofconduct.com/)，原文以 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US) 授權釋出。
 
-  關於守則的協作、修改或建議可至 [g0v 社群守則 Repo](https://github.com/g0v/coc/) 提出 。
-en: |  
+  關於守則的協作、修改或建議可至 [g0v 社群守則 Repo](https://github.com/g0v/coc/) 提出。
+en: |
   Participants in the g0v community must work together to create a friendly environment free of harassment for all participants, regardless of their gender, sexual orientation, mental state, appearance, race, religious or political beliefs, or technological preferences.
 
   Any sexually explicit, violent or discriminatory language and/or imagery is inappropriate at any online or offline community event/space, including at hackathons, seminars, speeches, workshops, gatherings, social media chatrooms and even in source code or documents.
@@ -44,17 +43,27 @@ en: |
 
   Harassment includes:
 
-  Offensive comments regarding the gender, sexual orientation, mental state, appearance, race, religious or political beliefs, or technological preferences of others.
-  Displaying sexually explicit images in public
-  Intentionally intimidating, stalking, following or harassing the photographer or cameraperson
-  Repeatedly disrupting the proceedings of speeches, online cooperation, or other events through verbal or other means
-  Inappropriate physical contact
-  Unwelcomed sexual attention
+  - Offensive comments regarding the gender, sexual orientation, mental state, appearance, race, religious or political beliefs, or technological preferences of others;
+  - Displaying sexually explicit images in public;
+  - Intentionally intimidating, stalking, following or harassing the photographer or cameraperson;
+  - Repeatedly disrupting the proceedings of speeches, online cooperation, or other events through verbal or other means;
+  - Inappropriate physical contact;
+  - Unwelcomed sexual attention.
+
   Please immediately stop such harassing behaviour when requested to do so by other participants.
 
   If you have been harassed or have discovered that others have been harassed, please immediately ask for help from other participants, managers or the event organising team.
 
-  The g0v community hopes that participants can follow the above rules at both online and offline events
+  The g0v community hopes that participants can follow the above rules at both online and offline events.
 
-  Need Help?
+  ## Need Help?
+
   If you run into any difficulties, you can ask for help from the project owner or the event organising team. If they are unable to help you, you can get in contact with the jothon team.
+
+  ----
+
+  ## License
+
+  g0v Code of Conduct was based on [Conference Code of Conduct](https://confcodeofconduct.com/), released under [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
+
+  Refer to [g0v Code of Conduct repo](https://github.com/g0v/coc/) for collaboration, amendment or comments regarding this document.
