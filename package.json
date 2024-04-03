@@ -18,14 +18,17 @@
     "build": "find . | grep \\.pug | xargs touch; npx lsc tool/parse-yaml.ls"
   },
   "dependencies": {
-    "fs-extra": "^8.1.0",
-    "js-yaml": "^3.13.1",
-    "livescript": "^1.6.0",
+    "@zbryikt/template": "^2.3.22",
     "fedep": "0.0.17",
-    "@zbryikt/template": "^2.3.22"
+    "fs-extra": "^8.1.0",
+    "livescript": "^1.6.0"
   },
   "frontendDependencies": {
     "root": "web/static/assets/lib",
     "modules": []
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "marked": "^12.0.1"
   }
 }
