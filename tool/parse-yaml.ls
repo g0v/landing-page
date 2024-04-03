@@ -1,7 +1,8 @@
-require! <[fs fs-extra js-yaml marked]>
+require! <[fs fs-extra js-yaml marked marked-gfm-heading-id]>
 
 option = breaks: true, renderer: new marked.Renderer!
 marked.set-options option
+marked.use marked-gfm-heading-id.gfmHeadingId!
 convert = (obj) ->
   if typeof(obj) == \object => (for k,v of obj => obj[k] = convert(v))
   else if typeof(obj) == \string and /\n/.exec(obj) => obj = marked.parse(obj.replace(/\n/g,'\r\n')).replace(\n/g,'')
