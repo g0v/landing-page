@@ -33,16 +33,12 @@ Array.from(document.querySelectorAll('#intl-btn-group button')).map(function(btn
     return window.location.href = window.location.origin + "" + newPath;
   });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Apply a Japanese font if the selected lang is ja.
-  var url = window.location.href;
-  if (window.location.href.includes("intl/ja")) {
-      document.body.style.fontFamily = 'Noto Sans JP';
-
-      const style = document.createElement('style');
-      document.head.appendChild(style);
-      style.sheet.insertRule(`.typeset { font-family: 'Noto Sans JP', Roboto, Helvetica,
-        Arial, sans-serif; }`, 0);
+document.addEventListener('DOMContentLoaded', function(){
+  var url, style;
+  url = window.location.href;
+  if (url.includes('intl/ja')) {
+    style = document.createElement('style');
+    document.head.appendChild(style);
+    return style.sheet.insertRule("html, body, .typeset { font-family: 'Noto Sans JP', 'Noto Sans TC', Roboto, Helvetica, Arial, sans-serif; }", 0);
   }
 });
