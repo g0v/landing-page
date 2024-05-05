@@ -33,3 +33,12 @@ Array.from(document.querySelectorAll('#intl-btn-group button')).map(function(btn
     return window.location.href = window.location.origin + "" + newPath;
   });
 });
+document.addEventListener('DOMContentLoaded', function(){
+  var url, style;
+  url = window.location.href;
+  if (url.includes('intl/ja')) {
+    style = document.createElement('style');
+    document.head.appendChild(style);
+    return style.sheet.insertRule("html, body, .typeset { font-family: 'Noto Sans JP', 'Noto Sans TC', Roboto, Helvetica, Arial, sans-serif; }", 0);
+  }
+});

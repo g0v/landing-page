@@ -34,3 +34,11 @@ Array.from(document.querySelectorAll '#intl-btn-group button').map (btn) ->
   lng = evt.target.getAttribute \data-target
   new-path = window.location.pathname.replace(/^\/intl\/[^/]+/, "/intl/#lng")
   window.location.href = "#{window.location.origin}#{new-path}"
+
+document.addEventListener 'DOMContentLoaded', ->
+  url = window.location.href
+  if url.includes 'intl/ja'
+    # Overwrite the Traditional Chinese font with the Japanese one.
+    style = document.createElement 'style'
+    document.head.appendChild style
+    style.sheet.insertRule "html, body, .typeset { font-family: 'Noto Sans JP', 'Noto Sans TC', Roboto, Helvetica, Arial, sans-serif; }", 0
