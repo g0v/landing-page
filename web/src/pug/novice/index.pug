@@ -36,7 +36,11 @@ block body
           li 到 #[a(href="https://www.facebook.com/groups/g0v.general/") FB 社團 後勤中心] 參與討論
           li 在 #[a(href="https://g0v.hackmd.io") g0v hackmd] 共筆看看有沒有感興趣的專案
     .row.mt-4.pt-4
-      .d-none.d-md-block.col-md.mb-4(style="height:350px")
+      .d-none.d-md-block.col-md.mb-4.position-relative(style="height:550px;text-align:center")
+        input.d-none(type="checkbox" name="covertoggle" id="covertoggle")
+        label.position-absolute.btn.btn-dark(for="covertoggle" style="font-size:2.5rem;top:50%;left:39%;z-index:1;cursor:pointer;") 點擊互動
+        div.position-absolute(style="filter: blur(1rem);background-color: rgba(255,255,255,0.8);width:100%;height:100%;cursor:pointer")
+          
         iframe(src="https://awesome.g0v.tw/", frameborder="0", style="width:100%;height:100%") 
     
     .text-center.my-4.py-4
