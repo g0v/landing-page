@@ -123,6 +123,12 @@ nav.navbar .collapse
     text-decoration: none
     background-color: #dc3545
 
+#covertoggle:checked ~ div,
+#covertoggle:checked ~ label,
+#covertoggle:checked {
+  display: none;
+}
+
 @import 'landing.styl'
 @import 'intro.styl'
 @import 'project.styl'
