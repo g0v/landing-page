@@ -1,0 +1,42 @@
+extends /base.pug
+block head
+  +css("/css/g0vernance.css")
+block body
+  .w-1024.px-2.px-lg-4.mx-auto.rwd.typeset.heading-contrast
+    .text-center.my-4.pt-4
+      img(src="/assets/img/g0v-only.svg",style="width:3em")
+      h1.display-4.font-weight-bold 社群參與的各種#[span(data-black="禮貌") 姿勢]
+      .text-muted Community g0vernance
+    .text-center.text-sm.my-4.text-muted #[a(href="https://g0v.hackmd.io/vYdTfaYeR7SnIU3zT5evOw?view", target="_blank") 編修共筆]
+    hr    
+    
+
+    h2 社群治理機制列表
+    .row
+      .col-md-8
+        each item, key in data.g0vernance
+          h3(id="g0vernance-"+key) g0v !{key}
+          each _i in item
+            a.mb-2.d-block(href=_i.url, target="_blank") !{_i.name}
+      .col-md-4
+        .sticky(style="max-height: 80vh; overflow-y: auto;"): .list-group.text-sm
+          each item, key in data.g0vernance
+            .list-group-item.text-truncate(data-scrollto=`#${"g0vernance-"+key}`) g0v !{key}
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+
