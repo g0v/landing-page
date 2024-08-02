@@ -1,9 +1,10 @@
-[data-black]:hover {
+[data-black] {
+  display: inline-block;
   position: relative;
 }
-[data-black]:hover:after {
+[data-black]:hover::after {
   content: attr(data-black);
-  background: #000;
+  background: #222324;
   color: #fff;
   position: absolute;
   top: 0;
