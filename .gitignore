@@ -6,3 +6,6 @@ npm-debug.log
 !.gitignore
 _public
 memo
+
+web/static/index.html
+web/static/**/index.html
