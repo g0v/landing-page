@@ -1,6 +1,10 @@
 [data-black] {
   display: inline-block;
+  border-bottom: 1px dotted #d60000;
   position: relative;
+}
+[data-black]:hover {
+  border-color: transparent;
 }
 [data-black]:hover::after {
   content: attr(data-black);

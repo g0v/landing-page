@@ -1,6 +1,9 @@
 [data-black]
   display: inline-block
+  border-bottom: 1px dotted #d60000
   position: relative
+  &:hover
+    border-color: transparent
   &:hover::after
     content: attr(data-black)
     background: #222324
