@@ -13,16 +13,6 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: #222324;
-line
-}
-p {
-  line-height: 1.75em;
-}
-li {
-  margin-bottom: 0.5em;
-}
-li:last-child {
-  margin-bottom: 0;
 }
 b,
 strong {
@@ -156,11 +146,6 @@ nav.navbar .collapse {
   color: #fff;
   text-decoration: none;
   background-color: #dc3545;
-}
-#covertoggle:checked ~ div,
-#covertoggle:checked ~ label,
-#covertoggle:checked {
-  display: none;
 }
 #landing {
   position: relative;
