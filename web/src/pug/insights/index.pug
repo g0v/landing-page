@@ -1,0 +1,16 @@
+extends /base.pug
+block body
+  .w-1024.px-2.px-lg-4.mx-auto.rwd.typeset.heading-contrast
+    .text-center.my-4.py-4
+      img(src="/assets/img/g0v-only.svg",style="width:3em")
+      h1.display-4.font-weight-bold 社群心得
+      .text-muted Insights
+    .card.text-sm: .card-body
+      p 這是社群參與者分享的心得
+      p: a(href="https://g0v.hackmd.io/YUhZ_ApjRX6-AtqC6M1qvw" target="_blank") 了解更多
+    #insights-rows.row.mt-4.pt-4
+      
+  +nbr(2)
+  
+block script
+  script(src="/js/insights.js")

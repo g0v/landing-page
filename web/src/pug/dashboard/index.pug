@@ -89,22 +89,4 @@ block body
       :i18n dashboard:is_opensource
 block script
   script(src='https://code.jquery.com/jquery-3.6.1.min.js' integrity='sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=' crossorigin='anonymous')
-  script(type='text/javascript').            
-    $(window).on('load', function(){ 
-      $.get("https://dashboard.g0v.tw/", function(data){      
-        $("#loading-text").fadeOut();
-        //console.log(data);
-        var date = new Date(data.create_at);
-        $("#update-time span").text(date.toLocaleString());
-        var titles = Object.keys(data.data);
-        titles.forEach((_title) => {
-          _data = data.data[_title];
-          var subtitles = Object.keys(_data);
-          subtitles.forEach((_subtitle) => {
-            //console.log(`${_title}-${_subtitle}: ${_data[_subtitle]}`);
-            $(`#${_title}-${_subtitle} .card-text span`).text(_data[_subtitle]);
-          });      
-        });
-      });
-    });
-  
+  script(src='/js/dashboard.js')
