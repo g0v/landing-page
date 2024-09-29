@@ -36,12 +36,12 @@ block body
     .row
       .col-md-8
         each item, key in data.g0vernance
-          h3(id="g0vernance-"+key) g0v !{key}
-          each _i in item
-            a.mb-2.d-block(href=_i.url, target="_blank") !{_i.name}
+          div(id="g0vernance-"+key)
+            each _i in item
+              a.mb-2.d-block(href=_i.url, target="_blank") !{_i.name}
         hr.my-4
         .pb-4 &nbsp;
-      .col-md-4
+      //-.col-md-4
         .sticky(style="max-height: 80vh; overflow-y: auto;"): .list-group.text-sm
           each item, key in data.g0vernance
             .list-group-item.text-truncate(data-scrollto=`#${"g0vernance-"+key}`) g0v !{key}
