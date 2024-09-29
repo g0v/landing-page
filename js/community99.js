@@ -1,5 +1,5 @@
 var RSS_URL, newsDom;
-RSS_URL = "http://api.g0v.tw/community99/";
+RSS_URL = "https://api.g0v.tw/community99/";
 newsDom = document.getElementById("community99");
 fetch(RSS_URL).then(function(response){
   return response.json();
