@@ -21,13 +21,13 @@
 - link: https://cofacts.g0v.tw/
   slug: cofacts
   zh:
-    name: 「真的假的」LINE Bot
+    name: Cofacts 真的假的
     description: |
       用聊天機器人和群眾協作查核澄清 LINE 封閉群組中的不實資訊。
 
-      「真的假的 LINE Bot」讓不擅於使用 Google，資訊搜尋能力較低的使用者，可以在加入「真的假的 LINE Bot」之後，遇上任何 LINE 上不知真假的訊息時，直接轉發給機器人，接著就會收到回覆，判斷訊息的真假。
+      「Cofacts 真的假的」讓不擅於使用 Google，資訊搜尋能力較低的使用者，可以在加入「Cofacts 真的假的」之後，遇上任何 LINE 上不知真假的訊息時，直接轉發給機器人，接著就會收到回覆，判斷訊息的真假。
   en:
-    name: Cofacts LINE Bot
+    name: Cofacts 真的假的
     description: |
       A LINE chat bot to help separate misinformation from fact.
 
