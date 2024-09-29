@@ -121,15 +121,16 @@ nav.navbar .collapse {
 #hero-text .inner h4 {
   margin: -30px 0 60px;
 }
-.news .item .date {
+#community99 .tag {
   font-family: sans-serif;
-  background: #999;
-  color: #fff;
-  display: inline;
-  padding: 3px 6px;
+  background: #ddd;
+  color: #000;
+  display: inline-block;
+  padding: 1px 4px;
   border-radius: 3px;
   font-weight: 200;
   font-size: 0.7em;
+  margin-right: 4px;
 }
 .char.cjk {
   display: inline;
