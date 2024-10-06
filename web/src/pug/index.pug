@@ -25,7 +25,7 @@ block body
         hr
         .text-center
           .btn.btn-outline-danger.mr-1.mb-2(data-scrollto="#projects"): :i18n index:projectList
-          .btn.btn-outline-danger.mr-1.mb-2(data-scrollto="#participate"): :i18n index:howToJoin
+          a.btn.btn-outline-danger.mr-1.mb-2(href=intlbase("novice/")): :i18n index:howToJoin
           a.btn.btn-outline-danger.mb-2(href=intlbase("/manifesto/" + i18n.language()),rol="button"): :i18n index:manifesto
 
   .w-1024.px-2.px-lg-4.mx-auto.rwd.d-flex
