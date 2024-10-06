@@ -62,93 +62,24 @@ block body
           a(href=intlbase("/manifesto/" + i18n.language())): :i18n index:g0vManifesto_link
           :i18n index:g0vManifesto_description2
 
-        h3: :i18n index:g0vManySides_title
-        p: :i18n index:g0vManySides_description
-        .text-center.my-4.py-4
-          a.btn.btn-outline-danger.mr-2.mb-2(href=intlbase("event/")): :i18n index:eventInfo
-          a.btn.btn-outline-danger.mr-2.mb-2(href=intlbase("novice/")): :i18n index:newcomersGuide
-          a.btn.btn-outline-danger.mb-2(href=intlbase("faq/")): :i18n index:faq
-        .text-center.text-sm.text-muted OSDC 2013 Keynote 「g0v 黑客松 - 寫程式改造社會」 by Kirby
-        .w-100.mb-4.mt-1
-          .aspect-ratio(style="padding-top:75%"): .w-100.h-100: iframe.w-100.h-100(src="https://www.youtube.com/embed/0HURMy0l4Ck")
-
-      .typeset.heading-contrast.pt-4
-        h2#projects.m-0: :i18n index:portfolio
-        hr
-        p
-          :i18n index:portfolioData
-          | 
-          :i18n index:portfolioMoreData
-          | 
-          a(href=intlbase("dashboard/")): :i18n index:dashboardLinkText
-          | 
-          :i18n index:awesomeProjects
-        p
-          :i18n index:famousProjects
-        include modules/project.pug
-
-        p
-          :i18n index:hackathonRecords
-              
-        h3
-          :i18n index:grantsTitle
-        p
-          :i18n index:grantsDescription
-
-      .typeset.heading-contrast.pt-4
-        h2#participate.m-0: :i18n index:getInvolved_title
-        hr
-        p: :i18n index:getInvolved_description
-        h3: :i18n index:events
-        h4: :i18n index:hackathons
-        p: :i18n index:eventsBlurb
-        p: :i18n index:eventsBlurbCont
-          a(href="https://jothon.g0v.tw/" target="_blank"): :i18n index:jothonWebsite
-          t: :i18n index:jothonFollow
-            a(href="http://g0v-jothon.kktix.cc" target="_blank"): :i18n index:jothonLink
-            t: :i18n index:jothonEventInfo
-        h4: :i18n index:otherHackathons
-        p: :i18n index:infraHackathons
-        p: :i18n index:smallHackathons
-
-        h3: :i18n index:onlinePlatform
-        p: :i18n index:onlinePlatformBlurb
-        ul
-          li: a(href="https://www.facebook.com/groups/g0v.general/" target="_blank"): :i18n index:g0vFacebook
-          li: a(href="https://join.g0v.tw" target="_blank"): :i18n index:g0vSlack
-          li: a(href="https://g0v.hackmd.io/NuhdUaTVRNykTqcstpM8VQ?view", target="_blank") g0v Slack Channels
-        p: :i18n index:codeOfConduct
-        h3: :i18n index:otherChannels
-        p: :i18n index:participateMore
         .row
+          .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
+            h4.text-center: :i18n index:eventInfo
+            p: :i18n index:getInvolved_description
+            a.btn-block(href=intlbase("event/")): :i18n index:eventInfo
+          .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
+            h4.text-center: :i18n index:newcomersGuide
+            p: :i18n index:callToAction
+            a.btn-block(href=intlbase("novice/")): :i18n index:newcomersGuide
           .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
             h4.text-center: :i18n index:donate
             p: :i18n index:donateBlurb
             a.btn-block(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30&_ga=2.218722001.93807760.1535621686-361420765.1511415990" target="_blank"): :i18n index:donateLink
-          .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
-            h4.text-center: :i18n index:propose
-            p: :i18n index:proposeBlurb
-            a.btn-block(href="https://grants.g0v.tw" target="_blank"): :i18n index:proposeLink
-          .col-md-4: .card.shadow-sm.mb-4.h-100: .card-body
-            h4.text-center: :i18n index:organize
-            p: :i18n index:organizeBlurb
-            a.btn-block(href="http://g0v.network" target="_blank"): :i18n index:organizeLink
         
-        h3: :i18n index:moreInfo
-        p
-          :i18n index:callToAction
-          | 
-          a(href=intlbase("novice/")): :i18n index:newcomersGuideLinkText
-          :i18n index:baam
-
     .d-none.d-md-block(style="min-width:10em"): .sticky.ml-4.pl-4.pt-4.border-left.border-danger
       br
       .mb-4
         .text-danger.clickable(data-scrollto="#news"): :i18n nav:latest
-      .mb-4
-        a.clickable.d-block(href="#",data-scrollto="#more"): :i18n nav:more
-        a.clickable.d-block(href="#",data-scrollto="#projects"): :i18n nav:projects
-        a.clickable.d-block(href="#",data-scrollto="#participate"): :i18n nav:join
       .mb-4
         a.clickable.d-block(href=intlbase("/manifesto/" + i18n.language())): :i18n nav:manifesto
         a.clickable.d-block(href=intlbase("/g0vernance/")): :i18n nav:g0vernance

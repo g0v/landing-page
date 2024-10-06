@@ -44,7 +44,7 @@ grantsDescription: 'Organized by <a href="https://jothon.g0v.tw" target="_blank"
 
 ## How to Join
 getInvolved_title: "How to get involved?"
-getInvolved_description: 'The best way to get to know g0v is to come participate. Whether online or offline, there are many channels to interact with members of the community. If you would like to learn more about open-source collaboration, you can take a look at <a href="https://g0v.hackmd.io/@jothon/g0v-cowork-guideline" target="_blank">g0v open-source collaboration guide</a>.'
+getInvolved_description: 'The best way to get to know g0v is to come participate. Whether online or offline, there are many channels to interact with members of the community.'
 
 ## Offline
 events: "Offline: Bimonthly g0v hackathons and smaller community hackathons"
@@ -79,6 +79,6 @@ organize: "Organize Related Events"
 organizeBlurb: "Currently, g0v hackathons only take place in Taiwan, but civic hackers in other countries are beginning to take notice. Does your country have a g0v movement? Why not consider starting a g0v hackathon where you are?"
 organizeLink: "Organize"
 moreInfo: "More information"
-callToAction: 'If you want to participate in g0v, but are unsure how, check out our'
+callToAction: 'If you want to participate in g0v, but are unsure how, check out our Newcomers Guide'
 newcomersGuideLinkText: 'Newcomers Guide'
 baam: '!'
