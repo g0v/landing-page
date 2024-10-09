@@ -24,9 +24,9 @@ block body
           a(href="#",data-scrollto="#more"): :i18n index:introLearnMore
         hr
         .text-center
-          .btn.btn-outline-danger.mr-1.mb-2(data-scrollto="#projects"): :i18n index:projectList
-          a.btn.btn-outline-danger.mr-1.mb-2(href=intlbase("novice/")): :i18n index:howToJoin
-          a.btn.btn-outline-danger.mb-2(href=intlbase("/manifesto/" + i18n.language()),rol="button"): :i18n index:manifesto
+          a.btn.btn-outline-danger.mr-1.mb-2(href=intlbase("/portfolio/")): :i18n nav:portfolio
+          a.btn.btn-outline-danger.mr-1.mb-2(href=intlbase("/novice/")): :i18n nav:newcomer
+          a.btn.btn-outline-danger.mb-2(href=intlbase("/manifesto/" + i18n.language()),rol="button"): :i18n nav:manifesto
 
   .w-1024.px-2.px-lg-4.mx-auto.rwd.d-flex
     div
@@ -79,12 +79,9 @@ block body
     .d-none.d-md-block(style="min-width:10em"): .sticky.ml-4.pl-4.pt-4.border-left.border-danger
       br
       .mb-4
-        .text-danger.clickable(data-scrollto="#news"): :i18n nav:latest
-      .mb-4
         a.clickable.d-block(href=intlbase("/manifesto/" + i18n.language())): :i18n nav:manifesto
         a.clickable.d-block(href=intlbase("/g0vernance/")): :i18n nav:g0vernance
-        a.clickable.d-block(href=intlbase("/dashboard/")): :i18n nav:dashboard
-        a.clickable.d-block(href=intlbase("timeline/")): :i18n nav:timeline
+        a.clickable.d-block(href=intlbase("/portfolio/")): :i18n nav:portfolio
         a.clickable.d-block(href=intlbase("/novice/")): :i18n nav:newcomer
         a.clickable.d-block(href=intlbase("/event/")): :i18n nav:events
         a.clickable.d-block(href=intlbase("/faq/")): :i18n nav:faq

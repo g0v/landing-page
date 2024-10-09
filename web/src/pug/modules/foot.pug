@@ -16,10 +16,9 @@
       .row
         .col: .mt-0.list
             .item: a(href=intlbase("/manifesto/")): :i18n nav:manifesto
-            .item: a(href=intlbase("/dashboard/")): :i18n nav:dashboard
+            .item: a(href=intlbase("/portfolio/")): :i18n nav:portfolio
             .item: a(href=intlbase("/faq/")): :i18n nav:faq
             .item: a(href=intlbase("/contact/")): :i18n nav:contact
-            .item: a(href=intlbase("/event/")): :i18n nav:events
             .item: a(href=intlbase("/g0vernance/")): :i18n nav:g0vernance
             .item: a(href=intlbase("/coc/")): :i18n nav:coc
             .item: a(href="https://jothon.g0v.tw/transaction/",target="_blank") 收支明細
@@ -36,7 +35,8 @@
     .col-md-3.mb-4
       h5 參與貢獻
       .mt-2.list
-        .item: a(href=intlbase("/novice/")) 新手指南
+        .item: a(href=intlbase("/event/")): :i18n nav:events
+        .item: a(href=intlbase("/novice/")): :i18n nav:newcomer
         .item: a(href="https://jothon.g0v.tw/",target="_blank") 黑客松入口網
         .item: a(href="https://github.com/g0v/landing-page",target="_blank") 官網原始碼    
       h5.mt-4 相關專案
@@ -65,3 +65,4 @@
         a(target="_blank", href="https://www.youtube.com/user/g0vTW"): i.bi.bi-youtube
         a(target="_blank", href="https://www.flickr.com/g0v/"): i.bi.bi-images
         a(target="_blank", href="https://github.com/g0v"): i.bi.bi-github
+        a(target="_blank", href="https://join.g0v.tw/"): i.bi.bi-slack
