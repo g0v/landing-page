@@ -1,0 +1,20 @@
+[data-black] {
+  display: inline-block;
+  border-bottom: 1px dotted #d60000;
+  position: relative;
+}
+[data-black]:hover {
+  border-color: transparent;
+}
+[data-black]:hover::after {
+  content: attr(data-black);
+  background: #222324;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
