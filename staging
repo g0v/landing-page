@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Test Build
+
+git checkout master
+REV=`git describe --always`
+rm -rf _public
+git clone git@github.com:g0v/landing-page --depth 1 -b staging-pages _public
+cd _public
+git rm -rf *
+cp -R ../web/static/* ./
+git add *
+git commit -m "regen for $REV"
+git push
+cd ..
+rm -rf _public
+echo "Done."

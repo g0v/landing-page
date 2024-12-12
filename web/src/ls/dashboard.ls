@@ -1,16 +1,19 @@
-window.addEventListener 'load', ->
-  xhr = new XMLHttpRequest!
-  xhr.open 'GET', 'https://dashboard.g0v.tw/', true
-  xhr.onreadystatechange = ->
-    if xhr.readyState == 4 and xhr.status == 200
-      data = JSON.parse xhr.responseText
+document.addEventListener 'DOMContentLoaded', ->
+  fetch 'https://dashboard.g0v.tw/'
+    .then (response) -> response.json!
+    .then (data) ->
       document.getElementById('loading-text').style.display = 'none'
+      # console.log data
       date = new Date data.create_at
-      document.getElementById('update-time').querySelector('span').textContent = date.toLocaleString!
+      document.querySelector('#update-time span').textContent = date.toLocaleString!
+
       titles = Object.keys data.data
-      titles.forEach (_title) ->
-        _data = data.data[_title]
+      titles.forEach (title) ->
+        _data = data.data[title]
         subtitles = Object.keys _data
-        subtitles.forEach (_subtitle) ->
-          document.getElementById(_title + '-' + _subtitle).querySelector('.card-text span').textContent = _data[_subtitle]
-  xhr.send!
+        subtitles.forEach (subtitle) ->
+          # console.log "#{title}-#{subtitle}: #{_data[subtitle]}"
+          element = document.querySelector "##{title}-#{subtitle} .card-text span"
+          element?.textContent = _data[subtitle]
+    .catch (error) ->
+      console.error 'Error fetching data:', error

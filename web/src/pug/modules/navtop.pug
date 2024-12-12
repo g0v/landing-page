@@ -17,18 +17,17 @@
     #navbar-list.collapse.navbar-collapse
       a.navbar-brand(href=intlbase("/")): img(src="/assets/img/g0v-banner.svg",style="height:27px;margin-top:-8px")
       ul.navbar-nav
-        li.nav-item: a.nav-link(href=intlbase("manifesto/")): :i18n nav:manifesto
-        li.nav-item: a.nav-link(href=intlbase("coc/")): :i18n nav:coc
-        li.nav-item: a.nav-link(href=intlbase("event/")): :i18n nav:events
-        li.nav-item: a.nav-link(href=intlbase("novice/")): :i18n nav:newcomer
-        li.nav-item: a.nav-link(href=intlbase("g0vernance/")): :i18n nav:g0vernance
-        li.nav-item: a.nav-link(href=intlbase("faq/")): :i18n nav:faq
         li.nav-item.dropdown
           a.nav-link.dropdown-toggle(href="#",data-toggle="dropdown"): :i18n nav:about
           .dropdown-menu
-            a.dropdown-item(href=intlbase("dashboard/")): :i18n nav:dashboard
-            a.dropdown-item(href=intlbase("timeline/")): :i18n nav:timeline
-            a.dropdown-item(href=intlbase("contact/")): :i18n nav:contact
+            a.dropdown-item(href=intlbase("manifesto/")): :i18n nav:manifesto
+            a.dropdown-item(href=intlbase("coc/")): :i18n nav:coc
+            a.dropdown-item(href=intlbase("g0vernance/")): :i18n nav:g0vernance
+            a.dropdown-item(href=intlbase("portfolio/")): :i18n nav:portfolio
+        li.nav-item: a.nav-link(href=intlbase("event/")): :i18n nav:events
+        li.nav-item: a.nav-link(href=intlbase("novice/")): :i18n nav:newcomer
+        li.nav-item: a.nav-link(href=intlbase("faq/")): :i18n nav:faq
+        li.nav-item: a.nav-link(href=intlbase("contact/")): :i18n nav:contact
         li.nav-item: a.nav-link(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30",target="_blank"): :i18n nav:donate
 
       .navbar-nav.ml-auto#intl-btn-group

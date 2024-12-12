@@ -11,24 +11,18 @@
   .sep.sep-light
   .pb-4
   .row
-    .col-md-5.mb-4
+    .col-md-3.mb-4
       h5 關於 g0v
       .row
         .col: .mt-0.list
             .item: a(href=intlbase("/manifesto/")): :i18n nav:manifesto
-            .item: a(href=intlbase("/dashboard/")): :i18n nav:dashboard
+            .item: a(href=intlbase("/portfolio/")): :i18n nav:portfolio
             .item: a(href=intlbase("/faq/")): :i18n nav:faq
             .item: a(href=intlbase("/contact/")): :i18n nav:contact
-            .item: a(href=intlbase("/event/")): :i18n nav:events
             .item: a(href=intlbase("/g0vernance/")): :i18n nav:g0vernance
             .item: a(href=intlbase("/coc/")): :i18n nav:coc
-        .col: .mt-0.list
             .item: a(href="https://jothon.g0v.tw/transaction/",target="_blank") 收支明細
-            .item: a(href="https://www.facebook.com/g0v.tw/",target="_blank") 臉書專頁
-            .item: a(href="https://twitter.com/g0vtw",target="_blank") 推特專頁
-            .item: a(href="https://flickr.com/g0v/",target="_blank") 活動影像
-            .item: a(href="https://flickr.com/g0v/",target="_blank") 活動影片
-    .col-md-3.mb-4.offset-md-1
+    .col-md-3.mb-4
       h5 線上協作
       .mt-2.list
         .item: a(href="http://www.facebook.com/groups/387816094628136/",target="_blank") 臉書後勤中心
@@ -41,7 +35,8 @@
     .col-md-3.mb-4
       h5 參與貢獻
       .mt-2.list
-        .item: a(href=intlbase("/novice/")) 新手指南
+        .item: a(href=intlbase("/event/")): :i18n nav:events
+        .item: a(href=intlbase("/novice/")): :i18n nav:newcomer
         .item: a(href="https://jothon.g0v.tw/",target="_blank") 黑客松入口網
         .item: a(href="https://github.com/g0v/landing-page",target="_blank") 官網原始碼    
       h5.mt-4 相關專案
@@ -49,17 +44,25 @@
         .item: a(href="https://jothon.g0v.tw/about",target="_blank") jothon 揪松團
         .item: a(href="https://g0v.hackmd.io/@int/about",target="_blank") intl 國際交流專案
   .sep.sep-light.my-4
-  .text-sm
-    .d-inline-block.align-middle.mr-1(style="width:24px;height:24px;background:url(/assets/img/justfont.png) center center no-repeat;background-size:36px")
-    a(href="https://justfont.com",style="display:inline",target="_blank") web font provided by justfont
-  .text-sm
-    .d-inline-block.align-middle.mr-1(style="width:24px;height:24px;background:url(/assets/img/loader-jothon.svg) center center no-repeat;background-size:36px")
-    a(href="https://loading.io",style="display:inline",target="_blank") animations are made possible by loading.io
-  .text-sm
-    .d-inline-block.align-middle.mr-1(style="width:24px;height:24px;background:url(/assets/img/loader-jothon.svg) center center no-repeat;background-size:36px")
-    a(href="https://jothon.g0v.tw/about",target="_blank") this website is maintained by jothon.g0v.tw
-  .text-sm.mt-2
-    a(href="https://github.com/g0v/landing-page/issues/new?assignees=&labels=bug&projects=&template=%E9%8C%AF%E8%AA%A4%E5%9B%9E%E5%A0%B1.md&title=%5BBUG%5D+", target="_blank") 網站需要大家共同維護，歡迎協助修正錯誤或提供建議 
-
-
-  
+  .row
+    .col-md.my-4
+      .text-sm
+        .d-inline-block.align-middle.mr-1(style="width:24px;height:24px;background:url(/assets/img/justfont.png) center center no-repeat;background-size:36px")
+        a(href="https://justfont.com",style="display:inline",target="_blank") web font provided by justfont
+      .text-sm
+        .d-inline-block.align-middle.mr-1(style="width:24px;height:24px;background:url(/assets/img/loader-jothon.svg) center center no-repeat;background-size:36px")
+        a(href="https://loading.io",style="display:inline",target="_blank") animations are made possible by loading.io
+      .text-sm
+        .d-inline-block.align-middle.mr-1(style="width:24px;height:24px;background:url(/assets/img/loader-jothon.svg) center center no-repeat;background-size:36px")
+        a(href="https://jothon.g0v.tw/about",target="_blank") this website is maintained by jothon.g0v.tw
+      .text-sm.mt-2
+        a(href="https://github.com/g0v/landing-page/issues/new?assignees=&labels=bug&projects=&template=%E9%8C%AF%E8%AA%A4%E5%9B%9E%E5%A0%B1.md&title=%5BBUG%5D+", target="_blank") 網站需要大家共同維護，歡迎協助修正錯誤或提供建議 
+    .col-md-auto.my-4
+      .d-flex.icon-list.justify-content-center
+        a(target="_blank", href="https://www.facebook.com/g0v.tw/"): i.bi.bi-facebook
+        a(target="_blank", href="https://www.instagram.com/g0v.tw/"): i.bi.bi-instagram
+        a(target="_blank", href="https://twitter.com/g0vtw"): i.bi.bi-twitter-x
+        a(target="_blank", href="https://www.youtube.com/user/g0vTW"): i.bi.bi-youtube
+        a(target="_blank", href="https://www.flickr.com/g0v/"): i.bi.bi-images
+        a(target="_blank", href="https://github.com/g0v"): i.bi.bi-github
+        a(target="_blank", href="https://join.g0v.tw/"): i.bi.bi-slack
