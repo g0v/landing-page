@@ -20,13 +20,13 @@ operatingBlurb: "g0v.tw primarily operates online with a large hackathon occurri
 hackathonBlurb: "(Note: Hackathon is a portmanteau of \"hacker\" and \"marathon\", a large-scale event that takes place over the course of one to two days. Volunteers form groups, work, and report their progress. Many projects will meet before the event and form a plan for the day to make sure they can get as much done as possible in the limited time available.)"
 communityMakeup: "People Who Make g0v"
 communityBlurb: "Members of g0v are both online and offline and come from all fields. The only requirement is that you believe in the principle of open-source collaboration. You don't need to be a software engineer; although most members in the early days of g0v were software engineers, now over 60% of participants are not from a technical background."
-cantCode: "Is it a problem if I can’t write code? <b>Not at all!</b>"
+cantCode: "Is it a problem if I can't write code? <b>Not at all!</b>"
 g0vManifesto_title: "g0v Manifesto"
-g0vManifesto_description: 'Originally drafted by <code>ipa</code>, the g0v manifesto, after many rounds of community deliberation and discussion, now clearly represents and define the g0v spirit, the logic of open-source collaboration. It is a kind of "constitution" for the g0v community. If you want to learn more, you can view the '
+g0vManifesto_description: 'Originally drafted by <code>ipa</code>, the g0v manifesto, after many rounds of community deliberation and discussion, now clearly represents and defines the g0v spirit, the logic of open-source collaboration. It is a kind of "constitution" for the g0v community. If you want to learn more, you can view the '
 g0vManifesto_link: "g0v Manifesto"
 g0vManifesto_description2: " page."
 g0vManySides_title: "The Many Sides of g0v"
-g0vManySides_description: 'It is impossible to explain the many sides of g0v in a few sentences. So to learn more about g0v, please watch the keynote speach Kirby gave at OSDC in 2013 on "g0v hackathon - code to refactor society."'
+g0vManySides_description: 'It is impossible to explain the many sides of g0v in a few sentences. So to learn more about g0v, please watch the keynote speech Kirby gave at OSDC in 2013 on "g0v hackathon - code to refactor society."'
 eventInfo: "Events"
 newcomersGuide: "Newcomers Guide"
 faq: "FAQ"
@@ -49,15 +49,15 @@ getInvolved_description: 'The best way to get to know g0v is to come participate
 ## Offline
 events: "Offline: Bimonthly g0v hackathons and smaller community hackathons"
 hackathons: "The bimonthly g0v hackathon"
-eventsBlurb: "The Bimontlhy g0v Hackathon is our long-running event. Here, you can meet participants of all walks of life. At hackathons, they hack away on their projects before presenting their progress at the end of the day."
+eventsBlurb: "The Bimonthly g0v Hackathon is our long-running event. Here, you can meet participants of all walks of life. At hackathons, they hack away on their projects before presenting their progress at the end of the day."
 eventsBlurbCont: "The most important thing is, you can participate even if you don't write code! You can find out more details on our "
 jothonWebsite: "Jothon website"
 jothonFollow: ". You can also follow the "
 jothonLink: "g0v-jothon"
 jothonEventInfo: " social media to get the newest event information."
 otherHackathons: "project hackathons/small hackathons"
-infraHackathons: "Apart from the g0v hackathon, g0v-jothon also regularly holds \"infrastructure hackathons\" to help maintain the basic community infastructure."
-smallHackathons: "Each community hackathon has a different feel. Often, these events will explain what kind of people are best suited to participate in the information for the event. You can find this information by visitng the g0v facebook group or g0v slack."
+infraHackathons: "Apart from the g0v hackathon, g0v-jothon also regularly holds \"infrastructure hackathons\" to help maintain the basic community infrastructure."
+smallHackathons: "Each community hackathon has a different feel. Often, these events will explain what kind of people are best suited to participate in the information for the event. You can find this information by visiting the g0v facebook group or g0v slack."
 
 ## Online
 onlinePlatform: "Online: g0v facebook and slack channels"
