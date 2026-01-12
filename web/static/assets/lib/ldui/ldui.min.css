@@ -1041,7 +1041,7 @@ pre {
 .ld-over-inverse.running > .ld,
 .ld-over-full.running > .ld,
 .ld-over-full-inverse.running > .ld {
-  z-index: z-index: 4001;;
+  z-index: 4001;
 }
 .ld-over.running:before,
 .ld-over-inverse.running:before,
